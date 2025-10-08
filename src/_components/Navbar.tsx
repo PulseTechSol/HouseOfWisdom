@@ -1,24 +1,70 @@
 "use client";
-
 import { sectionPaddingX, localFontSize } from "@/utils/themes";
 import { Box, Typography } from "@mui/material";
 import { svgs } from "@/_assets/svgs";
 import Image from "next/image";
 import NavTopBar from "./NavTopBar";
 import { useRouter, usePathname } from "next/navigation";
-
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "" },
-  { label: "Our People", href: "" },
-  { label: "Events", href: "" },
-  { label: "Blog", href: "" },
-  { label: "Contact", href: "" },
-];
+import React from "react";
 
 export default function Navbar() {
+  const [menu, setMenu] = React.useState(false);
   const router = useRouter();
   const pathname = usePathname();
+  const toggleDrawer = (open: boolean) => {
+    setMenu(open);
+  };
+  function sidebar() {
+    setMenu((p) => !p);
+    console.log(menu);
+  }
+
+  const navLinks = [
+    { label: "Home", href: "/" },
+    { label: "About", href: "" },
+    { label: "Our People", href: "" },
+    { label: "Events", href: "" },
+    { label: "Blog", href: "" },
+    { label: "Contact", href: "" },
+  ];
+  const menuNavLinks = [
+    {
+      src: svgs.homeGreen,
+      darkLogo: svgs.homeWhite,
+      text: "Home",
+      route: "/",
+    },
+    {
+      src: svgs.aboutGreen,
+      darkLogo: svgs.aboutWhite,
+      text: "About",
+      route: "/about-us",
+    },
+    {
+      src: svgs.ourPeopleGreen,
+      darkLogo: svgs.ourPropleWhite,
+      text: "Our People",
+      route: "/services",
+    },
+    {
+      src: svgs.eventsGreen,
+      darkLogo: svgs.eventsWhite,
+      text: "Events",
+      route: "/for-dentists",
+    },
+    {
+      src: svgs.blogsGreen,
+      darkLogo: svgs.blogsWhite,
+      text: "Blogs",
+      route: "/smile-galleries",
+    },
+    {
+      src: svgs.contactGreen,
+      darkLogo: svgs.contactWhite,
+      text: "Contact",
+      route: "/contact-us",
+    },
+  ];
 
   return (
     <>
@@ -76,8 +122,115 @@ export default function Navbar() {
               width: { xs: "30px", sm: "40px" },
             }}
           >
-            <Image src={svgs.hamburger} alt="hamburger" />
+            <Image onClick={sidebar} src={svgs.hamburger} alt="hamburger" />
           </Box>
+        </Box>
+      </Box>
+
+      <Box
+        onClick={sidebar}
+        sx={{
+          // bgcolor:""
+          display: menu ? "block" : "none",
+          height: "100vh",
+          width: "100vw",
+          position: "fixed",
+          top: "0px",
+          left: "0px",
+          zIndex: "1000",
+        }}
+      ></Box>
+      <Box
+        sx={{
+          height: "100vh",
+          maxWidth: { xs: "100vw", sm: "50vw" },
+          position: "fixed",
+          top: "0px",
+          left: "0px",
+          transition: "all 0.4s ease-in-out",
+          transform: menu ? "translateX(0)" : "translateX(-100%)",
+          zIndex: "1000",
+          backgroundColor: "#FFFFFF",
+          width: "100%",
+          overflowY: "auto",
+        }}
+      >
+        <Box
+          sx={{
+            margin: "40px 20px 70px 30px",
+            textAlign: "left",
+          }}
+        >
+          <Image
+            onClick={sidebar}
+            src={svgs.crossGreen}
+            alt="kashanimgclose"
+            height={20}
+            width={20}
+          />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexDirection: "column",
+            gap: "10px",
+          }}
+        >
+          {menuNavLinks.map((link, i) => (
+            <Box
+              onClick={() => {
+                toggleDrawer(false);
+                router.push(link.route);
+              }}
+              sx={{
+                width: "-webkit-fill-available !important",
+                alignItems: "center",
+                justifyContent: "flex-start",
+                display: "flex",
+                gap: "30px",
+                backgroundColor:
+                  pathname ===
+                  (link.route.startsWith("./")
+                    ? link.route.substring(1)
+                    : link.route)
+                    ? "#006B4F"
+                    : "",
+                padding: "25px 20px",
+                cursor: "pointer",
+              }}
+              key={i}
+            >
+              <Image
+                style={{ height: "30px", width: "30px", objectFit: "contain" }}
+                src={
+                  pathname ===
+                  (link.route.startsWith("./")
+                    ? `/${link.route.substring(2)}`
+                    : link.route)
+                    ? link.darkLogo
+                    : link.src
+                }
+                alt="location"
+              />
+              <Typography
+                sx={{
+                  textTransform: "capitalize",
+                  color:
+                    pathname ===
+                    (link.route.startsWith("./")
+                      ? link.route.substring(1)
+                      : link.route)
+                      ? "#fff"
+                      : "#006B4F",
+                  fontSize: "20px",
+                }}
+              >
+                {link.text}
+              </Typography>
+            </Box>
+          ))}
         </Box>
       </Box>
     </>
