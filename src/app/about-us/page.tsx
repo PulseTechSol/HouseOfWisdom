@@ -3,6 +3,7 @@ import Navbar from "@/_components/Navbar";
 import WhoWeAre from "./_sections/WhoWeAre";
 import MediaFeatureList from "../../_components/MediaFeatureList";
 import AimsAndObjectives from "./_sections/AimsAndObjectives";
+import UnitingForImpact from "./_sections/UnitingForImpact";
 
 export default function AboutUS() {
   return (
@@ -19,6 +20,7 @@ export default function AboutUS() {
       <WhoWeAre />
       <MediaFeatureList />
       <AimsAndObjectives />
+      <UnitingForImpact />
     </>
   );
 }

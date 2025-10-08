@@ -21,6 +21,10 @@ import whoWeAre from "./about-us/whoWeAre.svg";
 import developingLeaders from "./about-us/developingLeaders.svg";
 import elevateMuslimStatus from "./about-us/elevateMuslimStatus.svg";
 import reviveIslamicIntellectual from "./about-us/reviveIslamicIntellectual.svg";
+import advocacy from "./about-us/advocacy.svg";
+import collaboration from "./about-us/collaboration.svg";
+import empowerment from "./about-us/empowerment.svg";
+import thoughtLeadership from "./about-us/thoughtLeadership.svg";
 
 export const svgs = {
   logo,
@@ -46,4 +50,8 @@ export const svgs = {
   developingLeaders,
   elevateMuslimStatus,
   reviveIslamicIntellectual,
+  advocacy,
+  collaboration,
+  empowerment,
+  thoughtLeadership,
 };
