@@ -1,15 +1,3 @@
-// import { localFontSize } from "@/app/utils/themes";
-
-// this is the font family below there
-import { createTheme } from "@mui/material/styles";
-
-export const theme = createTheme({
-  typography: {
-    fontFamily: "Open Sans , sans-serif",
-  },
-});
-// export theme;
-
 export const localFontSize = {
   // headings
   h1: {
@@ -43,4 +31,18 @@ export const sectionPadding = {
   sm: "50px 60px",
   md: "60px 80px",
   lg: "100px 150px",
+};
+
+export const sectionPaddingX = {
+  xs: "20px",
+  sm: "60px",
+  md: "80px",
+  lg: "150px",
+};
+// sectionPaddingY not require alteast for now 7/act/25
+export const sectionPaddingY = {
+  xs: "40px",
+  sm: "50px",
+  md: "60px",
+  lg: "100px",
 };

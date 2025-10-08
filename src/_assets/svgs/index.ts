@@ -1,8 +1,38 @@
+import logo from "./logo.svg";
+import hamburger from "./menu-icons/hamburger.svg";
+import crossGreen from "./menu-icons/crossGreen.svg";
+import aboutGreen from "./menu-icons/aboutGreen.svg";
+import aboutWhite from "./menu-icons/aboutWhite.svg";
+import blogsGreen from "./menu-icons/blogsGreen.svg";
+import blogsWhite from "./menu-icons/blogsWhite.svg";
+import contactGreen from "./menu-icons/contactGreen.svg";
+import contactWhite from "./menu-icons/contactWhite.svg";
+import eventsGreen from "./menu-icons/eventsGreen.svg";
+import eventsWhite from "./menu-icons/eventsWhite.svg";
+import homeGreen from "./menu-icons/homeGreen.svg";
+import homeWhite from "./menu-icons/homeWhite.svg";
+import ourPeopleGreen from "./menu-icons/ourPeopleGreen.svg";
+import ourPropleWhite from "./menu-icons/ourPropleWhite.svg";
 import calander from "./calander.svg";
 import clock from "./clock.svg";
 import location from "./location.svg";
 
 export const svgs = {
+  logo,
+  hamburger,
+  crossGreen,
+  aboutGreen,
+  aboutWhite,
+  blogsGreen,
+  blogsWhite,
+  contactGreen,
+  contactWhite,
+  eventsGreen,
+  eventsWhite,
+  homeGreen,
+  homeWhite,
+  ourPeopleGreen,
+  ourPropleWhite,
   calander,
   clock,
   location,
