@@ -1,6 +1,7 @@
 import HeroComponent from "@/_components/HeroComponent";
 import Navbar from "@/_components/Navbar";
-import DrivenByPurposeSection from "./_sections/WhoWeAre";
+import WhoWeAre from "./_sections/WhoWeAre";
+import MediaFeatureList from "../../_components/MediaFeatureList";
 
 export default function AboutUS() {
   return (
@@ -14,7 +15,8 @@ export default function AboutUS() {
         description="We are a professional network dedicated to uniting Muslim leaders, innovators, and changemakers from across the UK. Our mission is to connect talent with purpose — building a platform where professional growth meets community impact."
         descriptionMob="We are a professional network dedicated to uniting Muslim leaders, innovators, and changemakers from across the UK. Our mission is to connect talent with purpose — building a platform where professional growth meets community impact."
       />
-      <DrivenByPurposeSection />
+      <WhoWeAre />
+      <MediaFeatureList />
     </>
   );
 }
