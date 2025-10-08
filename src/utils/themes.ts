@@ -20,10 +20,11 @@ export const localFontSize = {
   },
   // typography
   p1: {
-    xs: "18px",
-    md: "20px",
+    xs: "16px",
+    md: "18px",
+    lg: "20px",
   },
-  p2: { xs: "16px", md: "18px" },
+  p2: { xs: "14px", md: "16px", lg: "18px" },
 };
 
 export const sectionPadding = {

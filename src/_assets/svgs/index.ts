@@ -16,6 +16,8 @@ import ourPropleWhite from "./menu-icons/ourPropleWhite.svg";
 import calander from "./calander.svg";
 import clock from "./clock.svg";
 import location from "./location.svg";
+// about-us icons
+import whoWeAre from "./about-us/whoWeAre.svg";
 
 export const svgs = {
   logo,
@@ -36,4 +38,6 @@ export const svgs = {
   calander,
   clock,
   location,
+  // about-us icons
+  whoWeAre,
 };
