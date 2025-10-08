@@ -32,7 +32,12 @@ export default function UnitingForImpact() {
         </Box>
         {/* heading there  */}
         <Box
-          sx={{ marginBottom: "20px", width: "fit-content", marginX: "auto" }}
+          sx={{
+            marginBottom: "20px",
+            width: "fit-content",
+            marginX: "auto",
+            maxWidth: "880px",
+          }}
         >
           <Typography
             sx={{
@@ -40,6 +45,8 @@ export default function UnitingForImpact() {
               fontWeight: 600,
               color: "#000",
               textAlign: "center",
+              width: "fit-content",
+              marginX: "auto",
             }}
           >
             Driven by Purpose
@@ -49,6 +56,19 @@ export default function UnitingForImpact() {
                 border: { xs: "2px solid #006B4F", md: "4px solid #006B4F" },
               }}
             />
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: localFontSize.p1,
+              color: "#00000080",
+              marginTop: "20px",
+              textAlign: "center",
+            }}
+          >
+            HOW is a platform designed to ignite revival by helping British
+            Muslims reclaim the spirit of curiosity, excellence, leadership, and
+            service that once defined Muslim culture. Our goal is to inspire
+            groundbreaking contributions to humanity once again.
           </Typography>
         </Box>
         {/* the card box  */}

@@ -4,6 +4,7 @@ import WhoWeAre from "./_sections/WhoWeAre";
 import MediaFeatureList from "../../_components/MediaFeatureList";
 import AimsAndObjectives from "./_sections/AimsAndObjectives";
 import UnitingForImpact from "./_sections/UnitingForImpact";
+import JoinOurMission from "@/_components/JoinOurMission";
 
 export default function AboutUS() {
   return (
@@ -21,6 +22,7 @@ export default function AboutUS() {
       <MediaFeatureList />
       <AimsAndObjectives />
       <UnitingForImpact />
+      <JoinOurMission />
     </>
   );
 }
