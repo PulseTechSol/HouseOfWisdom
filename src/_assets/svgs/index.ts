@@ -18,6 +18,9 @@ import clock from "./clock.svg";
 import location from "./location.svg";
 // about-us icons
 import whoWeAre from "./about-us/whoWeAre.svg";
+import developingLeaders from "./about-us/developingLeaders.svg";
+import elevateMuslimStatus from "./about-us/elevateMuslimStatus.svg";
+import reviveIslamicIntellectual from "./about-us/reviveIslamicIntellectual.svg";
 
 export const svgs = {
   logo,
@@ -40,4 +43,7 @@ export const svgs = {
   location,
   // about-us icons
   whoWeAre,
+  developingLeaders,
+  elevateMuslimStatus,
+  reviveIslamicIntellectual,
 };
