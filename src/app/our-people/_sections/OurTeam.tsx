@@ -1,9 +1,9 @@
 "use client";
-import { Box, Typography, Divider } from "@mui/material";
+import { Box, Typography, Divider, SxProps, Theme } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
 import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { localFontSize, sectionPadding } from "@/utils/themes";
 import { pngs } from "@/_assets/pngs";
 import { svgs } from "@/_assets/svgs";
@@ -15,6 +15,33 @@ export default function OurTeam() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+    arrows: true,
+    nextArrow: (
+      <CustomSlider
+        styles={{
+          right: { xs: "0", md: "-25px" },
+
+          top: { xs: "40%", md: "calc(42%)" },
+        }}
+      />
+    ),
+    prevArrow: (
+      <CustomSlider
+        styles={{
+          left: { xs: "0", md: "-25px" },
+          top: { xs: "43%", md: "calc(44.5%)" },
+          transform: "rotate(180deg)",
+        }}
+      />
+    ),
+    responsive: [
+      {
+        breakpoint: 660,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -31,6 +58,8 @@ export default function OurTeam() {
           flexDirection: { xs: "column", md: "row" },
           alignItems: "center",
           gap: { xs: "20px", md: "30px", xl: "80px" },
+          margin: "auto",
+          justifyContent: "center",
         }}
       >
         <Box sx={{ width: { xs: "100%", md: "50%" } }}>
@@ -97,10 +126,15 @@ export default function OurTeam() {
         </Box>
         <Box
           sx={{
-            width: { xs: "100%", md: "500px" },
+            width: { xs: "100%", md: "60%", xl: "45%" },
           }}
         >
           <Slider {...settings}>
+            <MemberCard
+              image={pngs.teamMember1}
+              name="Tariq Ahmed"
+              designation="Executive Director & Corporate Relations"
+            />
             <MemberCard
               image={pngs.teamMember1}
               name="Tariq Ahmed"
@@ -126,27 +160,62 @@ type MemberCardProps = {
 
 export function MemberCard({ image, name, designation }: MemberCardProps) {
   return (
-    <Box sx={{ height: "510px", maxWidth: "265px", width: "100%" }}>
-      <Box sx={{ height: "fit-content", width: "265px" }}>
-        <Image
-          src={image}
-          alt={name}
-          style={{ height: "100%", width: "100%", objectFit: "contain" }}
-        />
-      </Box>
-      <Typography
+    <Box sx={{ margin: "auto", width: "fit-content" }}>
+      <Box
         sx={{
-          fontSize: localFontSize.h4,
-          color: "#000000",
-          textTransform: "capitalize",
-          paddingTop: { xs: "20px", md: "40px" },
+          width: "260px",
+          margin: "8px",
         }}
       >
-        {name}
-      </Typography>
-      <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
-        {designation}
-      </Typography>
+        <Box sx={{ height: "fit-content", maxWidth: "260px", width: "100%" }}>
+          <Image
+            src={image}
+            alt={name}
+            style={{ height: "100%", width: "100%", objectFit: "contain" }}
+          />
+        </Box>
+        <Typography
+          sx={{
+            fontSize: localFontSize.h4,
+            color: "#000000",
+            textTransform: "capitalize",
+            paddingTop: { xs: "20px", md: "40px" },
+          }}
+        >
+          {name}
+        </Typography>
+        <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
+          {designation}
+        </Typography>
+      </Box>
     </Box>
   );
 }
+
+interface CustomSliderProps {
+  styles?: SxProps<Theme>;
+  onClick?: (event?: React.MouseEvent<HTMLDivElement>) => void;
+}
+
+const CustomSlider: React.FC<CustomSliderProps> = ({ styles, onClick }) => {
+  return (
+    <Box
+      sx={{
+        position: "absolute",
+        cursor: "pointer",
+        width: { xs: "15px", md: "20px" },
+        height: "auto",
+        zIndex: 2,
+        ...styles,
+      }}
+      onClick={onClick}
+    >
+      <Image
+        loading="lazy"
+        style={{ height: "100%", width: "100%", objectFit: "contain" }}
+        src={svgs.sliderArrow}
+        alt="SliderArrow"
+      />
+    </Box>
+  );
+};

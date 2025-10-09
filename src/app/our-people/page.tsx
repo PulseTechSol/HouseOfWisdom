@@ -1,7 +1,9 @@
-import HeroComponent from "@/_components/HeroComponent";
 import Navbar from "@/_components/Navbar";
+import HeroComponent from "@/_components/HeroComponent";
+import OurTeam from "./_sections/OurTeam";
 import AdvisoryBoard from "./_sections/AdvisoryBoard";
-// import OurTeam from "./_sections/OurTeam";
+import JoinOurMission from "@/_components/JoinOurMission";
+import Footer from "@/_components/Footer";
 
 export default function OurPeople() {
   return (
@@ -15,8 +17,10 @@ export default function OurPeople() {
         description="We are a professional network dedicated to uniting Muslim leaders, innovators, and changemakers from across the UK. Our mission is to connect talent with purpose — building a platform where professional growth meets community impact."
         descriptionMob="We are a professional network dedicated to uniting Muslim leaders, innovators, and changemakers from across the UK. Our mission is to connect talent with purpose — building a platform where professional growth meets community impact."
       />
-      {/* <OurTeam /> */}
+      <OurTeam />
       <AdvisoryBoard />
+      <JoinOurMission />
+      <Footer />
     </>
   );
 }

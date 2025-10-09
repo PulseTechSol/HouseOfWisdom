@@ -32,6 +32,8 @@ import linkedin from "./linkedin.svg";
 import phone from "./phone.svg";
 import email from "./email.svg";
 import locationFooter from "./locationFooter.svg";
+
+import sliderArrow from "./sliderArrow.svg";
 export const svgs = {
   logo,
   hamburger,
@@ -67,4 +69,6 @@ export const svgs = {
   phone,
   email,
   locationFooter,
+
+  sliderArrow,
 };
