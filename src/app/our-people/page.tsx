@@ -1,5 +1,6 @@
 import HeroComponent from "@/_components/HeroComponent";
 import Navbar from "@/_components/Navbar";
+import AdvisoryBoard from "./_sections/AdvisoryBoard";
 // import OurTeam from "./_sections/OurTeam";
 
 export default function OurPeople() {
@@ -15,6 +16,7 @@ export default function OurPeople() {
         descriptionMob="We are a professional network dedicated to uniting Muslim leaders, innovators, and changemakers from across the UK. Our mission is to connect talent with purpose — building a platform where professional growth meets community impact."
       />
       {/* <OurTeam /> */}
+      <AdvisoryBoard />
     </>
   );
 }
