@@ -55,7 +55,7 @@ export default function Footer() {
             flexDirection: { xs: "column", md: "row" },
             justifyContent: "space-between",
             alignItems: { xs: "center", md: "start" },
-            gap: { xs: "30px", md: "40px" },
+            gap: "40px",
             rowGap: { sm: "60px !important" },
             flexWrap: "wrap",
           }}
@@ -70,6 +70,7 @@ export default function Footer() {
               sx={{
                 width: "22px",
                 paddingX: "14px",
+                margin: { xs: "auto", md: "0" },
               }}
             >
               <Image
@@ -84,6 +85,7 @@ export default function Footer() {
                 color: "rgba(255,255,255,0.5)",
                 paddingTop: { xs: "15px", md: "25px" },
                 paddingBottom: { xs: "20px", md: "40px" },
+                display: { xs: "none", md: "block" },
               }}
             >
               Based in the heart of Dubai, we specialize in offering exquisitely
@@ -92,7 +94,7 @@ export default function Footer() {
             </Typography>
             <Box
               sx={{
-                display: "flex",
+                display: { xs: "none", md: "flex" },
                 gap: "40px",
                 alignItems: "center",
                 "& *": {
@@ -113,6 +115,7 @@ export default function Footer() {
                 textTransform: "uppercase",
                 color: "#fff",
                 marginBottom: { xs: "20px", md: "40px" },
+                textAlign: { xs: "center", md: "left" },
               }}
             >
               Pages
@@ -126,6 +129,7 @@ export default function Footer() {
                 rowGap: { xs: "20px", md: "20px" },
                 columnGap: "40px",
                 justifyContent: "center",
+                maxWidth: "250px",
               }}
             >
               {navLinks.map((link, index) => {
@@ -147,7 +151,7 @@ export default function Footer() {
               })}
             </Box>
           </Box>
-          <Box sx={{ maxWidth: "160px", width: "100%" }}>
+          <Box sx={{ maxWidth: { md: "160px" }, width: "100%" }}>
             <Typography
               sx={{
                 fontSize: localFontSize.h4,
@@ -155,6 +159,7 @@ export default function Footer() {
                 color: "#fff",
                 marginBottom: { xs: "20px", md: "40px" },
                 textWrap: "nowrap",
+                textAlign: { xs: "center", md: "left" },
               }}
             >
               USEFUL LINKS
@@ -168,6 +173,7 @@ export default function Footer() {
                 rowGap: { xs: "20px", md: "20px" },
                 columnGap: "40px",
                 justifyContent: "center",
+                margin: { xs: "auto", md: "0" },
               }}
             >
               <Typography
@@ -205,8 +211,9 @@ export default function Footer() {
                 fontSize: localFontSize.h4,
                 textTransform: "uppercase",
                 color: "#fff",
-                marginBottom: { xs: "20px", md: "40px" },
+                marginBottom: { xs: "30px", md: "40px" },
                 textWrap: "nowrap",
+                textAlign: { xs: "center", md: "left" },
               }}
             >
               Contact
@@ -221,7 +228,7 @@ export default function Footer() {
                   display: "flex",
                   alignItems: "center",
                   gap: { xs: "12px", md: "20px" },
-                  justifyContent: { xs: "center", md: "initial" },
+                  justifyContent: { xs: "flex-start", md: "initial" },
                   textAlign: { xs: "center", md: "initial" },
                 }}
               >
@@ -262,7 +269,7 @@ export default function Footer() {
         <Typography
           sx={{
             maxWidth: "800px",
-            width: "100%",
+            // width: "100%",
             margin: "auto",
             padding: "30px 20px",
             fontSize: localFontSize.p2,
