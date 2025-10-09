@@ -17,6 +17,7 @@ export default function FeaturedEvent() {
         sx={{
           padding: sectionPadding,
           maxWidth: "1440px",
+          margin: "auto",
         }}
       >
         <Typography

@@ -1,6 +1,7 @@
 import HeroComponent from "@/_components/HeroComponent";
 import Navbar from "@/_components/Navbar";
 import FeaturedEvent from "./_sections/FeaturedEvent";
+import UpcomingEvents from "./_sections/UpcomingEvents";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
         descriptionMob="Join our exclusive events designed to foster meaningful connections, drive policy discussions, and advance professional development within the Muslim community."
       />
       <FeaturedEvent />
+      <UpcomingEvents />
     </>
   );
 }
