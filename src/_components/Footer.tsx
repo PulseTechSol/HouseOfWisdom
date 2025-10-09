@@ -10,24 +10,23 @@ import { svgs } from "@/_assets/svgs";
 const footerData = [
   {
     imgSrc: svgs.phone,
-    text: "0522518384 (UAE)",
+    text: "+44 (0) 20 7123 4567",
+    description: "Monday - Friday, 9AM - 5PM",
   },
-  {
-    imgSrc: svgs.phone,
-    text: "+447871777747 (INTERNATIONAL)",
-  },
+
   {
     imgSrc: svgs.email,
-    text: "info@savilerowfurniture.com",
+    text: "info@houseofwisdom.org.uk",
+    description: "General Inquiry",
   },
 ];
 
 const navLinks = [
-  { text: "home", route: "/" },
-  { text: "about us", route: "/about-us" },
-  { text: "our service", route: "/our-services" },
-  { text: "our projects", route: "./our-projects" },
-  { text: "Contact us", route: "./contact-us" },
+  { text: "Home", route: "/" },
+  { text: "About", route: "/" },
+  { text: "Our People", route: "/" },
+  { text: "Blogs", route: "/" },
+  { text: "Contact", route: "/" },
 ];
 
 export default function Footer() {
@@ -56,18 +55,21 @@ export default function Footer() {
             flexDirection: { xs: "column", md: "row" },
             justifyContent: "space-between",
             alignItems: { xs: "center", md: "start" },
-            gap: { xs: "30px", md: "20px" },
+            gap: { xs: "30px", md: "40px" },
+            rowGap: { sm: "60px !important" },
+            flexWrap: "wrap",
           }}
         >
           <Box
             sx={{
-              maxWidth: "405px",
+              maxWidth: "360px",
               width: "100%",
             }}
           >
             <Box
               sx={{
-                width: "50px",
+                width: "22px",
+                paddingX: "14px",
               }}
             >
               <Image
@@ -80,7 +82,7 @@ export default function Footer() {
               sx={{
                 fontSize: localFontSize.p2,
                 color: "rgba(255,255,255,0.5)",
-                paddingTop: { xs: "10px", md: "20px" },
+                paddingTop: { xs: "15px", md: "25px" },
                 paddingBottom: { xs: "20px", md: "40px" },
               }}
             >
@@ -116,25 +118,24 @@ export default function Footer() {
               Pages
             </Typography>
 
-            {navLinks.map((link, index) => {
-              return (
-                <Box
-                  key={index}
-                  sx={{
-                    display: "flex",
-                    flexDirection: { xs: "row", md: "column" },
-                    flexWrap: { xs: "wrap", md: "nowrap" },
-                    rowGap: { xs: "20px", md: "0px" },
-                    columnGap: "40px",
-                    justifyContent: "center",
-                  }}
-                >
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: { xs: "row", md: "column" },
+                flexWrap: { xs: "wrap", md: "nowrap" },
+                rowGap: { xs: "20px", md: "20px" },
+                columnGap: "40px",
+                justifyContent: "center",
+              }}
+            >
+              {navLinks.map((link, index) => {
+                return (
                   <Typography
+                    key={index}
                     onClick={() => router.push(link.route)}
                     sx={{
                       fontSize: localFontSize.p2,
                       fontWeight: "400",
-                      marginBottom: { xs: "10px", md: "20px" },
                       cursor: "pointer",
                       textTransform: "capitalize",
                       color: checkActive(link.route) ? "#FFFFFF" : "#FFFFFF80",
@@ -142,29 +143,73 @@ export default function Footer() {
                   >
                     {link.text}
                   </Typography>
-                </Box>
-              );
-            })}
+                );
+              })}
+            </Box>
+          </Box>
+          <Box sx={{ maxWidth: "160px", width: "100%" }}>
+            <Typography
+              sx={{
+                fontSize: localFontSize.h4,
+                textTransform: "uppercase",
+                color: "#fff",
+                marginBottom: { xs: "20px", md: "40px" },
+                textWrap: "nowrap",
+              }}
+            >
+              USEFUL LINKS
+            </Typography>
+
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: { xs: "row", md: "column" },
+                flexWrap: { xs: "wrap", md: "nowrap" },
+                rowGap: { xs: "20px", md: "20px" },
+                columnGap: "40px",
+                justifyContent: "center",
+              }}
+            >
+              <Typography
+                sx={{
+                  fontSize: localFontSize.p2,
+                  fontWeight: "400",
+                  cursor: "pointer",
+                  textTransform: "capitalize",
+                  color: "#FFFFFF80",
+                }}
+              >
+                Privacy Policy
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: localFontSize.p2,
+                  fontWeight: "400",
+                  cursor: "pointer",
+                  textTransform: "capitalize",
+                  color: "#FFFFFF80",
+                }}
+              >
+                Cookies
+              </Typography>
+            </Box>
           </Box>
           <Box
-            data-aos-duration="500"
-            data-aos="fade-left"
             sx={{
-              maxWidth: "370px",
+              maxWidth: "306px",
               width: "100%",
             }}
           >
             <Typography
               sx={{
-                fontSize: localFontSize.p1,
-                fontWeight: "600",
+                fontSize: localFontSize.h4,
                 textTransform: "uppercase",
-                color: "rgba(255,255,255,1)",
-                marginBottom: "30px",
-                textAlign: { xs: "center", md: "initial" },
+                color: "#fff",
+                marginBottom: { xs: "20px", md: "40px" },
+                textWrap: "nowrap",
               }}
             >
-              Contact Us
+              Contact
             </Typography>
             {footerData.map((data, i) => (
               <Box
@@ -175,8 +220,7 @@ export default function Footer() {
                   margin: { xs: "20px auto", md: "20px 0px" },
                   display: "flex",
                   alignItems: "center",
-                  gap: { xs: "15px", md: "30px" },
-                  //   margin: "20px 0px",
+                  gap: { xs: "12px", md: "20px" },
                   justifyContent: { xs: "center", md: "initial" },
                   textAlign: { xs: "center", md: "initial" },
                 }}
@@ -184,19 +228,31 @@ export default function Footer() {
                 <Image
                   src={data.imgSrc}
                   alt={data.text}
-                  height={24}
-                  width={24}
+                  height={40}
+                  width={40}
                 />
-                <Typography
-                  sx={{
-                    fontSize: localFontSize.p2,
-                    fontWeight: "400",
-                    color: "rgba(255,255,255,0.5)",
-                    textWrap: { xs: "nowrap", md: "wrap" },
-                  }}
-                >
-                  {data.text}
-                </Typography>
+                <Box>
+                  <Typography
+                    sx={{
+                      fontSize: localFontSize.p2,
+                      fontWeight: "400",
+                      color: "rgba(255, 255, 255, 1)",
+                      textWrap: { xs: "nowrap", md: "wrap" },
+                    }}
+                  >
+                    {data.text}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontSize: { xs: "12px", md: "14px" },
+                      fontWeight: "400",
+                      color: "rgba(255,255,255,0.5)",
+                      textWrap: { xs: "nowrap", md: "wrap" },
+                    }}
+                  >
+                    {data.description}
+                  </Typography>
+                </Box>
               </Box>
             ))}
           </Box>
@@ -222,9 +278,9 @@ export default function Footer() {
               fontWeight: "inherit",
               textDecoration: "none",
               transition: "all 0.4s ease-in-out",
-              color: "#ffffff",
+              color: "#006B4F",
               "&:hover": {
-                color: "rgba(255,255,255,0.5)",
+                color: "rgba(255, 255, 255, 1)",
               },
             }}
             href="https://www.qashnova.com/"
