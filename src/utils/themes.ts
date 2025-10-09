@@ -18,6 +18,11 @@ export const localFontSize = {
     md: "30px",
     lg: "36px",
   },
+  h4: {
+    xs: "18px",
+    md: "20px",
+    lg: "24px",
+  },
   // typography
   p1: {
     xs: "16px",

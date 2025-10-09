@@ -25,7 +25,13 @@ import advocacy from "./about-us/advocacy.svg";
 import collaboration from "./about-us/collaboration.svg";
 import empowerment from "./about-us/empowerment.svg";
 import thoughtLeadership from "./about-us/thoughtLeadership.svg";
-
+// footer icons
+import facebook from "./facebook.svg";
+import instagram from "./instagram.svg";
+import linkedin from "./linkedin.svg";
+import phone from "./phone.svg";
+import email from "./email.svg";
+import locationFooter from "./locationFooter.svg";
 export const svgs = {
   logo,
   hamburger,
@@ -54,4 +60,11 @@ export const svgs = {
   collaboration,
   empowerment,
   thoughtLeadership,
+  // footer icons
+  facebook,
+  instagram,
+  linkedin,
+  phone,
+  email,
+  locationFooter,
 };

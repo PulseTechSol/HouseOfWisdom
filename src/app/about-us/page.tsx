@@ -5,6 +5,7 @@ import MediaFeatureList from "../../_components/MediaFeatureList";
 import AimsAndObjectives from "./_sections/AimsAndObjectives";
 import UnitingForImpact from "./_sections/UnitingForImpact";
 import JoinOurMission from "@/_components/JoinOurMission";
+import Footer from "@/_components/Footer";
 
 export default function AboutUS() {
   return (
@@ -23,6 +24,7 @@ export default function AboutUS() {
       <AimsAndObjectives />
       <UnitingForImpact />
       <JoinOurMission />
+      <Footer />
     </>
   );
 }
