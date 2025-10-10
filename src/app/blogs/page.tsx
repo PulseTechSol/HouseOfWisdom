@@ -1,6 +1,7 @@
 import HeroComponent from "@/_components/HeroComponent";
 import Navbar from "@/_components/Navbar";
 import FeaturedArticle from "./_sections/FeaturedArticle";
+import ListOfBlogs from "./_sections/ListOfBlogs";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
         descriptionMob="Insights, analysis, and perspectives from Muslim professionals shaping Britain's future."
       />
       <FeaturedArticle />
+      <ListOfBlogs />
     </>
   );
 }
