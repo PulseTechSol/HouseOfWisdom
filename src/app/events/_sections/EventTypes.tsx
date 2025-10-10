@@ -7,7 +7,7 @@ import { svgs } from "@/_assets/svgs";
 
 export default function EventTypes() {
   return (
-    <Box sx={{ bgcolor: "#E9E9E9" }}>
+    <Box sx={{ bgcolor: "#fff" }}>
       <Box
         sx={{
           padding: sectionPadding,

@@ -4,6 +4,8 @@ import FeaturedEvent from "./_sections/FeaturedEvent";
 import UpcomingEvents from "./_sections/UpcomingEvents";
 import AimsAndObjectives from "./_sections/PastEvents";
 import EventTypes from "./_sections/EventTypes";
+import JoinOurMission from "@/_components/JoinOurMission";
+import Footer from "@/_components/Footer";
 
 export default function Events() {
   return (
@@ -21,6 +23,8 @@ export default function Events() {
       <UpcomingEvents />
       <AimsAndObjectives />
       <EventTypes />
+      <JoinOurMission />
+      <Footer />
     </>
   );
 }
