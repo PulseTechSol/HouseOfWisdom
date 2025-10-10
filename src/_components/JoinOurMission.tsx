@@ -48,7 +48,7 @@ export default function JoinOurMission() {
             flexDirection: { xs: "column", sm: "row" },
           }}
         >
-          <CustomButton text="meet our people" lightmode={true} />
+          <CustomButton text="get involved" lightmode={true} />
           <CustomButton text="meet our people" />
         </Box>
       </Box>

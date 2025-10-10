@@ -21,8 +21,8 @@ export default function AboutUS() {
       />
       <WhoWeAre />
       <MediaFeatureList />
-      <AimsAndObjectives />
       <UnitingForImpact />
+      <AimsAndObjectives />
       <JoinOurMission />
       <Footer />
     </>

@@ -25,6 +25,7 @@ const navLinks = [
   { text: "Home", route: "/" },
   { text: "About", route: "/" },
   { text: "Our People", route: "/" },
+  { text: "Events", route: "/" },
   { text: "Blogs", route: "/" },
   { text: "Contact", route: "/" },
 ];
@@ -88,9 +89,8 @@ export default function Footer() {
                 display: { xs: "none", md: "block" },
               }}
             >
-              Based in the heart of Dubai, we specialize in offering exquisitely
-              furnished apartments, combining world-class interiors with turnkey
-              convenience.
+              Bringing professional Muslims together to network, shape policies,
+              and create influence for British Muslims in public life.
             </Typography>
             <Box
               sx={{
@@ -278,7 +278,7 @@ export default function Footer() {
             textAlign: "center",
           }}
         >
-          Copyright &copy; 2025 Savile Row Furniture. All Rights Reserved.{" "}
+          Copyright © 2025 | House of Wisdom. All Rights Reserved.{" "}
           <Link
             sx={{
               fontSize: "inherit",

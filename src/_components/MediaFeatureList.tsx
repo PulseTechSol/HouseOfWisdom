@@ -59,7 +59,7 @@ export default function MediaFeatureList() {
                 color: "#000",
               }}
             >
-              Driven by Purpose
+              Principles We Live By
             </Typography>
             <Divider
               sx={{

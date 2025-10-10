@@ -27,7 +27,7 @@ export default function AimsAndObjectives() {
         >
           <Image src={svgs.whoWeAre} alt="Icon" width={24} height={24} />
           <Typography sx={{ fontSize: localFontSize.p2, color: "#25D366" }}>
-            Our Values
+            Aims and Objectives
           </Typography>
         </Box>
         {/* heading there  */}
@@ -42,7 +42,7 @@ export default function AimsAndObjectives() {
               textAlign: "center",
             }}
           >
-            Driven by Purpose
+            Uniting for Impact
             <Divider
               sx={{
                 width: "80px",
@@ -68,13 +68,13 @@ export default function AimsAndObjectives() {
           />
           <ValueCard
             iconSrc={svgs.developingLeaders}
-            title="Revive Islamic Intellectual"
-            description="Reignite curiosity and creativity rooted in Islamic values."
+            title="Developing Leaders"
+            description="Identify and support emerging Muslim leaders."
           />
           <ValueCard
             iconSrc={svgs.developingLeaders}
-            title="Revive Islamic Intellectual"
-            description="Reignite curiosity and creativity rooted in Islamic values."
+            title="Elevate Muslim Status"
+            description="Promote dignity, self-worth, and cultural confidence."
           />
         </Box>
       </Box>

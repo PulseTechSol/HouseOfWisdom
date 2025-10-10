@@ -7,7 +7,7 @@ import { svgs } from "@/_assets/svgs";
 
 export default function UnitingForImpact() {
   return (
-    <Box sx={{ bgcolor: "#fff" }}>
+    <Box sx={{ bgcolor: "#E9E9E9" }}>
       <Box
         sx={{
           padding: sectionPadding,
@@ -27,7 +27,7 @@ export default function UnitingForImpact() {
         >
           <Image src={svgs.whoWeAre} alt="Icon" width={24} height={24} />
           <Typography sx={{ fontSize: localFontSize.p2, color: "#25D366" }}>
-            Our Values
+            our mission
           </Typography>
         </Box>
         {/* heading there  */}
@@ -49,7 +49,7 @@ export default function UnitingForImpact() {
               marginX: "auto",
             }}
           >
-            Driven by Purpose
+            Serving Humanity
             <Divider
               sx={{
                 width: "80px",
@@ -80,29 +80,29 @@ export default function UnitingForImpact() {
           <Grid size={{ xs: 12, sm: 6, md: 6 }}>
             <Card
               iconSrc={svgs.thoughtLeadership}
-              title="Revive Islamic Intellectual"
-              description="Reignite curiosity and creativity rooted in Islamic values."
+              title="Thought leadership"
+              description="Developing bold new ideas and strategies for community elevation."
             />
           </Grid>
           <Grid size={{ xs: 12, sm: 6, md: 6 }}>
             <Card
               iconSrc={svgs.thoughtLeadership}
-              title="Revive Islamic Intellectual"
-              description="Reignite curiosity and creativity rooted in Islamic values."
+              title="Collaboration"
+              description="Building a strong network of professionals to address collective challenges"
             />
           </Grid>
           <Grid size={{ xs: 12, sm: 6, md: 6 }}>
             <Card
               iconSrc={svgs.thoughtLeadership}
-              title="Revive Islamic Intellectual"
-              description="Reignite curiosity and creativity rooted in Islamic values."
+              title="Advocacy"
+              description="Equipping leaders to represent and defend our community's interests."
             />
           </Grid>
           <Grid size={{ xs: 12, sm: 6, md: 6 }}>
             <Card
               iconSrc={svgs.thoughtLeadership}
-              title="Revive Islamic Intellectual"
-              description="Reignite curiosity and creativity rooted in Islamic values."
+              title="Empowerment"
+              description="Supporting emerging leaders through mentorship, investment, and expertise."
             />
           </Grid>
         </Grid>

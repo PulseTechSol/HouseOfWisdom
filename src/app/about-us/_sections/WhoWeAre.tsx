@@ -74,19 +74,17 @@ export default function WhoWeAre() {
             }}
           >
             <Typography sx={{ fontSize: localFontSize.p1, color: "#00000080" }}>
-              Our organization brings together accomplished Muslim professionals
-              from every field — business, academia, law, healthcare,
-              technology, and beyond.
-            </Typography>
-            <Typography sx={{ fontSize: localFontSize.p1, color: "#00000080" }}>
-              We provide a trusted space for connection, collaboration, and
-              mentorship, empowering our members to share expertise and drive
-              positive change in both their industries and communities.
-            </Typography>
-            <Typography sx={{ fontSize: localFontSize.p1, color: "#00000080" }}>
-              As an independent initiative rooted in Islamic values, we aim to
-              showcase the excellence, integrity, and leadership of British
-              Muslims in every sector of society.
+              At its heart, HOW is a platform for leadership development
+              bringing together Muslim professionals and thinkers from across
+              disciplines to generate bold ideas, influence public discourse,
+              and build strategic capacity. We focus on engaging individuals
+              across key sectors including law, politics, finance, business,
+              medicine, academia, media, technology, and the creative
+              industries. We are creating a space where emerging leaders are
+              mentored, supported, and equipped with the skills, networks, and
+              vision needed to drive meaningful change. Through HOW, we aim to
+              foster a generation that leads not just in their professions, but
+              in the public life of Britain.
             </Typography>
           </Box>
         </Box>
