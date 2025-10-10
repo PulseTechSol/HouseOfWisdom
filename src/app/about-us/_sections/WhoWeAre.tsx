@@ -20,6 +20,7 @@ export default function WhoWeAre() {
           flexDirection: { xs: "column", md: "row" },
           alignItems: "center",
           gap: { xs: "20px", md: "30px", xl: "80px" },
+          margin: "auto",
         }}
       >
         <Box sx={{ width: { xs: "100%", md: "50%" } }}>
