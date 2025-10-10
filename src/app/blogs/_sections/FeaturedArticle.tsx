@@ -6,7 +6,7 @@ import { pngs } from "@/_assets/pngs";
 import { svgs } from "@/_assets/svgs";
 import CustomButton from "@/_components/CustomButton";
 
-export default function FeaturedEvent() {
+export default function FeaturedArticle() {
   return (
     <Box
       sx={{
@@ -29,7 +29,7 @@ export default function FeaturedEvent() {
             paddingBottom: { xs: "30px", md: "40px", lg: "80px" },
           }}
         >
-          Featured Event
+          Featured Article
         </Typography>
         <Box
           sx={{
@@ -69,7 +69,7 @@ export default function FeaturedEvent() {
                     color: "#25D366",
                   }}
                 >
-                  Conference
+                  Leadership
                 </Typography>
               </Box>
               <Box
@@ -86,33 +86,32 @@ export default function FeaturedEvent() {
                     color: "#000",
                   }}
                 >
-                  Leadership Summit 2025
+                  The Future of Muslim Professional Leadership in Britain
                 </Typography>
                 <Typography
                   sx={{ fontSize: localFontSize.p1, color: "#00000080" }}
                 >
-                  Our flagship annual event bringing together leading Muslim
-                  professionals for strategic discussions on community
-                  leadership, policy influence, and professional development.
+                  {`As we navigate an increasingly complex political and social
+                  landscape, the role of Muslim professionals in shaping
+                  Britain's future has never been more critical.`}
                 </Typography>
               </Box>
             </Box>
             {/* listed points there  */}
             <Box
               sx={{
-                "& > :not(:last-child)": { marginBottom: "5px" },
+                // "& > :not(:last-child)": { marginBottom: "5px" },
+                display: "flex",
+                gap: "30px",
+                flexWrap: "wrap",
               }}
             >
-              <IconTextRow iconSrc={svgs.calander} text="October 15, 2025" />
-              <IconTextRow iconSrc={svgs.clock} text="9:00 AM - 6:00 PM" />
-              <IconTextRow iconSrc={svgs.location} text="The Shard, London" />
-              <IconTextRow
-                iconSrc={svgs.ourPeopleGreen}
-                text="150+ Expected Attendees"
-              />
+              <IconTextRow iconSrc={svgs.profile} text="Dr. Amina Hassan" />
+              <IconTextRow iconSrc={svgs.calander} text="March 1, 2024" />
+              <IconTextRow iconSrc={svgs.clock} text="8 min read" />
             </Box>
             {/* button here  */}
-            <CustomButton text="Register now" lightmode={true} />
+            <CustomButton text="read article" lightmode={true} />
           </Box>
           <Box
             sx={{
