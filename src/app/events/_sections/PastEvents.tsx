@@ -25,7 +25,7 @@ export default function PastEvents() {
             marginBottom: "20px",
           }}
         >
-          Driven by Purpose
+          past events
         </Typography>
         {/* the card box  */}
         <Box
@@ -39,18 +39,21 @@ export default function PastEvents() {
         >
           <ValueCard
             iconSrc={svgs.developingLeaders}
-            title="Revive Islamic Intellectual"
-            description="Reignite curiosity and creativity rooted in Islamic values."
+            title="Inaugural Networking Gala"
+            date="December 2023"
+            description="Our launch event that brought together over 200 Muslim professionals from across various sectors."
           />
           <ValueCard
             iconSrc={svgs.developingLeaders}
-            title="Revive Islamic Intellectual"
-            description="Reignite curiosity and creativity rooted in Islamic values."
+            title="Women in Leadership Panel"
+            date="January 2024"
+            description="Panel discussion featuring prominent Muslim women leaders discussing barriers and opportunities in professional advancement."
           />
           <ValueCard
             iconSrc={svgs.developingLeaders}
-            title="Revive Islamic Intellectual"
-            description="Reignite curiosity and creativity rooted in Islamic values."
+            title="Financial Services"
+            date="February 2024"
+            description="Strategic discussion on Islamic finance integration and Muslim professional advancement in financial services."
           />
         </Box>
       </Box>
@@ -62,9 +65,15 @@ type ValueCardProps = {
   iconSrc: StaticImageData;
   title: string;
   description: string;
+  date: string;
 };
 
-export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
+export function ValueCard({
+  iconSrc,
+  title,
+  description,
+  date,
+}: ValueCardProps) {
   return (
     <Box
       sx={{
@@ -74,9 +83,9 @@ export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
         textAlign: "center",
         maxWidth: { xs: "250px", sm: "300px", md: "360px" },
         padding: "20px",
-        backgroundColor: "red",
+        backgroundColor: "#25D366",
         borderRadius: "20px",
-        height: "360px",
+        height: "345px",
       }}
     >
       <Box
@@ -96,7 +105,7 @@ export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
       <Typography
         sx={{
           fontSize: localFontSize.h3,
-          color: "#000",
+          color: "#fff",
         }}
       >
         {title}
@@ -108,12 +117,12 @@ export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
           marginY: { xs: "6px", md: "10px" },
         }}
       >
-        December 2023
+        {date}
       </Typography>
       <Typography
         sx={{
           fontSize: localFontSize.p2,
-          color: "#00000080",
+          color: "#FFFFFF80",
         }}
       >
         {description}

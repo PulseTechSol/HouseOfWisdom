@@ -25,7 +25,7 @@ export default function EventTypes() {
               marginBottom: { xs: "10px", md: "20px" },
             }}
           >
-            Driven by Purpose
+            Types of Events
           </Typography>
           <Typography
             sx={{
@@ -50,18 +50,18 @@ export default function EventTypes() {
         >
           <ValueCard
             iconSrc={svgs.developingLeaders}
-            title="Revive Islamic Intellectual"
-            description="Reignite curiosity and creativity rooted in Islamic values."
+            title="Conferences"
+            description="Large-scale events featuring keynote speakers, panel discussions, and networking opportunities."
           />
           <ValueCard
             iconSrc={svgs.developingLeaders}
-            title="Revive Islamic Intellectual"
-            description="Reignite curiosity and creativity rooted in Islamic values."
+            title="Workshops"
+            description="Interactive sessions focused on skill development and practical knowledge sharing."
           />
           <ValueCard
             iconSrc={svgs.developingLeaders}
-            title="Revive Islamic Intellectual"
-            description="Reignite curiosity and creativity rooted in Islamic values."
+            title="Networking"
+            description="Intimate gatherings designed to foster meaningful professional connections."
           />
         </Box>
       </Box>
@@ -104,7 +104,7 @@ export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
 
       <Typography
         sx={{
-          fontSize: localFontSize.h3,
+          fontSize: localFontSize.h4,
           color: "#25D366",
         }}
       >

@@ -29,7 +29,7 @@ export default function FeaturedEvent() {
             paddingBottom: { xs: "30px", md: "40px", lg: "80px" },
           }}
         >
-          Join Our Mission
+          featured event
         </Typography>
         <Box
           sx={{
@@ -86,7 +86,7 @@ export default function FeaturedEvent() {
                     color: "#000",
                   }}
                 >
-                  Driven by Purpose
+                  Leadership Summit 2025
                 </Typography>
                 <Typography
                   sx={{ fontSize: localFontSize.p1, color: "#00000080" }}
@@ -104,9 +104,12 @@ export default function FeaturedEvent() {
               }}
             >
               <IconTextRow iconSrc={svgs.calander} text="October 15, 2025" />
-              <IconTextRow iconSrc={svgs.calander} text="October 15, 2025" />
-              <IconTextRow iconSrc={svgs.calander} text="October 15, 2025" />
-              <IconTextRow iconSrc={svgs.calander} text="October 15, 2025" />
+              <IconTextRow iconSrc={svgs.clock} text="9:00 AM - 6:00 PM" />
+              <IconTextRow iconSrc={svgs.location} text="The Shard, London" />
+              <IconTextRow
+                iconSrc={svgs.ourPeopleGreen}
+                text="150+ Expected Attendees"
+              />
             </Box>
             {/* button here  */}
             <CustomButton text="Register now" lightmode={true} />

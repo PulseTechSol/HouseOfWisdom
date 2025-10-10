@@ -5,7 +5,7 @@ import UpcomingEvents from "./_sections/UpcomingEvents";
 import AimsAndObjectives from "./_sections/PastEvents";
 import EventTypes from "./_sections/EventTypes";
 
-export default function HomePage() {
+export default function Events() {
   return (
     <>
       <Navbar />

@@ -27,7 +27,7 @@ export default function UpcomingEvents() {
             paddingBottom: { xs: "30px", md: "40px", lg: "80px" },
           }}
         >
-          Join Our Mission
+          upcoming events
         </Typography>
         <Box
           sx={{
@@ -41,13 +41,13 @@ export default function UpcomingEvents() {
           {/* the cards there  */}
           <EventCard
             buttonText="Conference"
-            heading="Driven by Purpose"
-            description="Our flagship annual event bringing together leading Muslim professionals for strategic discussions on community leadership, policy influence, and professional development."
+            heading="Policy & Governance Workshop"
+            description="An interactive workshop focused on understanding UK policy-making processes and how Muslim professionals can effectively engage with government institutions."
             points={[
-              { iconSrc: svgs.calander, text: "October 15, 2025" },
-              { iconSrc: svgs.location, text: "London, United Kingdom" },
-              { iconSrc: svgs.clock, text: "10:00 AM – 4:00 PM" },
-              { iconSrc: svgs.calander, text: "Limited seats" },
+              { iconSrc: svgs.calander, text: "April 10, 2024" },
+              { iconSrc: svgs.clock, text: "2:00 PM - 5:00 PM" },
+              { iconSrc: svgs.location, text: "Westminster Hub, London" },
+              { iconSrc: svgs.ourPeopleGreen, text: "50+ Expected Attendees" },
             ]}
           />
           <EventCard
@@ -55,10 +55,10 @@ export default function UpcomingEvents() {
             heading="Driven by Purpose"
             description="Our flagship annual event bringing together leading Muslim professionals for strategic discussions on community leadership, policy influence, and professional development."
             points={[
-              { iconSrc: svgs.calander, text: "October 15, 2025" },
-              { iconSrc: svgs.location, text: "London, United Kingdom" },
-              { iconSrc: svgs.clock, text: "10:00 AM – 4:00 PM" },
-              { iconSrc: svgs.calander, text: "Limited seats" },
+              { iconSrc: svgs.calander, text: "April 25, 2024" },
+              { iconSrc: svgs.clock, text: "7:00 PM - 10:00 PM" },
+              { iconSrc: svgs.location, text: "The Dorchester, London" },
+              { iconSrc: svgs.ourPeopleGreen, text: "75+ Expected Attendees" },
             ]}
           />
         </Box>
