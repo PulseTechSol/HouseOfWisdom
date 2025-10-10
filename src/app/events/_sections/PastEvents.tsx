@@ -96,7 +96,6 @@ export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
       <Typography
         sx={{
           fontSize: localFontSize.h3,
-          fontWeight: 600,
           color: "#000",
         }}
       >

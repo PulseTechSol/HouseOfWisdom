@@ -3,6 +3,7 @@ import Navbar from "@/_components/Navbar";
 import FeaturedEvent from "./_sections/FeaturedEvent";
 import UpcomingEvents from "./_sections/UpcomingEvents";
 import AimsAndObjectives from "./_sections/PastEvents";
+import EventTypes from "./_sections/EventTypes";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
       <FeaturedEvent />
       <UpcomingEvents />
       <AimsAndObjectives />
+      <EventTypes />
     </>
   );
 }
