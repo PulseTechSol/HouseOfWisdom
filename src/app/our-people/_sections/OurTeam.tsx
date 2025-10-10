@@ -83,7 +83,7 @@ export default function OurTeam() {
                 color: "#25D366",
               }}
             >
-              Who We Are
+              our team
             </Typography>
           </Box>
 
@@ -96,7 +96,7 @@ export default function OurTeam() {
                 color: "#000",
               }}
             >
-              Driven by Purpose
+              Meet the Team
             </Typography>
             <Divider
               sx={{
@@ -114,13 +114,11 @@ export default function OurTeam() {
             }}
           >
             <Typography sx={{ fontSize: localFontSize.p1, color: "#00000080" }}>
-              Our organization brings together accomplished Muslim professionals
               Our strength lies in the people who make up House of Wisdom — a
               collective of accomplished Muslim professionals, leaders, and
               visionaries from across the UK. Bound by shared values of faith,
               excellence, and service, we work together to uplift communities
-              and shape a more inclusive future. every field — business,
-              academia, law, healthcare, technology, and beyond.
+              and shape a more inclusive future.
             </Typography>
           </Box>
         </Box>
@@ -136,14 +134,19 @@ export default function OurTeam() {
               designation="Executive Director & Corporate Relations"
             />
             <MemberCard
-              image={pngs.teamMember1}
-              name="Tariq Ahmed"
-              designation="Executive Director & Corporate Relations"
+              image={pngs.teamMember2}
+              name="Prof. Omar Ibrahim"
+              designation="Academic Affairs & Research Director"
             />
             <MemberCard
               image={pngs.teamMember1}
               name="Tariq Ahmed"
               designation="Executive Director & Corporate Relations"
+            />
+            <MemberCard
+              image={pngs.teamMember2}
+              name="Prof. Omar Ibrahim"
+              designation="Academic Affairs & Research Director"
             />
           </Slider>
         </Box>

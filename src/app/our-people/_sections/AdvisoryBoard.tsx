@@ -1,9 +1,7 @@
 "use client";
-
-import { Box, Typography, Divider, Grid } from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
 import { localFontSize, sectionPadding } from "@/utils/themes";
-import { svgs } from "@/_assets/svgs";
 import { pngs } from "@/_assets/pngs";
 
 export default function UnitingForImpact() {
@@ -35,7 +33,7 @@ export default function UnitingForImpact() {
               marginX: "auto",
             }}
           >
-            Driven by Purpose
+            Advisory Board{" "}
           </Typography>
           <Typography
             sx={{
@@ -45,10 +43,9 @@ export default function UnitingForImpact() {
               textAlign: "center",
             }}
           >
-            HOW is a platform designed to ignite revival by helping British
-            Muslims reclaim the spirit of curiosity, excellence, leadership, and
-            service that once defined Muslim culture. Our goal is to inspire
-            groundbreaking contributions to humanity once again.
+            Our Advisory Board comprises distinguished professionals from
+            various sectors who provide strategic guidance and expertise to help
+            shape our initiatives and expand our impact.
           </Typography>
         </Box>
         {/* the card box  */}
@@ -85,6 +82,36 @@ export default function UnitingForImpact() {
               iconSrc={pngs.adviser3}
               title="Ayesha Patel"
               description="Chief Technology Officer, FinTech Startup"
+            />
+          </Grid>
+          <Grid
+            sx={{ height: { xs: "220px", md: "230px", lg: "270px" } }}
+            size={{ xs: 12, sm: 6, lg: 4 }}
+          >
+            <Card
+              iconSrc={pngs.adviser4}
+              title="Zaid Rashid"
+              description="Head of Public Policy, Tech Corporation"
+            />
+          </Grid>
+          <Grid
+            sx={{ height: { xs: "220px", md: "230px", lg: "270px" } }}
+            size={{ xs: 12, sm: 6, lg: 4 }}
+          >
+            <Card
+              iconSrc={pngs.adviser5}
+              title="Dr. Khadija Williams"
+              description="Senior Lecturer, Cambridge University"
+            />
+          </Grid>
+          <Grid
+            sx={{ height: { xs: "220px", md: "230px", lg: "270px" } }}
+            size={{ xs: 12, sm: 6, lg: 4 }}
+          >
+            <Card
+              iconSrc={pngs.adviser6}
+              title="Bilal Hassan"
+              description="Managing Director, Investment Banking"
             />
           </Grid>
         </Grid>

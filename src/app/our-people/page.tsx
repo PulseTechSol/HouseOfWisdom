@@ -12,10 +12,10 @@ export default function OurPeople() {
       <HeroComponent
         mobileBg="bgAbout.webp"
         pcBg="bgAbout.webp"
-        title="Empowering Muslim Professionals, Connecting for Change"
-        titleMob="Guided by Faith, Committed to Humanity"
-        description="We are a professional network dedicated to uniting Muslim leaders, innovators, and changemakers from across the UK. Our mission is to connect talent with purpose — building a platform where professional growth meets community impact."
-        descriptionMob="We are a professional network dedicated to uniting Muslim leaders, innovators, and changemakers from across the UK. Our mission is to connect talent with purpose — building a platform where professional growth meets community impact."
+        title="The People behind Our success"
+        titleMob="The People behind Our success"
+        description="At Minhaj – House of Wisdom, our strength lies in the dedication of our people. Together, they embody the values of faith, service, and positive change."
+        descriptionMob="At Minhaj – House of Wisdom, our strength lies in the dedication of our people. Together, they embody the values of faith, service, and positive change."
       />
       <OurTeam />
       <AdvisoryBoard />
