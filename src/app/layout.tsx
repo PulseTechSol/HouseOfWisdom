@@ -4,7 +4,7 @@ import ConsentGate from "@/_components/privacy/ConsentGate";
 import AnalyticsGA from "@/_components/privacy/AnalyticsGA";
 import MetaPixel from "@/_components/privacy/MetaPixel";
 import CookieBanner from "@/_components/privacy/CookieBanner";
-import "./globals.css";
+import "./cookies.css";
 
 export const metadata: Metadata = {
   title: "Minhaj - House Of Wisdom",
