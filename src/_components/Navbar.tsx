@@ -21,11 +21,11 @@ export default function Navbar() {
 
   const navLinks = [
     { label: "Home", href: "/" },
-    { label: "About", href: "" },
-    { label: "Our People", href: "" },
-    { label: "Events", href: "" },
-    { label: "Blog", href: "" },
-    { label: "Contact", href: "" },
+    { label: "About", href: "/about-us" },
+    { label: "Our People", href: "/our-people" },
+    { label: "Events", href: "/events" },
+    { label: "Blog", href: "/blogs" },
+    { label: "Contact", href: "/contact-us" },
   ];
   const menuNavLinks = [
     {
@@ -44,19 +44,19 @@ export default function Navbar() {
       src: svgs.ourPeopleGreen,
       darkLogo: svgs.ourPropleWhite,
       text: "Our People",
-      route: "/services",
+      route: "/our-people",
     },
     {
       src: svgs.eventsGreen,
       darkLogo: svgs.eventsWhite,
       text: "Events",
-      route: "/for-dentists",
+      route: "/events",
     },
     {
       src: svgs.blogsGreen,
       darkLogo: svgs.blogsWhite,
       text: "Blogs",
-      route: "/smile-galleries",
+      route: "/blogs",
     },
     {
       src: svgs.contactGreen,
