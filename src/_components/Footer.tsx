@@ -285,7 +285,7 @@ export default function Footer() {
               fontWeight: "inherit",
               textDecoration: "none",
               transition: "all 0.4s ease-in-out",
-              color: "#006B4F",
+              color: "#25D366",
               "&:hover": {
                 color: "rgba(255, 255, 255, 1)",
               },

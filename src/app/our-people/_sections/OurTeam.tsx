@@ -80,7 +80,7 @@ export default function OurTeam() {
             <Typography
               sx={{
                 fontSize: localFontSize.p2,
-                color: "#006B4F",
+                color: "#25D366",
               }}
             >
               Who We Are
@@ -101,7 +101,7 @@ export default function OurTeam() {
             <Divider
               sx={{
                 width: "80px",
-                border: { xs: "2px solid #006B4F", md: "4px solid #006B4F" },
+                border: { xs: "2px solid #25D366", md: "4px solid #25D366" },
               }}
             />
           </Box>

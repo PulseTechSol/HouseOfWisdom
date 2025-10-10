@@ -69,7 +69,7 @@ export default function Navbar() {
   return (
     <>
       <NavTopBar />
-      <Box sx={{ backgroundColor: "#006B4F" }}>
+      <Box sx={{ backgroundColor: "#25D366" }}>
         <Box
           sx={{
             maxWidth: 1440,
@@ -195,7 +195,7 @@ export default function Navbar() {
                   (link.route.startsWith("./")
                     ? link.route.substring(1)
                     : link.route)
-                    ? "#006B4F"
+                    ? "#25D366"
                     : "",
                 padding: "25px 20px",
                 cursor: "pointer",
@@ -223,7 +223,7 @@ export default function Navbar() {
                       ? link.route.substring(1)
                       : link.route)
                       ? "#fff"
-                      : "#006B4F",
+                      : "#25D366",
                   fontSize: "20px",
                 }}
               >

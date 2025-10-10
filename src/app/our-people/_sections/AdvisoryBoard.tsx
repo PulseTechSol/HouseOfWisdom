@@ -109,7 +109,7 @@ export function Card({ iconSrc, title, description }: CardProps) {
         // justifyContent: "flex-start",
         textAlign: "center",
         gap: { xs: "5px", md: "10px" },
-        backgroundColor: "#006B4F",
+        backgroundColor: "#25D366",
         padding: { xs: "20px", md: "30px", lg: "40px" },
         borderRadius: { xs: "20px", sm: "40px" },
         height: "-webkit-fill-available",

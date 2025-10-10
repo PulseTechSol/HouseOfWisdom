@@ -26,7 +26,7 @@ export default function AimsAndObjectives() {
           }}
         >
           <Image src={svgs.whoWeAre} alt="Icon" width={24} height={24} />
-          <Typography sx={{ fontSize: localFontSize.p2, color: "#006B4F" }}>
+          <Typography sx={{ fontSize: localFontSize.p2, color: "#25D366" }}>
             Our Values
           </Typography>
         </Box>
@@ -46,7 +46,7 @@ export default function AimsAndObjectives() {
             <Divider
               sx={{
                 width: "80px",
-                border: { xs: "2px solid #006B4F", md: "4px solid #006B4F" },
+                border: { xs: "2px solid #25D366", md: "4px solid #25D366" },
               }}
             />
           </Typography>

@@ -60,13 +60,13 @@ export default function FeaturedEvent() {
                 <Divider
                   sx={{
                     width: "30px",
-                    border: "2px solid #006B4F",
+                    border: "2px solid #25D366",
                   }}
                 />
                 <Typography
                   sx={{
                     fontSize: localFontSize.p2,
-                    color: "#006B4F",
+                    color: "#25D366",
                   }}
                 >
                   Conference

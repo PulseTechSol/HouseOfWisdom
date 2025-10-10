@@ -113,7 +113,7 @@ export function EventCard({
         maxWidth: "555px",
         padding: { xs: "20px", md: "30px" },
         borderRadius: "20px",
-        border: "2px solid #006B4F",
+        border: "2px solid #25D366",
         width: "-webkit-fill-availables",
       }}
     >
@@ -121,7 +121,7 @@ export function EventCard({
         sx={{
           textTransform: "capitalize",
           color: "#fff",
-          backgroundColor: "#006B4F",
+          backgroundColor: "#25D366",
           padding: "10px",
           borderRadius: "10px",
           "&:hover": { backgroundColor: "#015C46" },

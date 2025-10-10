@@ -24,7 +24,7 @@ export default function CustomButton({
           <Divider
             sx={{
               width: "30px",
-              border: "2px solid #006B4F",
+              border: "2px solid #25D366",
             }}
           />
         ) : (
@@ -39,13 +39,13 @@ export default function CustomButton({
       }
       sx={{
         textTransform: "capitalize",
-        color: lightmode ? "#006B4F" : "#fff",
+        color: lightmode ? "#25D366" : "#fff",
         borderRadius: "10px",
         padding: "15px 30px",
         fontSize: localFontSize.p2,
         gap: "12px",
-        border: "2px solid #006B4F",
-        backgroundColor: lightmode ? "transparent" : "#006B4F",
+        border: "2px solid #25D366",
+        backgroundColor: lightmode ? "transparent" : "#25D366",
         "& .MuiButton-endIcon": { margin: 0 },
         height: { xs: "45px", md: "56px" },
         textWrap: "nowrap",
