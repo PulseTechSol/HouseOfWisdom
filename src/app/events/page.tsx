@@ -2,6 +2,7 @@ import HeroComponent from "@/_components/HeroComponent";
 import Navbar from "@/_components/Navbar";
 import FeaturedEvent from "./_sections/FeaturedEvent";
 import UpcomingEvents from "./_sections/UpcomingEvents";
+import AimsAndObjectives from "./_sections/PastEvents";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       />
       <FeaturedEvent />
       <UpcomingEvents />
+      <AimsAndObjectives />
     </>
   );
 }

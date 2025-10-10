@@ -30,6 +30,7 @@ export const localFontSize = {
     lg: "20px",
   },
   p2: { xs: "14px", md: "16px", lg: "18px" },
+  p3: { xs: "12px", md: "14px", lg: "16px" },
 };
 
 export const sectionPadding = {
