@@ -31,7 +31,6 @@ import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import phone from "./phone.svg";
 import email from "./email.svg";
-import locationFooter from "./locationFooter.svg";
 
 import sliderArrow from "./sliderArrow.svg";
 import profile from "./profile.svg";
@@ -71,7 +70,6 @@ export const svgs = {
   linkedin,
   phone,
   email,
-  locationFooter,
 
   sliderArrow,
   profile,
