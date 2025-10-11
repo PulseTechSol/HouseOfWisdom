@@ -25,6 +25,8 @@ import advocacy from "./about-us/advocacy.svg";
 import collaboration from "./about-us/collaboration.svg";
 import empowerment from "./about-us/empowerment.svg";
 import thoughtLeadership from "./about-us/thoughtLeadership.svg";
+import ourValues from "./about-us/ourValues.svg";
+import stepUpToAim from "./about-us/stepUpToAim.svg";
 // footer icons
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -35,6 +37,7 @@ import email from "./email.svg";
 import sliderArrow from "./sliderArrow.svg";
 import profile from "./profile.svg";
 import lable from "./lable.svg";
+import archeryArrow from "./about-us/ourValues.svg";
 
 export const svgs = {
   logo,
@@ -64,6 +67,8 @@ export const svgs = {
   collaboration,
   empowerment,
   thoughtLeadership,
+  ourValues,
+  stepUpToAim,
   // footer icons
   facebook,
   instagram,
@@ -74,4 +79,5 @@ export const svgs = {
   sliderArrow,
   profile,
   lable,
+  archeryArrow,
 };

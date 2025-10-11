@@ -45,7 +45,7 @@ export default function MediaFeatureList() {
               mb: { xs: "16px", md: "20px" },
             }}
           >
-            <Image src={svgs.whoWeAre} alt="Icon" width={24} height={24} />
+            <Image src={svgs.ourValues} alt="Icon" width={24} height={24} />
             <Typography sx={{ fontSize: localFontSize.p2, color: "#25D366" }}>
               Our Values
             </Typography>

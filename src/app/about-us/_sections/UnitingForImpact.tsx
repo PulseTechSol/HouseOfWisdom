@@ -25,7 +25,7 @@ export default function UnitingForImpact() {
             justifyContent: "center",
           }}
         >
-          <Image src={svgs.whoWeAre} alt="Icon" width={24} height={24} />
+          <Image src={svgs.archeryArrow} alt="Icon" width={24} height={24} />
           <Typography sx={{ fontSize: localFontSize.p2, color: "#25D366" }}>
             our mission
           </Typography>
@@ -80,27 +80,27 @@ export default function UnitingForImpact() {
           <Grid size={{ xs: 12, sm: 6, md: 6 }}>
             <Card
               iconSrc={svgs.thoughtLeadership}
-              title="Thought leadership"
+              title="Thought Leadership"
               description="Developing bold new ideas and strategies for community elevation."
             />
           </Grid>
           <Grid size={{ xs: 12, sm: 6, md: 6 }}>
             <Card
-              iconSrc={svgs.thoughtLeadership}
+              iconSrc={svgs.collaboration}
               title="Collaboration"
               description="Building a strong network of professionals to address collective challenges"
             />
           </Grid>
           <Grid size={{ xs: 12, sm: 6, md: 6 }}>
             <Card
-              iconSrc={svgs.thoughtLeadership}
+              iconSrc={svgs.advocacy}
               title="Advocacy"
               description="Equipping leaders to represent and defend our community's interests."
             />
           </Grid>
           <Grid size={{ xs: 12, sm: 6, md: 6 }}>
             <Card
-              iconSrc={svgs.thoughtLeadership}
+              iconSrc={svgs.empowerment}
               title="Empowerment"
               description="Supporting emerging leaders through mentorship, investment, and expertise."
             />

@@ -7,7 +7,7 @@ import { svgs } from "@/_assets/svgs";
 
 export default function AimsAndObjectives() {
   return (
-    <Box sx={{ bgcolor: "#E9E9E9" }}>
+    <Box sx={{ bgcolor: "#fff" }}>
       <Box
         sx={{
           padding: sectionPadding,
@@ -25,7 +25,7 @@ export default function AimsAndObjectives() {
             justifyContent: "center",
           }}
         >
-          <Image src={svgs.whoWeAre} alt="Icon" width={24} height={24} />
+          <Image src={svgs.stepUpToAim} alt="Icon" width={24} height={24} />
           <Typography sx={{ fontSize: localFontSize.p2, color: "#25D366" }}>
             Aims and Objectives
           </Typography>
@@ -42,7 +42,7 @@ export default function AimsAndObjectives() {
               textAlign: "center",
             }}
           >
-            Uniting for Impact
+            Uniting For Impact
             <Divider
               sx={{
                 width: "80px",
