@@ -56,7 +56,7 @@ export default function AimsAndObjectives() {
           sx={{
             display: "flex",
             justifyContent: "center",
-            gap: "30px",
+            // gap: "30px",
             flexWrap: "wrap",
             marginTop: { xs: "40px", md: "80px" },
           }}
@@ -97,7 +97,8 @@ export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
         alignItems: "center",
         textAlign: "center",
         gap: { xs: "10px", md: "20px" },
-        maxWidth: { xs: "150px", sm: "300px", md: "360px" },
+        maxWidth: { xs: "200px", sm: "300px", md: "360px" },
+        padding: "20px",
       }}
     >
       <Box

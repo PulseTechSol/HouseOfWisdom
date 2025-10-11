@@ -35,6 +35,7 @@ import locationFooter from "./locationFooter.svg";
 
 import sliderArrow from "./sliderArrow.svg";
 import profile from "./profile.svg";
+import lable from "./lable.svg";
 
 export const svgs = {
   logo,
@@ -74,4 +75,5 @@ export const svgs = {
 
   sliderArrow,
   profile,
+  lable,
 };
