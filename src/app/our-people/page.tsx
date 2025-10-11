@@ -10,8 +10,8 @@ export default function OurPeople() {
     <>
       <Navbar />
       <HeroComponent
-        mobileBg="bgAbout.webp"
-        pcBg="bgAbout.webp"
+        mobileBg="bgOurPeople.webp"
+        pcBg="bgOurPeople.webp"
         title="The People behind Our success"
         titleMob="The People behind Our success"
         description="At Minhaj – House of Wisdom, our strength lies in the dedication of our people. Together, they embody the values of faith, service, and positive change."
