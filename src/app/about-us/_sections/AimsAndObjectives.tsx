@@ -62,7 +62,7 @@ export default function AimsAndObjectives() {
           }}
         >
           <ValueCard
-            iconSrc={svgs.developingLeaders}
+            iconSrc={svgs.reviveIslamicIntellectual}
             title="Revive Islamic Intellectual"
             description="Reignite curiosity and creativity rooted in Islamic values."
           />
@@ -72,7 +72,7 @@ export default function AimsAndObjectives() {
             description="Identify and support emerging Muslim leaders."
           />
           <ValueCard
-            iconSrc={svgs.developingLeaders}
+            iconSrc={svgs.elevateMuslimStatus}
             title="Elevate Muslim Status"
             description="Promote dignity, self-worth, and cultural confidence."
           />
