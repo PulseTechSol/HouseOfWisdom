@@ -14,6 +14,8 @@ import blogItem1 from "./blogs/blogItem1.png";
 import blogItem2 from "./blogs/blogItem2.png";
 import blogItem3 from "./blogs/blogItem3.png";
 import blogItem4 from "./blogs/blogItem4.png";
+// home screens imports.
+import AboutUs from "./home/AboutUs.png";
 
 export const pngs = {
   drivenByPurpose,
@@ -32,4 +34,6 @@ export const pngs = {
   blogItem2,
   blogItem3,
   blogItem4,
+  // home screens imports.
+  AboutUs,
 };
