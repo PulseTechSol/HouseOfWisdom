@@ -2,7 +2,7 @@ import HeroComponent from "@/_components/HeroComponent";
 import Navbar from "@/_components/Navbar";
 import FeaturedEvent from "./_sections/FeaturedEvent";
 import UpcomingEvents from "./_sections/UpcomingEvents";
-import AimsAndObjectives from "./_sections/PastEvents";
+import PastEvents from "./_sections/PastEvents";
 import EventTypes from "./_sections/EventTypes";
 import JoinOurMission from "@/_components/JoinOurMission";
 import Footer from "@/_components/Footer";
@@ -21,7 +21,7 @@ export default function Events() {
       />
       <FeaturedEvent />
       <UpcomingEvents />
-      <AimsAndObjectives />
+      <PastEvents />
       <EventTypes />
       <JoinOurMission />
       <Footer />

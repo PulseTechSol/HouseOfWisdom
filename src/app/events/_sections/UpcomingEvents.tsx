@@ -3,8 +3,47 @@ import { Box, Typography, Button } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
 import { localFontSize, sectionPadding } from "@/utils/themes";
 import { svgs } from "@/_assets/svgs";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function UpcomingEvents() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    customPaging: () => (
+      <Box
+        sx={{
+          width: "15px",
+          height: "15px",
+          borderRadius: "50%",
+          backgroundColor: "transparent",
+        }}
+      />
+    ),
+    dotsClass: "slick-dots custom-dots",
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <Box
       sx={{
@@ -27,17 +66,9 @@ export default function UpcomingEvents() {
             paddingBottom: { xs: "30px", md: "40px", lg: "80px" },
           }}
         >
-          upcoming events
+          Upcoming Events
         </Typography>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: { xs: "column", md: "row" },
-            alignItems: "center",
-            gap: { xs: "20px", md: "30px", xl: "80px" },
-            justifyContent: "center",
-          }}
-        >
+        <Slider {...settings}>
           {/* the cards there  */}
           <EventCard
             buttonText="Conference"
@@ -47,44 +78,42 @@ export default function UpcomingEvents() {
               { iconSrc: svgs.calander, text: "April 10, 2024" },
               { iconSrc: svgs.clock, text: "2:00 PM - 5:00 PM" },
               { iconSrc: svgs.location, text: "Westminster Hub, London" },
-              { iconSrc: svgs.ourPeopleGreen, text: "50+ Expected Attendees" },
+              {
+                iconSrc: svgs.ourPeopleGreen,
+                text: "50+ Expected Attendees",
+              },
             ]}
           />
           <EventCard
             buttonText="Conference"
-            heading="Driven by Purpose"
-            description="Our flagship annual event bringing together leading Muslim professionals for strategic discussions on community leadership, policy influence, and professional development."
+            heading="Networking Dinner - Healthcare Professionals"
+            description="An exclusive networking dinner for Muslim healthcare professionals to discuss challenges, opportunities, and collaborative initiatives in the healthcare sector."
             points={[
               { iconSrc: svgs.calander, text: "April 25, 2024" },
               { iconSrc: svgs.clock, text: "7:00 PM - 10:00 PM" },
               { iconSrc: svgs.location, text: "The Dorchester, London" },
-              { iconSrc: svgs.ourPeopleGreen, text: "75+ Expected Attendees" },
+              {
+                iconSrc: svgs.ourPeopleGreen,
+                text: "75+ Expected Attendees",
+              },
             ]}
           />
-        </Box>
+          <EventCard
+            buttonText="Conference"
+            heading="Policy & Governance Workshop"
+            description="An interactive workshop focused on understanding UK policy-making processes and how Muslim professionals can effectively engage with government institutions."
+            points={[
+              { iconSrc: svgs.calander, text: "April 10, 2024" },
+              { iconSrc: svgs.clock, text: "2:00 PM - 5:00 PM" },
+              { iconSrc: svgs.location, text: "Westminster Hub, London" },
+              {
+                iconSrc: svgs.ourPeopleGreen,
+                text: "50+ Expected Attendees",
+              },
+            ]}
+          />
+        </Slider>
       </Box>
-    </Box>
-  );
-}
-
-type IconTextRowProps = {
-  iconSrc: string | StaticImageData;
-  text: string;
-};
-
-export function IconTextRow({ iconSrc, text }: IconTextRowProps) {
-  return (
-    <Box
-      sx={{
-        display: "flex",
-        gap: { xs: "10px", md: "20px" },
-        alignItems: "center",
-      }}
-    >
-      <Image src={iconSrc} alt="" width={25} height={25} />
-      <Typography sx={{ fontSize: localFontSize.p1, color: "#00000080" }}>
-        {text}
-      </Typography>
     </Box>
   );
 }
@@ -115,6 +144,8 @@ export function EventCard({
         borderRadius: "20px",
         border: "2px solid #25D366",
         width: "-webkit-fill-availables",
+        height: { xs: "389px", md: "435px", lg: "491px" },
+        marginX: { xs: "5px", sm: "auto", md: "10px" },
       }}
     >
       <Button
@@ -136,12 +167,29 @@ export function EventCard({
           color: "#000",
           marginTop: { xs: "20px", lg: "30px" },
           marginBottom: "6px",
+          // elipsis
+          display: "-webkit-box",
+          WebkitLineClamp: 2,
+          WebkitBoxOrient: "vertical",
+          overflow: "hidden",
+          textOverflow: "ellipsis",
         }}
       >
         {heading}
       </Typography>
 
-      <Typography sx={{ fontSize: localFontSize.p1, color: "#00000080" }}>
+      <Typography
+        sx={{
+          fontSize: localFontSize.p1,
+          color: "#00000080",
+          // elipsis
+          display: "-webkit-box",
+          WebkitLineClamp: 4,
+          WebkitBoxOrient: "vertical",
+          overflow: "hidden",
+          textOverflow: "ellipsis",
+        }}
+      >
         {description}
       </Typography>
 
@@ -155,6 +203,28 @@ export function EventCard({
           <IconTextRow key={i} iconSrc={p.iconSrc} text={p.text} />
         ))}
       </Box>
+    </Box>
+  );
+}
+
+type IconTextRowProps = {
+  iconSrc: string | StaticImageData;
+  text: string;
+};
+
+export function IconTextRow({ iconSrc, text }: IconTextRowProps) {
+  return (
+    <Box
+      sx={{
+        display: "flex",
+        gap: { xs: "10px", md: "20px" },
+        alignItems: "center",
+      }}
+    >
+      <Image src={iconSrc} alt="" width={25} height={25} />
+      <Typography sx={{ fontSize: localFontSize.p1, color: "#00000080" }}>
+        {text}
+      </Typography>
     </Box>
   );
 }

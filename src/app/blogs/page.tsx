@@ -3,7 +3,7 @@ import Navbar from "@/_components/Navbar";
 import FeaturedArticle from "./_sections/FeaturedArticle";
 import ListOfBlogs from "./_sections/ListOfBlogs";
 
-export default function HomePage() {
+export default function Blogs() {
   return (
     <>
       <Navbar />

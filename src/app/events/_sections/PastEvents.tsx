@@ -1,11 +1,57 @@
 "use client";
 
-import { Box, Typography, Divider } from "@mui/material";
+import { Box, Typography, GlobalStyles } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
 import { localFontSize, sectionPadding } from "@/utils/themes";
 import { svgs } from "@/_assets/svgs";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function PastEvents() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    customPaging: () => (
+      <Box
+        sx={{
+          width: "15px",
+          height: "15px",
+          borderRadius: "50%",
+          backgroundColor: "transparent",
+        }}
+      />
+    ),
+    dotsClass: "slick-dots custom-dots",
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <Box sx={{ bgcolor: "#E9E9E9" }}>
       <Box
@@ -25,36 +71,51 @@ export default function PastEvents() {
             marginBottom: "20px",
           }}
         >
-          past events
+          Past Events
         </Typography>
         {/* the card box  */}
         <Box
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            gap: "30px",
-            flexWrap: "wrap",
+            // display: "flex",
+            // justifyContent: "center",
+            // gap: "30px",
+            // flexWrap: "wrap",
             marginTop: { xs: "40px", md: "80px" },
           }}
         >
-          <ValueCard
-            iconSrc={svgs.developingLeaders}
-            title="Inaugural Networking Gala"
-            date="December 2023"
-            description="Our launch event that brought together over 200 Muslim professionals from across various sectors."
+          <GlobalStyles
+            styles={{
+              ".custom-dots li": {
+                backgroundColor: "#fff",
+              },
+            }}
           />
-          <ValueCard
-            iconSrc={svgs.developingLeaders}
-            title="Women in Leadership Panel"
-            date="January 2024"
-            description="Panel discussion featuring prominent Muslim women leaders discussing barriers and opportunities in professional advancement."
-          />
-          <ValueCard
-            iconSrc={svgs.developingLeaders}
-            title="Financial Services"
-            date="February 2024"
-            description="Strategic discussion on Islamic finance integration and Muslim professional advancement in financial services."
-          />
+          <Slider {...settings}>
+            <ValueCard
+              iconSrc={svgs.developingLeaders}
+              title="Inaugural Networking Gala"
+              date="December 2023"
+              description="Our launch event that brought together over 200 Muslim professionals from across various sectors."
+            />
+            <ValueCard
+              iconSrc={svgs.developingLeaders}
+              title="Women in Leadership Panel"
+              date="January 2024"
+              description="Panel discussion featuring prominent Muslim women leaders discussing barriers and opportunities in professional advancement."
+            />
+            <ValueCard
+              iconSrc={svgs.developingLeaders}
+              title="Financial Services"
+              date="February 2024"
+              description="Strategic discussion on Islamic finance integration and Muslim professional advancement in financial services."
+            />
+            <ValueCard
+              iconSrc={svgs.developingLeaders}
+              title="Financial Services"
+              date="February 2024"
+              description="Strategic discussion on Islamic finance integration and Muslim professional advancement in financial services."
+            />
+          </Slider>
         </Box>
       </Box>
     </Box>
@@ -85,7 +146,9 @@ export function ValueCard({
         padding: "20px",
         backgroundColor: "#25D366",
         borderRadius: "20px",
-        height: "345px",
+        // height: "345px",
+        marginX: { xs: "auto", lg: "10px" },
+        height: { xs: "264px", sm: "270px", md: "312px", lg: "336px" },
       }}
     >
       <Box
@@ -104,8 +167,14 @@ export function ValueCard({
 
       <Typography
         sx={{
-          fontSize: localFontSize.h3,
+          fontSize: localFontSize.h4,
           color: "#fff",
+          // elipsis
+          display: "-webkit-box",
+          WebkitLineClamp: 1,
+          WebkitBoxOrient: "vertical",
+          overflow: "hidden",
+          textOverflow: "ellipsis",
         }}
       >
         {title}
@@ -123,6 +192,12 @@ export function ValueCard({
         sx={{
           fontSize: localFontSize.p2,
           color: "#FFFFFF80",
+          // elipsis
+          display: "-webkit-box",
+          WebkitLineClamp: 4,
+          WebkitBoxOrient: "vertical",
+          overflow: "hidden",
+          textOverflow: "ellipsis",
         }}
       >
         {description}
