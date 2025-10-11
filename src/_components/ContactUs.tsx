@@ -68,7 +68,7 @@ export default function ContactUs() {
             </Typography>
             <Box>
               <Box sx={{ display: "flex", gap: "20px", alignItems: "center" }}>
-                <Image src={svgs.phone} height={40} width={40} alt="phone" />
+                <Image src={svgs.email} height={40} width={40} alt="phone" />
                 <Typography
                   sx={{ fontSize: localFontSize.p1, color: "#00000080" }}
                 >
@@ -87,7 +87,7 @@ export default function ContactUs() {
                 <Typography
                   sx={{ fontSize: localFontSize.p1, color: "#00000080" }}
                 >
-                  info@houseofwisdom.org.uk
+                  +44 (0) 20 7123 4567
                 </Typography>
               </Box>
             </Box>
