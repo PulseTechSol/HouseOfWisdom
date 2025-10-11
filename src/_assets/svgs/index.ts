@@ -27,6 +27,13 @@ import empowerment from "./about-us/empowerment.svg";
 import thoughtLeadership from "./about-us/thoughtLeadership.svg";
 import ourValues from "./about-us/ourValues.svg";
 import stepUpToAim from "./about-us/stepUpToAim.svg";
+// events screen
+import pastEvent1 from "./events/pastEvent1.svg";
+import pastEvent2 from "./events/pastEvent2.svg";
+import pastEvent3 from "./events/pastEvent3.svg";
+import eventsTypes1 from "./events/eventsTypes1.svg";
+import eventsTypes2 from "./events/eventsTypes2.svg";
+import eventsTypes3 from "./events/eventsTypes3.svg";
 // footer icons
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
@@ -69,6 +76,13 @@ export const svgs = {
   thoughtLeadership,
   ourValues,
   stepUpToAim,
+  // events scren
+  pastEvent1,
+  pastEvent2,
+  pastEvent3,
+  eventsTypes1,
+  eventsTypes2,
+  eventsTypes3,
   // footer icons
   facebook,
   instagram,

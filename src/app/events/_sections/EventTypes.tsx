@@ -25,7 +25,7 @@ export default function EventTypes() {
               marginBottom: { xs: "10px", md: "20px" },
             }}
           >
-            Types of Events
+            Types Of Events
           </Typography>
           <Typography
             sx={{
@@ -49,17 +49,17 @@ export default function EventTypes() {
           }}
         >
           <ValueCard
-            iconSrc={svgs.developingLeaders}
+            iconSrc={svgs.eventsTypes1}
             title="Conferences"
             description="Large-scale events featuring keynote speakers, panel discussions, and networking opportunities."
           />
           <ValueCard
-            iconSrc={svgs.developingLeaders}
+            iconSrc={svgs.eventsTypes2}
             title="Workshops"
             description="Interactive sessions focused on skill development and practical knowledge sharing."
           />
           <ValueCard
-            iconSrc={svgs.developingLeaders}
+            iconSrc={svgs.eventsTypes3}
             title="Networking"
             description="Intimate gatherings designed to foster meaningful professional connections."
           />

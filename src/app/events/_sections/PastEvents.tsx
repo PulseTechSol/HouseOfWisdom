@@ -92,25 +92,37 @@ export default function PastEvents() {
           />
           <Slider {...settings}>
             <ValueCard
-              iconSrc={svgs.developingLeaders}
+              iconSrc={svgs.pastEvent1}
               title="Inaugural Networking Gala"
               date="December 2023"
               description="Our launch event that brought together over 200 Muslim professionals from across various sectors."
             />
             <ValueCard
-              iconSrc={svgs.developingLeaders}
+              iconSrc={svgs.pastEvent2}
               title="Women in Leadership Panel"
               date="January 2024"
               description="Panel discussion featuring prominent Muslim women leaders discussing barriers and opportunities in professional advancement."
             />
             <ValueCard
-              iconSrc={svgs.developingLeaders}
+              iconSrc={svgs.pastEvent3}
               title="Financial Services"
               date="February 2024"
               description="Strategic discussion on Islamic finance integration and Muslim professional advancement in financial services."
             />
             <ValueCard
-              iconSrc={svgs.developingLeaders}
+              iconSrc={svgs.pastEvent1}
+              title="Financial Services"
+              date="February 2024"
+              description="Strategic discussion on Islamic finance integration and Muslim professional advancement in financial services."
+            />
+            <ValueCard
+              iconSrc={svgs.pastEvent2}
+              title="Women in Leadership Panel"
+              date="January 2024"
+              description="Panel discussion featuring prominent Muslim women leaders discussing barriers and opportunities in professional advancement."
+            />
+            <ValueCard
+              iconSrc={svgs.pastEvent3}
               title="Financial Services"
               date="February 2024"
               description="Strategic discussion on Islamic finance integration and Muslim professional advancement in financial services."

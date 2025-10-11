@@ -85,7 +85,7 @@ export default function UpcomingEvents() {
             ]}
           />
           <EventCard
-            buttonText="Conference"
+            buttonText="Networking"
             heading="Networking Dinner - Healthcare Professionals"
             description="An exclusive networking dinner for Muslim healthcare professionals to discuss challenges, opportunities, and collaborative initiatives in the healthcare sector."
             points={[
