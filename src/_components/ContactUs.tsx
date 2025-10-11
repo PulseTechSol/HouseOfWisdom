@@ -2,7 +2,6 @@
 import { Box, Typography, Divider } from "@mui/material";
 import Image from "next/image";
 import { localFontSize, sectionPadding } from "@/utils/themes";
-import { pngs } from "@/_assets/pngs";
 import { svgs } from "@/_assets/svgs";
 import ContactUsForm from "./ContactUsForm";
 
