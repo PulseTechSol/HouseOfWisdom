@@ -71,7 +71,7 @@ export default function ContactUs() {
                 <Typography
                   sx={{ fontSize: localFontSize.p1, color: "#00000080" }}
                 >
-                  info@houseofwisdom.org.uk
+                  info@thehownetwork.co.uk
                 </Typography>
               </Box>
               <Box

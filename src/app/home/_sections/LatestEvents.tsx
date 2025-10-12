@@ -77,7 +77,7 @@ export default function LatestEvents() {
         >
           <EventCard
             iconSrc={pngs.latestEvents1}
-            date="October 15, 2025"
+            date="November 28, 2025 at 6:00 PM"
             title="official launch at central hall"
             description="Join leading Muslim professionals for a day of strategic discussions on community leadership and policy influence."
             learnMore={() =>
