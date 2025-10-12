@@ -2,6 +2,7 @@ import HeroComponent from "@/_components/HeroComponent";
 import Navbar from "@/_components/Navbar";
 import FeaturedArticle from "./_sections/FeaturedArticle";
 import ListOfBlogs from "./_sections/ListOfBlogs";
+import Footer from "@/_components/Footer";
 
 export default function Blogs() {
   return (
@@ -17,6 +18,7 @@ export default function Blogs() {
       />
       <FeaturedArticle />
       <ListOfBlogs />
+      <Footer />
     </>
   );
 }
