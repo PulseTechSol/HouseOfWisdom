@@ -7,7 +7,6 @@ import WhatWeOffer from "./_sections/WhatWeOffer";
 import WhatUnique from "./_sections/WhatUnique";
 import LatestEvents from "./_sections/LatestEvents";
 import JoinOurCommunity from "./_sections/JoinOurCommunity";
-import ContactUs from "@/_components/ContactUs";
 import Footer from "@/_components/Footer";
 
 export default function HomePage() {
@@ -22,7 +21,6 @@ export default function HomePage() {
       <WhatUnique />
       <LatestEvents />
       <JoinOurCommunity />
-      <ContactUs />
       <Footer />
     </>
   );

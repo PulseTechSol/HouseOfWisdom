@@ -1,6 +1,7 @@
 import Navbar from "@/_components/Navbar";
 import HeroDetails from "@/_components/HeroDetails";
 import Details from "./_sections/Details";
+import Footer from "@/_components/Footer";
 
 export default function EventDetail() {
   return (
@@ -8,6 +9,7 @@ export default function EventDetail() {
       <Navbar />
       <HeroDetails />
       <Details />
+      <Footer />
     </>
   );
 }

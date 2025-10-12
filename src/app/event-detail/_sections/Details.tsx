@@ -2,13 +2,17 @@ import { localFontSize, sectionPadding } from "@/utils/themes";
 import { Box, List, ListItem, Typography } from "@mui/material";
 
 export default function Details() {
+  const universalGap = { xs: "20px", md: "40px" };
   return (
     <>
-      <Box sx={{ padding: sectionPadding }}>
+      <Box sx={{ padding: sectionPadding, paddingTop: "0px !important" }}>
         <Box
           sx={{
             maxWidth: "1440px",
             margin: "auto",
+            "& > :not(:last-child)": {
+              marginBottom: universalGap,
+            },
           }}
         >
           <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
@@ -20,23 +24,135 @@ export default function Details() {
             decision-making processes across government, public institutions,
             and civil society.
           </Typography>
-          <Box>
-            <Typography sx={{ fontSize: localFontSize.h3, color: "#000000" }}>
-              n-making processes across government, public institutions, and
-              civil society.
+          <Box
+            sx={{
+              "& > :not(:last-child)": {
+                marginBottom: universalGap,
+              },
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: localFontSize.h3,
+                color: "#000000",
+                fontWeight: 600,
+              }}
+            >
+              What You’ll Learn
             </Typography>
             <Bullets
               items={[
-                "Access the personal data we hold about you.",
-                "Request correction or deletion of inaccurate or outdated data.",
-                "Object to or restrict processing of your data.",
-                "Withdraw consent (where applicable).",
-                "Lodge a complaint with the UK Information Commissioner’s Office (ICO).",
+                "The fundamentals of governance and policy development in the UK",
+                "How Muslim professionals can influence policy through research, advocacy, and leadership",
+                "Best practices in ethical decision-making and public accountability",
+                "Real-world case studies on successful community engagement in governance",
               ]}
             />
+          </Box>
+          <Box
+            sx={{
+              "& > :not(:last-child)": {
+                marginBottom: universalGap,
+              },
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: localFontSize.h3,
+                color: "#000000",
+                fontWeight: 600,
+              }}
+            >
+              Who Should Attend
+            </Typography>
             <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
-              n-making processes across government, public institutions, and
-              civil society.
+              This workshop is designed for professionals in:{" "}
+            </Typography>
+            <Bullets
+              items={[
+                "Law, politics, and public administration",
+                "Education and academia",
+                "Non-profit and community leadership",
+                "Business and consultancy sectors interested in policy influence",
+              ]}
+            />
+          </Box>
+          <Box
+            sx={{
+              "& > :not(:last-child)": {
+                marginBottom: universalGap,
+              },
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: localFontSize.h3,
+                color: "#000000",
+                fontWeight: 600,
+              }}
+            >
+              Why Attend
+            </Typography>
+            <Bullets
+              items={[
+                "Gain practical understanding of UK governance frameworks",
+                "Network with policymakers, thought leaders, and changemakers",
+                "Strengthen your ability to represent your community in national conversations",
+                "Enhance your professional leadership profile",
+              ]}
+            />
+          </Box>
+          <Box
+            sx={{
+              "& > :not(:last-child)": {
+                marginBottom: universalGap,
+              },
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: localFontSize.h3,
+                color: "#000000",
+                fontWeight: 600,
+              }}
+            >
+              Event Details
+            </Typography>
+            <Bullets
+              items={[
+                "Date: April 10, 2024",
+                "Time: 2:00 PM - 5:00 PM",
+                "Venue: Westminster Hub, London",
+                "Format: In-person workshop with interactive sessions and Q&A",
+              ]}
+            />
+          </Box>
+          <Box
+            sx={{
+              "& > :not(:last-child)": {
+                marginBottom: universalGap,
+              },
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: localFontSize.h3,
+                color: "#000000",
+                fontWeight: 600,
+              }}
+            >
+              Join Us
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: localFontSize.p2,
+                color: "#00000080",
+              }}
+            >
+              Be part of a movement empowering Muslim professionals to
+              contribute constructively to policy and governance in Britain.
+              Together, we can strengthen our voice and shape a more inclusive
+              and equitable society.
             </Typography>
           </Box>
         </Box>
