@@ -23,12 +23,12 @@ const footerData = [
 
 const navLinks = [
   { text: "Home", route: "/" },
-  { text: "About", route: "/" },
-  { text: "Our People", route: "/" },
-  { text: "Events", route: "/" },
-  { text: "Blogs", route: "/" },
-  { text: "Contact", route: "/" },
-  { text: "Privacy Policy", route: "/" },
+  { text: "About", route: "/about-us" },
+  { text: "Our People", route: "/our-people" },
+  { text: "Events", route: "/events" },
+  { text: "Blogs", route: "/blogs" },
+  { text: "Contact", route: "/contact-us" },
+  { text: "Privacy Policy", route: "/privacy-policy" },
 ];
 
 export default function Footer() {
