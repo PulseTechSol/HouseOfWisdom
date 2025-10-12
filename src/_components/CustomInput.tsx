@@ -71,6 +71,9 @@ export const CustomInput = React.forwardRef<HTMLInputElement, CustomInputProps>(
           "& .css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input": {
             height: "fit-content",
           },
+          "& .css-1pk1fka": {
+            height: "fit-content",
+          },
         }}
       />
     );
