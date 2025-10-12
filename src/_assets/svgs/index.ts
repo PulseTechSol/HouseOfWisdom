@@ -44,6 +44,7 @@ import email from "./email.svg";
 import exclusiveEvents from "./home/exclusiveEvents.svg";
 import policyInfluence from "./home/policyInfluence.svg";
 import professionalNetworking from "./home/professionalNetworking.svg";
+import quoteComma from "./home/quoteComma.svg";
 
 import sliderArrow from "./sliderArrow.svg";
 import profile from "./profile.svg";
@@ -98,6 +99,7 @@ export const svgs = {
   exclusiveEvents,
   policyInfluence,
   professionalNetworking,
+  quoteComma,
 
   sliderArrow,
   profile,

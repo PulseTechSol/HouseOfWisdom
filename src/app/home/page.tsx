@@ -1,6 +1,7 @@
 import Navbar from "@/_components/Navbar";
 import HeroHome from "./_sections/HeroHome";
 import AboutUs from "./_sections/AboutUs";
+import TheMessage from "./_sections/TheMessage";
 import WhatWeOffer from "./_sections/WhatWeOffer";
 import WhatUnique from "./_sections/WhatUnique";
 import LatestEvents from "./_sections/LatestEvents";
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Navbar />
       <HeroHome />
       <AboutUs />
+      <TheMessage />
       <WhatWeOffer />
       <WhatUnique />
       <LatestEvents />

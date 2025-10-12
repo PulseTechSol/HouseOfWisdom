@@ -19,6 +19,7 @@ import AboutUs from "./home/AboutUs.png";
 import whatWeOffer from "./home/whatWeOffer.png";
 import latestEvents1 from "./home/latestEvents1.png";
 import latestEvents2 from "./home/latestEvents2.png";
+import theMessage from "./home/theMessage.png";
 
 export const pngs = {
   drivenByPurpose,
@@ -42,4 +43,5 @@ export const pngs = {
   whatWeOffer,
   latestEvents1,
   latestEvents2,
+  theMessage,
 };
