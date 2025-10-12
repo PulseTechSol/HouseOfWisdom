@@ -50,7 +50,7 @@ export default function LatestEvents() {
             <Typography
               sx={{
                 fontSize: localFontSize.p2,
-                color: "#FFFFFF80",
+                color: "#FFFFFF",
               }}
             >
               Stay informed about our latest initiatives, events, and community
@@ -166,9 +166,8 @@ export function EventCard({
       <Typography
         sx={{
           fontSize: localFontSize.p2,
-          color: "#FFFFFF80",
+          color: "#FFFFFF",
           textAlign: "left",
-          opasity: "0.99",
         }}
       >
         {description}
