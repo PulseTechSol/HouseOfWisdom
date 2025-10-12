@@ -138,6 +138,8 @@ export function EventCard({
 }: EventCardProps) {
   return (
     <Box
+      data-aos="zoom-in"
+      data-aos-duration="500"
       sx={{
         maxWidth: "555px",
         padding: { xs: "20px", md: "30px" },

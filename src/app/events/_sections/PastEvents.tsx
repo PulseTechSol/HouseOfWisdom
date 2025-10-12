@@ -149,6 +149,8 @@ export function ValueCard({
 }: ValueCardProps) {
   return (
     <Box
+      data-aos="zoom-in"
+      data-aos-duration="500"
       sx={{
         display: "flex",
         flexDirection: "column",

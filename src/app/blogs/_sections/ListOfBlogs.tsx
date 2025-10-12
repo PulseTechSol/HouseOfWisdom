@@ -267,6 +267,8 @@ export function BlogListCard({
 }: BlogListCardProps) {
   return (
     <Box
+      data-aos="zoom-in"
+      data-aos-duration="500"
       sx={{
         maxWidth: "555px",
         padding: "20px",

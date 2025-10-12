@@ -98,6 +98,8 @@ export function SlidingSection() {
         }}
       >
         <Box
+          data-aos="zoom-in"
+          data-aos-duration="500"
           sx={{
             width: { xs: "100%", md: "50%" },
             "& > :not(:last-child)": {
@@ -178,6 +180,8 @@ export function SlidingSection() {
           }}
         >
           <Image
+            data-aos="zoom-in"
+            data-aos-duration="500"
             src={pngs.drivenByPurpose}
             alt="Driven By Purpose"
             style={{ objectFit: "cover", height: "100%", width: "100%" }}
