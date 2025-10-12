@@ -148,7 +148,7 @@ export default function Navbar() {
           top: "0px",
           left: "0px",
           transition: "all 0.4s ease-in-out",
-          transform: menu ? "translateX(0)" : "translateX(100%)",
+          transform: menu ? "translateX(0)" : "translateX(200%)",
           zIndex: "1000",
           backgroundColor: "#FFFFFF",
           width: "100%",
