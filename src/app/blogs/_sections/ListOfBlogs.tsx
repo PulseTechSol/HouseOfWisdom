@@ -263,7 +263,6 @@ interface BlogListCardProps {
   labels: string[]; // ✅ only text now
   onClick?: () => void;
 }
-
 export function BlogListCard({
   image,
   category,
@@ -292,6 +291,10 @@ export function BlogListCard({
         marginY: "10px",
         marginX: { xs: "8px", sm: "auto", lg: "10px" },
         height: { xs: "590px", sm: "600px", md: "655px", lg: "690px" },
+        transition: "all 0.3s ease-in-out",
+        "&:hover": {
+          transform: "scale(1.01)",
+        },
       }}
     >
       {/* image */}
