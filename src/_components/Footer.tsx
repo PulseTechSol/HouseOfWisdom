@@ -28,6 +28,7 @@ const navLinks = [
   { text: "Events", route: "/" },
   { text: "Blogs", route: "/" },
   { text: "Contact", route: "/" },
+  { text: "Privacy Policy", route: "/" },
 ];
 
 export default function Footer() {
