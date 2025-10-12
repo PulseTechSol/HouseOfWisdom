@@ -5,6 +5,10 @@ import { localFontSize, sectionPadding } from "@/utils/themes";
 import Image from "next/image";
 import { pngs } from "@/_assets/pngs";
 import { svgs } from "@/_assets/svgs";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 export default function ListOfBlogs() {
   const [activeCategory, setActiveCategory] = React.useState("All Posts");
 
@@ -15,6 +19,45 @@ export default function ListOfBlogs() {
     "Professional Development",
     "Technology",
   ];
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    rows: 2,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          rows: 1,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 1,
+        },
+      },
+    ],
+    customPaging: () => (
+      <Box
+        sx={{
+          width: "15px",
+          height: "15px",
+          borderRadius: "50%",
+          backgroundColor: "transparent",
+        }}
+      />
+    ),
+    dotsClass: "slick-dots custom-dots",
+  };
 
   return (
     <Box sx={{ bgcolor: "#fff" }}>
@@ -78,7 +121,14 @@ export default function ListOfBlogs() {
         {/* slider there  */}
         <Box sx={{ paddingTop: { xs: "30px", md: "40px", lg: "80px" } }}>
           {/* card therer  */}
-          <BlogListCard />
+          <Slider {...settings}>
+            <BlogListCard />
+            <BlogListCard />
+            <BlogListCard />
+            <BlogListCard />
+            <BlogListCard />
+            <BlogListCard />
+          </Slider>
         </Box>
       </Box>
     </Box>
@@ -97,6 +147,8 @@ export function BlogListCard() {
           "& > :not(:last-child)": {
             marginBottom: { xs: "12px", sm: "20px", md: "30px" },
           },
+          marginY: "30px",
+          marginX: { xs: "10px", sm: "auto", md: "15px" },
         }}
       >
         {/* image  */}
