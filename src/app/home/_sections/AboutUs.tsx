@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { localFontSize, sectionPadding } from "@/utils/themes";
+import { localFontSize, sectionPaddingY } from "@/utils/themes";
 import { Box, Typography, Grid, Divider } from "@mui/material";
 import { pngs } from "@/_assets/pngs";
 import Image from "next/image";
@@ -11,17 +11,21 @@ export default function AboutUs() {
       <Grid sx={{ maxWidth: { xl: "1600px" }, margin: "auto" }} container>
         <Grid
           sx={{
-            padding: sectionPadding,
+            paddingY: sectionPaddingY,
+            paddingLeft: {
+              xs: "20px",
+              sm: "60px",
+              md: "80px",
+            },
             paddingRight: {
-              xs: "15px",
-              sm: "20px",
+              xs: "20px",
               lg: "30px",
               xl: "60px !important",
             },
           }}
           size={{ xs: 12, md: 7, lg: 6, xl: 5.3 }}
         >
-          <Box sx={{ maxWidth: { xl: "80%" } }}>
+          <Box>
             <Box sx={{ marginBottom: { xs: "20px", md: "40px" } }}>
               <Typography
                 sx={{
