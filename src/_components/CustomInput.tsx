@@ -65,9 +65,7 @@ export const CustomInput = React.forwardRef<HTMLInputElement, CustomInputProps>(
               borderColor: "#25D366",
             },
           },
-          "& .MuiInputBase-input": {
-            padding: "12px 14px",
-          },
+          "& .MuiInputBase-input": {},
           "& .css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input": {
             height: "fit-content",
           },
