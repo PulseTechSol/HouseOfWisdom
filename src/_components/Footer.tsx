@@ -70,14 +70,14 @@ export default function Footer() {
             <Box
               sx={{
                 width: "22px",
-                paddingX: "14px",
                 margin: { xs: "auto", md: "0" },
+                height: "35px",
               }}
             >
               <Image
                 src={svgs.logo}
                 alt="logo"
-                style={{ height: "100%", width: "100%" }}
+                style={{ height: "100%", width: "100%", objectFit: "contain" }}
               />
             </Box>
             <Typography
