@@ -9,12 +9,12 @@ export default function ContactUs() {
   return (
     <Box
       sx={{
+        padding: sectionPadding,
         bgcolor: "#fff",
       }}
     >
       <Box
         sx={{
-          padding: sectionPadding,
           maxWidth: "1140px",
           margin: "auto",
         }}
