@@ -1,7 +1,14 @@
 import { localFontSize, sectionPadding } from "@/utils/themes";
 import { Box, Typography } from "@mui/material";
 
-export default function HeroDetails() {
+interface Props {
+  heading: string;
+  bgImage?: string;
+}
+export default function HeroDetails({
+  heading,
+  bgImage = "bgHeroBlogDetails.png",
+}: Props) {
   return (
     <>
       <Box sx={{ padding: sectionPadding }}>
@@ -9,8 +16,8 @@ export default function HeroDetails() {
           sx={{
             maxWidth: "1140px",
             margin: "auto",
-            // backgroundImage: "url(./bgHeroBlogDetails.png)",
-            backgroundImage: "url(./bgHeroEventDetails.png)",
+            backgroundImage: `url(./${bgImage})`,
+            // backgroundImage: "url(./bgHeroEventDetails.png)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             borderRadius: { xs: "20px", md: "40px" },
@@ -25,11 +32,12 @@ export default function HeroDetails() {
               fontSize: localFontSize.h1,
               color: "#fff",
               textAlign: "center",
-              paddingX: { xs: "20px", md: "40px", lg: "60px", xl: "100px" },
+              paddingX: { xs: "20px", md: "40px", lg: "60px" },
               fontWeight: "600",
+              textTransform: "uppercase",
             }}
           >
-            Policy & Governance Workshop
+            {heading}
           </Typography>
         </Box>
       </Box>

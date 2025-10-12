@@ -5,10 +5,12 @@ export default function Details() {
   const universalGap = { xs: "20px", md: "40px" };
   return (
     <>
-      <Box sx={{ padding: sectionPadding, paddingTop: "0px !important" }}>
+      <Box>
         <Box
           sx={{
             maxWidth: "1440px",
+            padding: sectionPadding,
+            paddingTop: "0px !important",
             margin: "auto",
             "& > :not(:last-child)": {
               marginBottom: universalGap,

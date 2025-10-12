@@ -3,13 +3,13 @@ import HeroDetails from "@/_components/HeroDetails";
 import Details from "./_sections/Details";
 import Footer from "@/_components/Footer";
 
-export default function EventDetail() {
+export default function BlogDetail() {
   return (
     <>
       <Navbar />
       <HeroDetails
-        heading="Policy & Governance Workshop"
-        bgImage="bgHeroEventDetails.png"
+        heading="The Future of Muslim Professional Leadership in Britain"
+        bgImage="bgHeroBlogDetails.png"
       />
       <Details />
       <Footer />
