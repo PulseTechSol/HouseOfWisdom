@@ -67,17 +67,27 @@ export default function Details() {
             >
               Who Should Attend
             </Typography>
-            <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
-              This workshop is designed for professionals in:{" "}
-            </Typography>
-            <Bullets
-              items={[
-                "Law, politics, and public administration",
-                "Education and academia",
-                "Non-profit and community leadership",
-                "Business and consultancy sectors interested in policy influence",
-              ]}
-            />
+            <Box
+              sx={{
+                "& > :not(:last-child)": {
+                  marginBottom: { xs: "10px", md: "20px" },
+                },
+              }}
+            >
+              <Typography
+                sx={{ fontSize: localFontSize.p2, color: "#00000080" }}
+              >
+                This workshop is designed for professionals in:{" "}
+              </Typography>
+              <Bullets
+                items={[
+                  "Law, politics, and public administration",
+                  "Education and academia",
+                  "Non-profit and community leadership",
+                  "Business and consultancy sectors interested in policy influence",
+                ]}
+              />
+            </Box>
           </Box>
           <Box
             sx={{
