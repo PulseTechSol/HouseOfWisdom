@@ -43,17 +43,16 @@ export default function AboutUs() {
               />
             </Box>
             <Typography sx={{ fontSize: localFontSize.p1, color: "#00000080" }}>
-              At its heart, HOW is a platform for leadership development
-              bringing together Muslim professionals and thinkers from across
-              disciplines to generate bold ideas, influence public discourse,
-              and build strategic capacity. We focus on engaging individuals
-              across key sectors including law, politics, finance, business,
-              medicine, academia, media, technology, and the creative
-              industries. We are creating a space where emerging leaders are
-              mentored, supported, and equipped with the skills, networks, and
-              vision needed to drive meaningful change. Through HOW, we aim to
-              foster a generation that leads not just in their professions, but
-              in the public life of Britain.
+              The House of Wisdom (HOW) is a bold new initiative launched by a
+              group of British Muslims, led by Patron Hammad Mustafa Al-Madani
+              Al-Qadri. Inspired by the intellectual legacy of the Islamic
+              Golden Age, HOW is rooted in a powerful vision: to create a
+              culture of thought leadership, curiosity, and principled
+              excellence within the British Muslim community. In the face of
+              growing social, political, and economic challenges, we believe the
+              most urgent task before us is to cultivate a new generation of
+              confident, capable Muslim leaders who can shape the future with
+              integrity and purpose.
             </Typography>
           </Box>
         </Grid>

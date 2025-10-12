@@ -110,19 +110,15 @@ export default function TheMessage() {
                     paddingY: "30px",
                   }}
                 >
-                  During that era, coffee houses, spiritual enclaves, and
-                  scholarly gatherings gave rise to world leading advancements
-                  in philosophy, theology, mathematics, medicine, astronomy,
-                  biology, and law. These developments, grounded firmly in
-                  Islamic principles and driven by the pursuit of knowledge
-                  (Ilm) and excellence (Ihsan), not only advanced Muslim
-                  societies but benefitted the entire world.
-                  <br />
-                  <br />
-                  Today, we find ourselves as Muslims often disconnected from
-                  that golden legacy of grand inventions and contributions to
-                  society that would enable us to play a pivotal role in further
-                  contributing to Britain.
+                  The future of our community, and our country, will be shaped
+                  by the voices we raise, the leaders we nurture, and the values
+                  we stand for. The House of Wisdom exists to unlock the
+                  potential of British Muslims across every field of society,
+                  and to build a network of thinkers, professionals, and
+                  changemakers who are committed to progress, unity, and
+                  service. Together, through collaboration and courage, we can
+                  shape a better Britain, one that reflects the richness of all
+                  its people and the strength of shared purpose.
                 </Typography>
               </Box>
               <Box
