@@ -9,14 +9,7 @@ import { svgs } from "@/_assets/svgs";
 export default function TheMessage() {
   return (
     <>
-      <Grid
-        sx={
-          {
-            // maxHeight: { lg: "770px" },bacco
-          }
-        }
-        container
-      >
+      <Grid sx={{ maxWidth: { xl: "1600px" }, margin: "auto" }} container>
         <Grid
           size={{ xs: 12, md: 7, lg: 6, xl: 5.3 }}
           sx={{

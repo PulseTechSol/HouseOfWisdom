@@ -9,7 +9,11 @@ export default function WhyJoinUs() {
   return (
     <>
       <Grid
-        sx={{ flexDirection: { xs: "column-reverse", md: "unset" } }}
+        sx={{
+          flexDirection: { xs: "column-reverse", md: "unset" },
+          maxWidth: { xl: "1600px" },
+          margin: "auto",
+        }}
         container
       >
         <Grid

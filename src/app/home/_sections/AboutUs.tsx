@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function AboutUs() {
   return (
     <>
-      <Grid container>
+      <Grid sx={{ maxWidth: { xl: "1600px" }, margin: "auto" }} container>
         <Grid
           sx={{
             padding: sectionPadding,
@@ -60,9 +60,11 @@ export default function AboutUs() {
         <Grid
           //  size={6.4}
           size={{ xs: 12, md: 5, lg: 6, xl: 6.7 }}
-          sx={{
-            maxHeight: { xl: "770px" },
-          }}
+          sx={
+            {
+              // maxHeight: { xl: "770px" },
+            }
+          }
         >
           <Image
             style={{
