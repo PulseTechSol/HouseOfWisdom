@@ -1,8 +1,9 @@
 "use client";
 
-import { Box, Typography } from "@mui/material";
+import { Box, InputBase, Typography } from "@mui/material";
 import { localFontSize, sectionPadding } from "@/utils/themes";
-import CustomButton from "@/_components/CustomButton";
+import { svgs } from "@/_assets/svgs";
+import Image from "next/image";
 
 export default function JoinOurCommunity() {
   return (
@@ -84,14 +85,43 @@ export default function JoinOurCommunity() {
         <Box
           sx={{
             marginTop: { xs: "40px", md: "80px" },
-            display: "flex",
-            justifyContent: "center",
-            gap: { xs: "10px", sm: "20px" },
-            flexDirection: { xs: "column", sm: "row" },
           }}
         >
-          <CustomButton text="get involved" lightmode={true} />
-          <CustomButton text="meet our people" />
+          {/* the input fu=ield there */}
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              border: "1px solid #25D366",
+              borderRadius: "10px",
+              padding: "15px 20px",
+              height: "70px",
+              maxWidth: "480px",
+              width: "100%",
+              margin: "auto",
+            }}
+          >
+            <InputBase
+              placeholder="Enter Your Email Address"
+              sx={{
+                flex: 1,
+                fontSize: localFontSize.p2,
+                color: "#00000080",
+              }}
+            />
+            <Box
+              sx={{
+                width: "44px",
+                height: "44px",
+              }}
+            >
+              <Image
+                src={svgs.sendIcon}
+                alt="Send"
+                style={{ width: "100%", height: "100%", objectFit: "contain" }}
+              />
+            </Box>
+          </Box>
         </Box>
       </Box>
     </Box>
