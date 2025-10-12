@@ -62,7 +62,11 @@ export default function OurTeam() {
           justifyContent: "center",
         }}
       >
-        <Box sx={{ width: { xs: "100%", md: "50%" } }}>
+        <Box
+          data-aos="fade-right"
+          data-aos-duration="500"
+          sx={{ width: { xs: "100%", md: "50%" } }}
+        >
           <Box
             sx={{
               display: "flex",
@@ -123,8 +127,10 @@ export default function OurTeam() {
           </Box>
         </Box>
         <Box
+          data-aos="fade-left"
+          data-aos-duration="500"
           sx={{
-            width: { xs: "100%", md: "60%", xl: "45%" },
+            width: { xs: "100%", md: "60%", xl: "50%" },
           }}
         >
           <Slider {...settings}>
@@ -166,7 +172,7 @@ export function MemberCard({ image, name, designation }: MemberCardProps) {
     <Box sx={{ margin: "auto", width: "fit-content" }}>
       <Box
         sx={{
-          width: "260px",
+          width: "250px",
           margin: "8px",
         }}
       >

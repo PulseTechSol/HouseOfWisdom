@@ -129,6 +129,8 @@ type CardProps = {
 export function Card({ iconSrc, title, description }: CardProps) {
   return (
     <Box
+      data-aos="zoom-in"
+      data-aos-duration="500"
       sx={{
         display: "flex",
         flexDirection: "column",

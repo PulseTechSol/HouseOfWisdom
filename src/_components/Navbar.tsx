@@ -5,12 +5,21 @@ import { svgs } from "@/_assets/svgs";
 import Image from "next/image";
 import NavTopBar from "./NavTopBar";
 import { useRouter, usePathname } from "next/navigation";
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Navbar() {
   const [menu, setMenu] = React.useState(false);
   const router = useRouter();
   const pathname = usePathname();
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+    AOS.refresh();
+  }, []);
   const toggleDrawer = (open: boolean) => {
     setMenu(open);
   };
@@ -71,6 +80,8 @@ export default function Navbar() {
       <NavTopBar />
       <Box sx={{ backgroundColor: "#25D366" }}>
         <Box
+          data-aos="zoom-in"
+          data-aos-duration="500"
           sx={{
             maxWidth: 1440,
             height: 80,

@@ -2,7 +2,7 @@
 import { Box, Typography, Button } from "@mui/material";
 import React from "react";
 import { localFontSize, sectionPadding } from "@/utils/themes";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { pngs } from "@/_assets/pngs";
 import { svgs } from "@/_assets/svgs";
 import Slider from "react-slick";
@@ -34,7 +34,7 @@ export default function ListOfBlogs() {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           rows: 1,
         },
@@ -60,6 +60,113 @@ export default function ListOfBlogs() {
     ),
     dotsClass: "slick-dots custom-dots",
   };
+
+  const blogData = [
+    {
+      image: pngs.blogItem1,
+      category: "Workplace Culture",
+      readTime: "8 min read",
+      title: "Building Bridges: Interfaith Dialogue in Professional Settings",
+      description:
+        "How Muslim professionals can foster understanding and collaboration across religious and cultural divides in the workplace.",
+      authorIcon: svgs.profile,
+      authorName: "Tariq Ahmed",
+      dateIcon: svgs.calander,
+      date: "February 25, 2024",
+      labels: ["Interfaith", "Professional Development"],
+    },
+    {
+      image: pngs.blogItem3,
+      category: "Finance",
+      readTime: "8 min read",
+      title: "The Rise of Islamic Finance in the UK Market",
+      description:
+        "Examining the growth of Sharia-compliant financial products and the opportunities they present for Muslim professionals in finance.",
+      authorIcon: svgs.profile,
+      authorName: "Prof. Omar Ibrahim",
+      dateIcon: svgs.calander,
+      date: "February 15, 2024",
+      labels: ["Islamic Finance", "Banking"],
+    },
+    {
+      image: pngs.blogItem2,
+      category: "Policy & Advocacy",
+      readTime: "7 min read",
+      title: "Policy Influence: A Practical Guide for Muslim Professionals",
+      description:
+        "A step-by-step approach to engaging with policy-making processes and creating meaningful change at local and national levels.",
+      authorIcon: svgs.profile,
+      authorName: "Sarah Khan",
+      dateIcon: svgs.calander,
+      date: "February 20, 2024",
+      labels: ["Policy", "Government"],
+    },
+    {
+      image: pngs.blogItem4,
+      category: "Professional Development",
+      readTime: "7 min read",
+      title: "Networking Strategies for Muslim Professionals",
+      description:
+        "Effective approaches to building professional networks while maintaining Islamic values and principles.",
+      authorIcon: svgs.profile,
+      authorName: "Dr. Amina Hassan",
+      dateIcon: svgs.calander,
+      date: "February 10, 2024",
+      labels: ["Networking", "Career"],
+    },
+    {
+      image: pngs.blogItem1,
+      category: "Workplace Culture",
+      readTime: "8 min read",
+      title: "Building Bridges: Interfaith Dialogue in Professional Settings",
+      description:
+        "How Muslim professionals can foster understanding and collaboration across religious and cultural divides in the workplace.",
+      authorIcon: svgs.profile,
+      authorName: "Tariq Ahmed",
+      dateIcon: svgs.calander,
+      date: "February 25, 2024",
+      labels: ["Interfaith", "Professional Development"],
+    },
+    {
+      image: pngs.blogItem3,
+      category: "Finance",
+      readTime: "8 min read",
+      title: "The Rise of Islamic Finance in the UK Market",
+      description:
+        "Examining the growth of Sharia-compliant financial products and the opportunities they present for Muslim professionals in finance.",
+      authorIcon: svgs.profile,
+      authorName: "Prof. Omar Ibrahim",
+      dateIcon: svgs.calander,
+      date: "February 15, 2024",
+      labels: ["Islamic Finance", "Banking"],
+    },
+    {
+      image: pngs.blogItem2,
+      category: "Policy & Advocacy",
+      readTime: "7 min read",
+      title: "Policy Influence: A Practical Guide for Muslim Professionals",
+      description:
+        "A step-by-step approach to engaging with policy-making processes and creating meaningful change at local and national levels.",
+      authorIcon: svgs.profile,
+      authorName: "Sarah Khan",
+      dateIcon: svgs.calander,
+      date: "February 20, 2024",
+      labels: ["Policy", "Government"],
+    },
+    {
+      image: pngs.blogItem4,
+      category: "Professional Development",
+      readTime: "7 min read",
+      title: "Networking Strategies for Muslim Professionals",
+      description:
+        "Effective approaches to building professional networks while maintaining Islamic values and principles.",
+      authorIcon: svgs.profile,
+      authorName: "Dr. Amina Hassan",
+      dateIcon: svgs.calander,
+      date: "February 10, 2024",
+      labels: ["Networking", "Career"],
+    },
+  ];
 
   return (
     <Box sx={{ bgcolor: "#fff" }}>
@@ -122,50 +229,20 @@ export default function ListOfBlogs() {
         </Box>
         {/* slider there  */}
         <Box sx={{ paddingTop: { xs: "30px", md: "40px", lg: "80px" } }}>
-          {/* card therer  */}
           <Slider {...settings}>
-            <BlogListCard
-              onClick={() =>
-                router.push(
-                  "blogs/the-future-of-muslim-professional-leadership"
-                )
-              }
-            />
-            <BlogListCard
-              onClick={() =>
-                router.push(
-                  "blogs/the-future-of-muslim-professional-leadership"
-                )
-              }
-            />
-            <BlogListCard
-              onClick={() =>
-                router.push(
-                  "blogs/the-future-of-muslim-professional-leadership"
-                )
-              }
-            />
-            <BlogListCard
-              onClick={() =>
-                router.push(
-                  "blogs/the-future-of-muslim-professional-leadership"
-                )
-              }
-            />
-            <BlogListCard
-              onClick={() =>
-                router.push(
-                  "blogs/the-future-of-muslim-professional-leadership"
-                )
-              }
-            />
-            <BlogListCard
-              onClick={() =>
-                router.push(
-                  "blogs/the-future-of-muslim-professional-leadership"
-                )
-              }
-            />
+            {blogData.map((blog, index) => (
+              <Box
+                key={index}
+                sx={{ px: 2 }}
+                onClick={() =>
+                  router.push(
+                    "blogs/the-future-of-muslim-professional-leadership"
+                  )
+                }
+              >
+                <BlogListCard {...blog} />
+              </Box>
+            ))}
           </Slider>
         </Box>
       </Box>
@@ -173,162 +250,193 @@ export default function ListOfBlogs() {
   );
 }
 
-export function BlogListCard({ onClick = () => {} }: { onClick?: () => void }) {
+interface BlogListCardProps {
+  image: StaticImageData;
+  category: string;
+  readTime: string;
+  title: string;
+  description: string;
+  authorIcon: StaticImageData;
+  authorName: string;
+  dateIcon: StaticImageData;
+  date: string;
+  labels: string[]; // ✅ only text now
+  onClick?: () => void;
+}
+
+export function BlogListCard({
+  image,
+  category,
+  readTime,
+  title,
+  description,
+  authorIcon,
+  authorName,
+  dateIcon,
+  date,
+  labels,
+  onClick = () => {},
+}: BlogListCardProps) {
   return (
-    <>
+    <Box
+      data-aos="zoom-in"
+      data-aos-duration="500"
+      sx={{
+        maxWidth: "555px",
+        padding: "20px",
+        borderRadius: "20px",
+        border: "2px solid #25D366",
+        "& > :not(:last-child)": {
+          marginBottom: { xs: "12px", sm: "20px", md: "30px" },
+        },
+        marginY: "10px",
+        marginX: { xs: "8px", sm: "auto", lg: "10px" },
+        height: { xs: "590px", sm: "600px", md: "655px", lg: "690px" },
+      }}
+    >
+      {/* image */}
       <Box
         sx={{
-          maxWidth: "555px",
-          padding: "20px",
+          width: "100%",
+          height: "250px",
           borderRadius: "20px",
-          border: "2px solid #25D366",
-          "& > :not(:last-child)": {
-            marginBottom: { xs: "12px", sm: "20px", md: "30px" },
-          },
-          marginY: "30px",
-          marginX: { xs: "10px", sm: "auto", md: "15px" },
+          overflow: "hidden",
         }}
         onClick={onClick}
       >
-        {/* image  */}
-        <Box
+        <Image
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          src={image}
+          alt={title}
+        />
+      </Box>
+
+      {/* category button + read time */}
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          gap: "20px",
+          justifyContent: "space-between",
+        }}
+      >
+        <Button
           sx={{
-            width: "100%",
-            height: "250px",
-            borderRadius: "20px",
-            overflow: "hidden",
+            backgroundColor: "#25D366",
+            color: "#fff",
+            height: "46px",
+            borderRadius: "10px",
+            padding: { xs: "10px", sm: "10px 20px" },
+            textTransform: "none",
+            fontSize: localFontSize.p3,
+            fontWeight: 500,
+            transition: "all 0.3s ease",
+            textWrap: "nowrap",
+            "&:hover": {
+              backgroundColor: "#20b85a",
+            },
           }}
         >
-          <Image
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-            src={pngs.blogItem1}
-            alt="adviser1"
-          />
-        </Box>
-        {/* the button and the reminder time   */}
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            gap: "20px",
-            justifyContent: "space-between",
-          }}
-        >
-          <Button
-            sx={{
-              backgroundColor: "#25D366",
-              color: "#fff",
-              height: "46px",
-              borderRadius: "10px",
-              padding: { xs: "10px", sm: "10px 20px" },
-              textTransform: "none",
-              fontSize: localFontSize.p1,
-              fontWeight: 500,
-              transition: "all 0.3s ease",
-              textWrap: "nowrap",
-              "&:hover": {
-                backgroundColor: "#20b85a",
-              },
-            }}
-          >
-            Workplace Culture
-          </Button>
-          <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
-            <Image height={25} width={25} src={svgs.clock} alt="clock" />
-            <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
-              8 min read
-            </Typography>
-          </Box>
-        </Box>
-        {/* teh textuals box  */}
-        <Box>
+          {category}
+        </Button>
+
+        <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <Image height={25} width={25} src={svgs.clock} alt="clock" />
           <Typography
             sx={{
-              fontSize: localFontSize.h4,
-              color: "#000000",
-              paddingBottom: { xs: "5px", md: "10px" },
-            }}
-          >
-            Building Bridges: Interfaith Dialogue in Professional Settings
-          </Typography>
-          <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
-            How Muslim professionals can foster understanding and collaboration
-            across religious and cultural divides in the workplace.
-          </Typography>
-        </Box>
-        {/* username and date  */}
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            gap: { xs: "20px", md: "30px" },
-          }}
-        >
-          <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
-            <Image height={25} width={25} src={svgs.profile} alt="profile" />
-            <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
-              Tariq Ahmed
-            </Typography>
-          </Box>
-          <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
-            <Image height={25} width={25} src={svgs.calander} alt="calander" />
-            <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
-              February 25, 2024
-            </Typography>
-          </Box>
-        </Box>
-        {/* the lable buttons there  */}
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            gap: "10px",
-          }}
-        >
-          <Button
-            sx={{
-              backgroundColor: "#E9E9E9",
+              fontSize: localFontSize.p3,
               color: "#00000080",
-              borderRadius: "10px",
-              padding: { xs: "10px", sm: "5px 10px" },
-              textTransform: "none",
-              fontSize: localFontSize.p2,
-              transition: "all 0.3s ease",
               textWrap: "nowrap",
-              "&:hover": {
-                backgroundColor: "#20b85a",
-              },
-              display: "flex",
-              alignItems: "center",
-              gap: "5px",
             }}
           >
-            <Image height={23} width={23} src={svgs.lable} alt="lable" />
-            Interfaith
-          </Button>
-          <Button
-            sx={{
-              backgroundColor: "#E9E9E9",
-              color: "#00000080",
-              borderRadius: "10px",
-              padding: { xs: "10px", sm: "5px 10px" },
-              textTransform: "none",
-              fontSize: localFontSize.p2,
-              transition: "all 0.3s ease",
-              textWrap: "nowrap",
-              "&:hover": {
-                backgroundColor: "#20b85a",
-              },
-              display: "flex",
-              alignItems: "center",
-              gap: "5px",
-            }}
-          >
-            <Image height={23} width={23} src={svgs.lable} alt="lable" />
-            Professional Development
-          </Button>
+            {readTime}
+          </Typography>
         </Box>
       </Box>
-    </>
+
+      {/* title + description */}
+      <Box>
+        <Typography
+          sx={{
+            fontSize: localFontSize.h4,
+            color: "#000000",
+            paddingBottom: { xs: "5px", md: "10px" },
+            // elipsis
+            display: "-webkit-box",
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+          }}
+        >
+          {title}
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: localFontSize.p2,
+            color: "#00000080",
+            // elipsis
+            display: "-webkit-box",
+            WebkitLineClamp: 3,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+          }}
+        >
+          {description}
+        </Typography>
+      </Box>
+
+      {/* author + date */}
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          gap: { xs: "20px", md: "30px" },
+        }}
+      >
+        <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <Image height={25} width={25} src={authorIcon} alt="author" />
+          <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
+            {authorName}
+          </Typography>
+        </Box>
+        <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <Image height={25} width={25} src={dateIcon} alt="date" />
+          <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
+            {date}
+          </Typography>
+        </Box>
+      </Box>
+
+      {/* labels */}
+      <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
+        {labels.map((label, index) => (
+          <Button
+            key={index}
+            sx={{
+              backgroundColor: "#E9E9E9",
+              color: "#00000080",
+              borderRadius: "10px",
+              padding: { xs: "10px", sm: "5px 10px" },
+              textTransform: "none",
+              fontSize: localFontSize.p3,
+              transition: "all 0.3s ease",
+              textWrap: "nowrap",
+              "&:hover": {
+                backgroundColor: "#20b85a",
+                color: "#fff",
+              },
+              display: "flex",
+              alignItems: "center",
+              gap: "5px",
+            }}
+          >
+            <Image height={18} width={18} src={svgs.lable} alt="label" />
+            {label}
+          </Button>
+        ))}
+      </Box>
+    </Box>
   );
 }

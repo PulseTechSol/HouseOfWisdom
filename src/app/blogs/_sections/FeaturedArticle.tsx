@@ -42,6 +42,8 @@ export default function FeaturedArticle() {
           }}
         >
           <Box
+            data-aos="fade-right"
+            data-aos-duration="500"
             sx={{
               width: { xs: "100%", md: "50%" },
               "& > :not(:last-child)": {
@@ -124,6 +126,8 @@ export default function FeaturedArticle() {
             />
           </Box>
           <Box
+            data-aos="fade-left"
+            data-aos-duration="500"
             sx={{
               width: { xs: "100%", md: "50%" },
             }}

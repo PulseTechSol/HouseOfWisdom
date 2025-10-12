@@ -9,8 +9,6 @@ export default function HeroHome() {
   const router = useRouter();
   return (
     <Box
-      data-aos="zoom-in"
-      data-aos-duration="500"
       sx={{
         backgroundImage: "url(bgHome.webp)",
         backgroundPosition: { xs: "center", sm: "center", md: "cover" },
@@ -37,6 +35,8 @@ export default function HeroHome() {
             }}
           >
             <Typography
+              data-aos="fade-left"
+              data-aos-duration="500"
               sx={{
                 fontSize: localFontSize.h1,
                 fontWeight: "700",
@@ -55,6 +55,8 @@ export default function HeroHome() {
             </Typography>
 
             <Typography
+              data-aos="fade-right"
+              data-aos-duration="500"
               sx={{
                 fontSize: localFontSize.p2,
                 fontWeight: "400",
@@ -73,6 +75,8 @@ export default function HeroHome() {
             </Typography>
           </Box>
           <Box
+            data-aos="zoom-in"
+            data-aos-duration="500"
             sx={{
               marginTop: { xs: "20px", md: "40px" },
               display: "flex",

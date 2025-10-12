@@ -23,7 +23,11 @@ export default function WhoWeAre() {
           margin: "auto",
         }}
       >
-        <Box sx={{ width: { xs: "100%", md: "50%" } }}>
+        <Box
+          data-aos="fade-right"
+          data-aos-duration="500"
+          sx={{ width: { xs: "100%", md: "50%" } }}
+        >
           <Box
             sx={{
               display: "flex",
@@ -90,6 +94,8 @@ export default function WhoWeAre() {
           </Box>
         </Box>
         <Box
+          data-aos="fade-left"
+          data-aos-duration="500"
           sx={{
             width: { xs: "100%", md: "50%" },
           }}

@@ -1,3 +1,4 @@
+"use client";
 import Navbar from "@/_components/Navbar";
 import HeroHome from "./_sections/HeroHome";
 import AboutUs from "./_sections/AboutUs";
@@ -8,8 +9,18 @@ import WhatUnique from "./_sections/WhatUnique";
 import LatestEvents from "./_sections/LatestEvents";
 import JoinOurCommunity from "./_sections/JoinOurCommunity";
 import Footer from "@/_components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function HomePage() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+    AOS.refresh();
+  }, []);
   return (
     <>
       <Navbar />
