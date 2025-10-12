@@ -187,6 +187,12 @@ export function EventCard({
           display: "flex",
           alignItems: "center",
           gap: "10px",
+          border: "2px solid #25D366",
+          "&:hover": {
+            backgroundColor: "transparent",
+            color: "#25D366",
+            boxShadow: "0 6px 14px rgba(37, 211, 102, 0.25)",
+          },
         }}
         onClick={learnMore}
       >
