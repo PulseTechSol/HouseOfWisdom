@@ -12,7 +12,6 @@ export default function UpcomingEvents() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
     customPaging: () => (
@@ -28,7 +27,7 @@ export default function UpcomingEvents() {
     dotsClass: "slick-dots custom-dots",
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 2500,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,

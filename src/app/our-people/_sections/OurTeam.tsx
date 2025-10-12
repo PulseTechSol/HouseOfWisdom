@@ -13,7 +13,6 @@ export default function OurTeam() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     nextArrow: (
@@ -35,6 +34,12 @@ export default function OurTeam() {
       />
     ),
     responsive: [
+      {
+        breakpoint: 66000,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
       {
         breakpoint: 660,
         settings: {
