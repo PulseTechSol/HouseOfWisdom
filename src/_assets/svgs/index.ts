@@ -49,6 +49,7 @@ import sliderArrow from "./sliderArrow.svg";
 import profile from "./profile.svg";
 import lable from "./lable.svg";
 import archeryArrow from "./about-us/ourValues.svg";
+import sendIcon from "./sendIcon.svg";
 
 export const svgs = {
   logo,
@@ -102,4 +103,5 @@ export const svgs = {
   profile,
   lable,
   archeryArrow,
+  sendIcon,
 };
