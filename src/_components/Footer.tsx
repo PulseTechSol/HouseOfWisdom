@@ -8,12 +8,11 @@ import { useRouter, usePathname } from "next/navigation";
 import { svgs } from "@/_assets/svgs";
 
 const footerData = [
-  {
-    imgSrc: svgs.phone,
-    text: "+44 (0) 20 7123 4567",
-    description: "Monday - Friday, 9AM - 5PM",
-  },
-
+  // {
+  //   imgSrc: svgs.phone,
+  //   text: "+44 (0) 20 7123 4567",
+  //   description: "Monday - Friday, 9AM - 5PM",
+  // },
   {
     imgSrc: svgs.email,
     text: "info@houseofwisdom.org.uk",

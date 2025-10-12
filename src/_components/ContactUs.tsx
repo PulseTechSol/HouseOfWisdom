@@ -74,7 +74,7 @@ export default function ContactUs() {
                   info@thehownetwork.co.uk
                 </Typography>
               </Box>
-              <Box
+              {/* <Box
                 sx={{
                   display: "flex",
                   gap: "20px",
@@ -88,7 +88,7 @@ export default function ContactUs() {
                 >
                   +44 (0) 20 7123 4567
                 </Typography>
-              </Box>
+              </Box> */}
             </Box>
           </Box>
           <Box
