@@ -95,6 +95,7 @@ export default function Navbar() {
           >
             {navLinks.map(({ label, href }) => {
               const active = pathname === href;
+
               return (
                 <Typography
                   key={href}

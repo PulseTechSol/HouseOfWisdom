@@ -5,8 +5,10 @@ import { localFontSize, sectionPadding } from "@/utils/themes";
 import { pngs } from "@/_assets/pngs";
 import { svgs } from "@/_assets/svgs";
 import CustomButton from "@/_components/CustomButton";
+import { useRouter } from "next/navigation";
 
 export default function LatestEvents() {
+  const router = useRouter();
   return (
     <Box
       sx={{
@@ -56,7 +58,11 @@ export default function LatestEvents() {
             </Typography>
           </Box>
           <Box>
-            <CustomButton text="get involved" lightmode={true} />
+            <CustomButton
+              text="get involved"
+              lightmode={true}
+              onClick={() => router.push("events")}
+            />
           </Box>
         </Box>
         {/* the card box  */}
@@ -74,12 +80,18 @@ export default function LatestEvents() {
             date="October 15, 2025"
             title="official launch at central hall"
             description="Join leading Muslim professionals for a day of strategic discussions on community leadership and policy influence."
+            learnMore={() =>
+              router.push("events/policy-and-governance-workshop")
+            }
           />
           <EventCard
             iconSrc={pngs.latestEvents2}
             date="February 28, 2026"
             title="New Member Welcome"
             description="We're excited to welcome 25 new professionals to our growing network this month."
+            learnMore={() =>
+              router.push("events/policy-and-governance-workshop")
+            }
           />
         </Box>
       </Box>
@@ -92,9 +104,16 @@ type Props = {
   title: string;
   description: string;
   date: string;
+  learnMore?: () => void;
 };
 
-export function EventCard({ iconSrc, title, description, date }: Props) {
+export function EventCard({
+  iconSrc,
+  title,
+  description,
+  date,
+  learnMore = () => {},
+}: Props) {
   return (
     <Box
       sx={{
@@ -166,6 +185,7 @@ export function EventCard({ iconSrc, title, description, date }: Props) {
           alignItems: "center",
           gap: "10px",
         }}
+        onClick={learnMore}
       >
         learn more
         <hr style={{ border: "1px solid #fff", width: "30px" }} />

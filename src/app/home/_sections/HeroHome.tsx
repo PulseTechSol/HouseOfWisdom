@@ -3,8 +3,10 @@ import React from "react";
 import { localFontSize, sectionPadding } from "@/utils/themes";
 import { Box, Typography } from "@mui/material";
 import CustomButton from "@/_components/CustomButton";
+import { useRouter } from "next/navigation";
 
 export default function HeroHome() {
+  const router = useRouter();
   return (
     <Box
       data-aos="zoom-in"
@@ -79,8 +81,15 @@ export default function HeroHome() {
               width: "fit-content",
             }}
           >
-            <CustomButton text="get involved" lightmode={true} />
-            <CustomButton text="meet our people" />
+            <CustomButton
+              text="get involved"
+              lightmode={true}
+              onClick={() => router.push("contact-us")}
+            />
+            <CustomButton
+              text="meet our people"
+              onClick={() => router.push("our-people")}
+            />
           </Box>
         </Box>
       </Box>

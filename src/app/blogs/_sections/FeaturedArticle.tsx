@@ -5,8 +5,10 @@ import { localFontSize, sectionPadding } from "@/utils/themes";
 import { pngs } from "@/_assets/pngs";
 import { svgs } from "@/_assets/svgs";
 import CustomButton from "@/_components/CustomButton";
+import { useRouter } from "next/navigation";
 
 export default function FeaturedArticle() {
+  const router = useRouter();
   return (
     <Box
       sx={{
@@ -111,7 +113,15 @@ export default function FeaturedArticle() {
               <IconTextRow iconSrc={svgs.clock} text="8 min read" />
             </Box>
             {/* button here  */}
-            <CustomButton text="read article" lightmode={true} />
+            <CustomButton
+              text="read article"
+              lightmode={true}
+              onClick={() =>
+                router.push(
+                  "blogs/the-future-of-muslim-professional-leadership"
+                )
+              }
+            />
           </Box>
           <Box
             sx={{

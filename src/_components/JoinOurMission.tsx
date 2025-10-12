@@ -3,8 +3,11 @@
 import { Box, Typography } from "@mui/material";
 import { localFontSize, sectionPadding } from "@/utils/themes";
 import CustomButton from "./CustomButton";
+import { useRouter } from "next/navigation";
 
 export default function JoinOurMission() {
+  const router = useRouter();
+
   return (
     <Box sx={{ bgcolor: "#fff" }}>
       <Box
@@ -48,8 +51,15 @@ export default function JoinOurMission() {
             flexDirection: { xs: "column", sm: "row" },
           }}
         >
-          <CustomButton text="get involved" lightmode={true} />
-          <CustomButton text="meet our people" />
+          <CustomButton
+            text="get involved"
+            lightmode={true}
+            onClick={() => router.push("contact-us")}
+          />
+          <CustomButton
+            text="meet our people"
+            onClick={() => router.push("our-people")}
+          />
         </Box>
       </Box>
     </Box>

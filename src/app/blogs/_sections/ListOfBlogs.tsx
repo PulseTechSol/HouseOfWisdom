@@ -8,9 +8,11 @@ import { svgs } from "@/_assets/svgs";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useRouter } from "next/navigation";
 
 export default function ListOfBlogs() {
   const [activeCategory, setActiveCategory] = React.useState("All Posts");
+  const router = useRouter();
 
   const categories = [
     "All Posts",
@@ -122,12 +124,48 @@ export default function ListOfBlogs() {
         <Box sx={{ paddingTop: { xs: "30px", md: "40px", lg: "80px" } }}>
           {/* card therer  */}
           <Slider {...settings}>
-            <BlogListCard />
-            <BlogListCard />
-            <BlogListCard />
-            <BlogListCard />
-            <BlogListCard />
-            <BlogListCard />
+            <BlogListCard
+              onClick={() =>
+                router.push(
+                  "blogs/the-future-of-muslim-professional-leadership"
+                )
+              }
+            />
+            <BlogListCard
+              onClick={() =>
+                router.push(
+                  "blogs/the-future-of-muslim-professional-leadership"
+                )
+              }
+            />
+            <BlogListCard
+              onClick={() =>
+                router.push(
+                  "blogs/the-future-of-muslim-professional-leadership"
+                )
+              }
+            />
+            <BlogListCard
+              onClick={() =>
+                router.push(
+                  "blogs/the-future-of-muslim-professional-leadership"
+                )
+              }
+            />
+            <BlogListCard
+              onClick={() =>
+                router.push(
+                  "blogs/the-future-of-muslim-professional-leadership"
+                )
+              }
+            />
+            <BlogListCard
+              onClick={() =>
+                router.push(
+                  "blogs/the-future-of-muslim-professional-leadership"
+                )
+              }
+            />
           </Slider>
         </Box>
       </Box>
@@ -135,7 +173,7 @@ export default function ListOfBlogs() {
   );
 }
 
-export function BlogListCard() {
+export function BlogListCard({ onClick = () => {} }: { onClick?: () => void }) {
   return (
     <>
       <Box
@@ -150,6 +188,7 @@ export function BlogListCard() {
           marginY: "30px",
           marginX: { xs: "10px", sm: "auto", md: "15px" },
         }}
+        onClick={onClick}
       >
         {/* image  */}
         <Box
