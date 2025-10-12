@@ -1,11 +1,60 @@
 "use client";
 
+import { useState } from "react";
+import Image from "next/image";
+import { toast } from "react-toastify";
+import axios from "axios";
+
 import { Box, InputBase, Typography } from "@mui/material";
 import { localFontSize, sectionPadding } from "@/utils/themes";
 import { svgs } from "@/_assets/svgs";
-import Image from "next/image";
 
 export default function JoinOurCommunity() {
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const isValidEmail = (email: string) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
+  async function onSubmit() {
+    if (!email) {
+      // toast.error("Please enter your email");
+      return;
+    }
+
+    if (!isValidEmail(email)) {
+      toast.error("Please enter a valid email address");
+      setEmail("");
+      return;
+    }
+
+    try {
+      setLoading(true);
+      const response = await axios.post(
+        "/api/join-community",
+        { email },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      if (response?.status === 200) {
+        toast.success("Form submitted successfully!");
+        setEmail("");
+      } else {
+        toast.error("Submission failed! Please try again.");
+      }
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (err) {
+      toast.error("Submission failed! Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <Box sx={{ bgcolor: "#fff" }}>
       <Box
@@ -87,7 +136,7 @@ export default function JoinOurCommunity() {
             marginTop: { xs: "40px", md: "80px" },
           }}
         >
-          {/* the input fu=ield there */}
+          {/* the input field there */}
           <Box
             sx={{
               display: "flex",
@@ -103,6 +152,8 @@ export default function JoinOurCommunity() {
           >
             <InputBase
               placeholder="Enter Your Email Address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               sx={{
                 flex: 1,
                 fontSize: localFontSize.p2,
@@ -114,6 +165,8 @@ export default function JoinOurCommunity() {
                 width: "44px",
                 height: "44px",
               }}
+              onClick={onSubmit}
+              role="button"
             >
               <Image
                 src={svgs.sendIcon}
