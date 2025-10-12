@@ -21,7 +21,7 @@ export default function AboutUs() {
           }}
           size={{ xs: 12, md: 7, lg: 6, xl: 5.3 }}
         >
-          <Box sx={{ maxWidth: { xl: "800px" } }}>
+          <Box sx={{ maxWidth: { xl: "80%" } }}>
             <Box sx={{ marginBottom: { xs: "20px", md: "40px" } }}>
               <Typography
                 sx={{
@@ -61,7 +61,7 @@ export default function AboutUs() {
           //  size={6.4}
           size={{ xs: 12, md: 5, lg: 6, xl: 6.7 }}
           sx={{
-            maxHeight: { xl: "600px" },
+            maxHeight: { xl: "770px" },
           }}
         >
           <Image

@@ -10,15 +10,18 @@ export default function TheMessage() {
   return (
     <>
       <Grid
-        sx={{
-          maxHeight: { lg: "770px" },
-        }}
+        sx={
+          {
+            // maxHeight: { lg: "770px" },bacco
+          }
+        }
         container
       >
         <Grid
           size={{ xs: 12, md: 7, lg: 6, xl: 5.3 }}
           sx={{
-            maxHeight: { lg: "770px" },
+            // maxHeight: { lg: "770px" },
+            backgroundColor: "#1A1A1A",
           }}
         >
           <Image
@@ -43,7 +46,7 @@ export default function TheMessage() {
             },
           }}
         >
-          <Box sx={{ maxWidth: { xl: "800px" } }}>
+          <Box sx={{ maxWidth: { xl: "80%" } }}>
             <Box sx={{ marginBottom: { xs: "20px", md: "40px" } }}>
               <Typography
                 sx={{
