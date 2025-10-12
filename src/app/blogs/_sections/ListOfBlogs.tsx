@@ -26,18 +26,11 @@ export default function ListOfBlogs() {
     dots: true,
     infinite: true,
     speed: 500,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
     rows: 2,
     responsive: [
-      {
-        breakpoint: 12500,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          rows: 1,
-        },
-      },
       {
         breakpoint: 900,
         settings: {
