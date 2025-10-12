@@ -5,21 +5,12 @@ import { svgs } from "@/_assets/svgs";
 import Image from "next/image";
 import NavTopBar from "./NavTopBar";
 import { useRouter, usePathname } from "next/navigation";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 export default function Navbar() {
   const [menu, setMenu] = React.useState(false);
   const router = useRouter();
   const pathname = usePathname();
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
-    AOS.refresh();
-  }, []);
   const toggleDrawer = (open: boolean) => {
     setMenu(open);
   };
