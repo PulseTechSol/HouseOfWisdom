@@ -20,6 +20,7 @@ import whatWeOffer from "./home/whatWeOffer.png";
 import latestEvents1 from "./home/latestEvents1.png";
 import latestEvents2 from "./home/latestEvents2.png";
 import theMessage from "./home/theMessage.png";
+import whyJoinUs from "./home/whyJoinUs.png";
 
 export const pngs = {
   drivenByPurpose,
@@ -44,4 +45,5 @@ export const pngs = {
   latestEvents1,
   latestEvents2,
   theMessage,
+  whyJoinUs,
 };
