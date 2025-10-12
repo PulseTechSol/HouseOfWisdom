@@ -15,6 +15,7 @@ export default function TheMessage() {
           sx={{
             // maxHeight: { lg: "770px" },
             backgroundColor: "#1A1A1A",
+            position: "relative",
           }}
         >
           <Image
@@ -26,6 +27,37 @@ export default function TheMessage() {
             src={pngs.theMessage}
             alt="About Us"
           />
+          <Box
+            sx={{
+              position: "absolute",
+              bottom: { xs: "30px", md: "40px", lg: "60px", xl: "80px" },
+              left: "50%",
+              transform: "translateX(-50%)",
+              textAlign: "center",
+            }}
+          >
+            <Typography
+              sx={{
+                fontWeight: "600",
+                color: "#fff",
+                fontSize: localFontSize.h3,
+                lineHeight: localFontSize.h3,
+              }}
+            >
+              Shaykh Hammad
+            </Typography>
+            <Typography
+              sx={{
+                color: "#FFFFFF80",
+                fontSize: localFontSize.p2,
+                lineHeight: localFontSize.p2,
+                paddingTop: { xs: "5px", md: "10px" },
+                textWrap: "nowrap",
+              }}
+            >
+              Chief Executive Officer, House of Wisdom
+            </Typography>
+          </Box>
         </Grid>
         <Grid
           size={{ xs: 12, md: 5, lg: 6, xl: 6.7 }}
