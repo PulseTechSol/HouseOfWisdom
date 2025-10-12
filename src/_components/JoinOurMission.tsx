@@ -40,6 +40,8 @@ export default function JoinOurMission() {
         </Box>
         {/* the card box  */}
         <Box
+          data-aos="zoom-in"
+          data-aos-duration="500"
           sx={{
             marginTop: { xs: "40px", md: "80px" },
             display: "flex",

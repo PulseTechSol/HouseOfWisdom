@@ -32,7 +32,11 @@ export default function WhyJoinUs() {
           }}
           size={{ xs: 12, md: 7, lg: 6, xl: 5.3 }}
         >
-          <Box sx={{ maxWidth: { xl: "800px" } }}>
+          <Box
+            data-aos="fade-right"
+            data-aos-duration="500"
+            sx={{ maxWidth: { xl: "800px" } }}
+          >
             <Box sx={{ marginBottom: { xs: "20px", md: "40px" } }}>
               <Typography
                 sx={{

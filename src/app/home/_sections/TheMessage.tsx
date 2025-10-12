@@ -71,7 +71,11 @@ export default function TheMessage() {
             },
           }}
         >
-          <Box sx={{ maxWidth: { xl: "80%" } }}>
+          <Box
+            data-aos="fade-left"
+            data-aos-duration="500"
+            sx={{ maxWidth: { xl: "80%" } }}
+          >
             <Box sx={{ marginBottom: { xs: "20px", md: "40px" } }}>
               <Typography
                 sx={{

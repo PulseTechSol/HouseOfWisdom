@@ -138,6 +138,8 @@ export default function JoinOurCommunity() {
         >
           {/* the input field there */}
           <Box
+            data-aos="zoom-in"
+            data-aos-duration="500"
             sx={{
               display: "flex",
               alignItems: "center",

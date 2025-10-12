@@ -63,6 +63,8 @@ export default function Footer() {
           }}
         >
           <Box
+            data-aos="fade-right"
+            data-aos-duration="500"
             sx={{
               maxWidth: "360px",
               width: "100%",
@@ -109,7 +111,7 @@ export default function Footer() {
               <Image src={svgs.linkedin} alt="linkedin" />
             </Box>
           </Box>
-          <Box>
+          <Box data-aos="zoom-in" data-aos-duration="500">
             <Typography
               sx={{
                 fontSize: localFontSize.h4,
@@ -152,7 +154,11 @@ export default function Footer() {
               })}
             </Box>
           </Box>
-          <Box sx={{ maxWidth: { md: "160px" }, width: "100%" }}>
+          <Box
+            data-aos="zoom-in"
+            data-aos-duration="500"
+            sx={{ maxWidth: { md: "160px" }, width: "100%" }}
+          >
             <Typography
               sx={{
                 fontSize: localFontSize.h4,
@@ -202,6 +208,8 @@ export default function Footer() {
             </Box>
           </Box>
           <Box
+            data-aos="fade-left"
+            data-aos-duration="500"
             sx={{
               maxWidth: "306px",
               width: "100%",

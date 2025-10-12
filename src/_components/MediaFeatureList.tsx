@@ -26,6 +26,8 @@ export default function MediaFeatureList() {
         }}
       >
         <Box
+          data-aos="fade-right"
+          data-aos-duration="500"
           sx={{
             width: { xs: "100%", md: "50%" },
           }}
@@ -36,7 +38,11 @@ export default function MediaFeatureList() {
             style={{ objectFit: "cover", height: "100%", width: "100%" }}
           />
         </Box>
-        <Box sx={{ width: { xs: "100%", md: "50%" } }}>
+        <Box
+          data-aos="fade-left"
+          data-aos-duration="500"
+          sx={{ width: { xs: "100%", md: "50%" } }}
+        >
           <Box
             sx={{
               display: "flex",

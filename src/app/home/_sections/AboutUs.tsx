@@ -25,7 +25,7 @@ export default function AboutUs() {
           }}
           size={{ xs: 12, md: 7, lg: 6, xl: 5.3 }}
         >
-          <Box>
+          <Box data-aos="fade-right" data-aos-duration="500">
             <Box sx={{ marginBottom: { xs: "20px", md: "40px" } }}>
               <Typography
                 sx={{

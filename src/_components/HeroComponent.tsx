@@ -23,8 +23,6 @@ export default function HeroComponent({
 }: HeroProps) {
   return (
     <Box
-      data-aos="zoom-in"
-      data-aos-duration="500"
       sx={{
         backgroundImage: {
           xs: `url(${mobileBg})`,
@@ -54,6 +52,8 @@ export default function HeroComponent({
           }}
         >
           <Typography
+            data-aos="fade-right"
+            data-aos-duration="500"
             sx={{
               fontSize: localFontSize.h1,
               fontWeight: "700",
@@ -71,6 +71,8 @@ export default function HeroComponent({
             {title}
           </Typography>
           <Typography
+            data-aos="fade-right"
+            data-aos-duration="500"
             sx={{
               fontSize: localFontSize.h1,
               fontWeight: "700",
@@ -89,6 +91,8 @@ export default function HeroComponent({
           </Typography>
 
           <Typography
+            data-aos="fade-left"
+            data-aos-duration="500"
             sx={{
               fontSize: localFontSize.p2,
               fontWeight: "400",
@@ -104,6 +108,8 @@ export default function HeroComponent({
             {description}
           </Typography>
           <Typography
+            data-aos="fade-left"
+            data-aos-duration="500"
             sx={{
               fontSize: localFontSize.p2,
               fontWeight: "400",

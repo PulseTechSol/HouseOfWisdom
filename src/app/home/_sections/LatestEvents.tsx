@@ -97,6 +97,8 @@ type Props = {
 export function EventCard({ iconSrc, title, description, date }: Props) {
   return (
     <Box
+      data-aos="zoom-in"
+      data-aos-duration="500"
       sx={{
         display: "flex",
         flexDirection: "column",
