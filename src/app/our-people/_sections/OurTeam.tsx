@@ -105,7 +105,7 @@ export default function OurTeam() {
             <Divider
               sx={{
                 width: "80px",
-                border: { xs: "2px solid #25D366", md: "4px solid #25D366" },
+                border: "2px solid #25D366",
               }}
             />
           </Box>
@@ -212,7 +212,7 @@ const CustomSlider: React.FC<CustomSliderProps> = ({ styles, onClick }) => {
       sx={{
         position: "absolute",
         cursor: "pointer",
-        width: { xs: "15px", md: "20px" },
+        width: { xs: "30px", md: "30px", lg: "32px" },
         height: "auto",
         zIndex: 2,
         ...styles,

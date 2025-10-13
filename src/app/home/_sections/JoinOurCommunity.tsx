@@ -126,7 +126,7 @@ export default function JoinOurCommunity() {
             <Divider
               sx={{
                 width: "80px",
-                border: { xs: "2px solid #25D366", md: "4px solid #25D366" },
+                border: "2px solid #25D366",
               }}
             />
           </Box>
@@ -156,7 +156,7 @@ export default function JoinOurCommunity() {
             sx={{
               display: "flex",
               alignItems: "center",
-              border: "1px solid #25D366",
+              border: "2px solid #25D366",
               borderRadius: "10px",
               padding: "15px 20px",
               height: "70px",

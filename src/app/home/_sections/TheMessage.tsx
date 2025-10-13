@@ -13,8 +13,6 @@ export default function TheMessage() {
         <Grid
           size={{ xs: 12, md: 7, lg: 6, xl: 5.3 }}
           sx={{
-            // maxHeight: { lg: "770px" },
-            backgroundColor: "#1A1A1A",
             position: "relative",
           }}
         >
@@ -41,10 +39,10 @@ export default function TheMessage() {
                 fontWeight: "600",
                 color: "#fff",
                 fontSize: localFontSize.h3,
-                lineHeight: localFontSize.h3,
+                // lineHeight: localFontSize.h3,
               }}
             >
-              Shaykh Hammad
+              Hammad Mustafa <br /> Al-Madani Al-Qadri
             </Typography>
             <Typography
               sx={{
@@ -55,7 +53,7 @@ export default function TheMessage() {
                 textWrap: "nowrap",
               }}
             >
-              Chief Executive Officer, House of Wisdom
+              Patron, House of Wisdom
             </Typography>
           </Box>
         </Grid>
@@ -69,6 +67,7 @@ export default function TheMessage() {
               lg: "30px",
               xl: "60px !important",
             },
+            backgroundColor: "#000",
           }}
         >
           <Box
@@ -89,10 +88,7 @@ export default function TheMessage() {
               <Divider
                 sx={{
                   width: "80px",
-                  border: {
-                    xs: "2px solid #25D366",
-                    md: "4px solid #25D366",
-                  },
+                  border: "2px solid #25D366",
                 }}
               />
             </Box>

@@ -156,7 +156,7 @@ export function ValueCard({
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
-        maxWidth: { xs: "250px", sm: "300px", md: "360px" },
+        maxWidth: { xs: "320px", sm: "300px", md: "360px" },
         padding: "20px",
         backgroundColor: "#fff",
         borderRadius: "20px",

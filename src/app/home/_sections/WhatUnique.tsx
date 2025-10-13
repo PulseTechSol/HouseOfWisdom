@@ -41,7 +41,7 @@ export default function WhatUnique() {
             <Divider
               sx={{
                 width: "80px",
-                border: { xs: "2px solid #25D366", md: "4px solid #25D366" },
+                border: "2px solid #25D366",
               }}
             />
           </Box>
@@ -103,7 +103,7 @@ export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
         alignItems: "center",
         textAlign: "center",
         gap: { xs: "10px", md: "20px" },
-        maxWidth: { xs: "200px", sm: "300px", md: "360px" },
+        maxWidth: { xs: "300px", md: "360px" },
         padding: "20px",
       }}
     >
@@ -126,6 +126,8 @@ export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
           fontSize: localFontSize.h3,
           fontWeight: 600,
           color: "#FFF",
+          maxWidth: { sm: "240px", lg: "260px" },
+          margin: "auto",
         }}
       >
         {title}

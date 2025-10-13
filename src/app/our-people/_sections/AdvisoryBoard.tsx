@@ -135,13 +135,13 @@ export function Card({ iconSrc, title, description }: CardProps) {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        // justifyContent: "flex-start",
+        height: "-webkit-fill-available",
         textAlign: "center",
         gap: { xs: "5px", md: "10px" },
         backgroundColor: "#fff",
         padding: { xs: "20px", md: "30px", lg: "40px" },
         borderRadius: { xs: "20px", sm: "40px" },
-        height: "-webkit-fill-available",
+        justifyContent: { xs: "center", sm: "unset" },
       }}
     >
       <Box

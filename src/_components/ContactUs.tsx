@@ -40,7 +40,7 @@ export default function ContactUs() {
           <Divider
             sx={{
               width: "80px",
-              border: { xs: "2px solid #25D366", md: "4px solid #25D366" },
+              border: "2px solid #25D366",
             }}
           />
         </Box>
