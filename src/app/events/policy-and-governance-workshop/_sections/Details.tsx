@@ -17,7 +17,7 @@ export default function Details() {
             },
           }}
         >
-          <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
+          <Typography sx={{ fontSize: localFontSize.p2, color: "#ffffff80" }}>
             The Policy & Governance Workshop by House of Wisdom brings together
             professionals, academics, and community leaders to explore the
             principles of effective governance and the role of British Muslims
@@ -36,7 +36,7 @@ export default function Details() {
             <Typography
               sx={{
                 fontSize: localFontSize.h3,
-                color: "#000000",
+                color: "#fff",
                 fontWeight: 600,
               }}
             >
@@ -61,7 +61,7 @@ export default function Details() {
             <Typography
               sx={{
                 fontSize: localFontSize.h3,
-                color: "#000000",
+                color: "#fff",
                 fontWeight: 600,
               }}
             >
@@ -75,7 +75,7 @@ export default function Details() {
               }}
             >
               <Typography
-                sx={{ fontSize: localFontSize.p2, color: "#00000080" }}
+                sx={{ fontSize: localFontSize.p2, color: "#ffffff80" }}
               >
                 This workshop is designed for professionals in:{" "}
               </Typography>
@@ -99,7 +99,7 @@ export default function Details() {
             <Typography
               sx={{
                 fontSize: localFontSize.h3,
-                color: "#000000",
+                color: "#fff",
                 fontWeight: 600,
               }}
             >
@@ -124,7 +124,7 @@ export default function Details() {
             <Typography
               sx={{
                 fontSize: localFontSize.h3,
-                color: "#000000",
+                color: "#fff",
                 fontWeight: 600,
               }}
             >
@@ -149,7 +149,7 @@ export default function Details() {
             <Typography
               sx={{
                 fontSize: localFontSize.h3,
-                color: "#000000",
+                color: "#fff",
                 fontWeight: 600,
               }}
             >
@@ -158,7 +158,7 @@ export default function Details() {
             <Typography
               sx={{
                 fontSize: localFontSize.p2,
-                color: "#00000080",
+                color: "#ffffff80",
               }}
             >
               Be part of a movement empowering Muslim professionals to
@@ -183,7 +183,7 @@ function Bullets(props: { items: string[] }) {
         listStyleType: "disc",
         "& .MuiListItem-root": { display: "list-item", px: 0, py: 0.5 },
         fontSize: localFontSize.p2,
-        color: "#00000080",
+        color: "#ffffff80",
       }}
     >
       {props.items.map((t, i) => (
