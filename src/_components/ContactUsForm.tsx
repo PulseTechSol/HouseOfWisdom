@@ -24,7 +24,7 @@ export default function ContactUsForm() {
     reset,
   } = useForm<FormData>({
     defaultValues: { name: "", email: "", message: "" },
-    mode: "onChange", // ✅ validate while typing
+    mode: "onChange",
     reValidateMode: "onChange",
   });
 
@@ -58,7 +58,7 @@ export default function ContactUsForm() {
       component="form"
       onSubmit={handleSubmit(onSubmit, onError)}
       sx={{
-        bgcolor: "#fff",
+        bgcolor: "#1A1A1A",
         display: "flex",
         flexDirection: "column",
         gap: "16px",

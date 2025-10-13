@@ -41,7 +41,7 @@ export default function UpcomingEvents() {
   return (
     <Box
       sx={{
-        bgcolor: "#fff",
+        bgcolor: "#1A1A1A",
       }}
     >
       <Box
@@ -55,7 +55,7 @@ export default function UpcomingEvents() {
           sx={{
             fontSize: localFontSize.h2,
             fontWeight: 600,
-            color: "#000",
+            color: "#fff",
             textAlign: "center",
             paddingBottom: { xs: "30px", md: "40px", lg: "80px" },
           }}
@@ -160,7 +160,7 @@ export function EventCard({
       <Typography
         sx={{
           fontSize: localFontSize.h4,
-          color: "#000",
+          color: "#fff",
           marginTop: { xs: "20px", lg: "30px" },
           marginBottom: "6px",
           // elipsis
@@ -177,7 +177,7 @@ export function EventCard({
       <Typography
         sx={{
           fontSize: localFontSize.p1,
-          color: "#00000080",
+          color: "#ffffff80",
           // elipsis
           display: "-webkit-box",
           WebkitLineClamp: 4,
@@ -218,7 +218,7 @@ export function IconTextRow({ iconSrc, text }: IconTextRowProps) {
       }}
     >
       <Image src={iconSrc} alt="" width={25} height={25} />
-      <Typography sx={{ fontSize: localFontSize.p1, color: "#00000080" }}>
+      <Typography sx={{ fontSize: localFontSize.p1, color: "#ffffff80" }}>
         {text}
       </Typography>
     </Box>

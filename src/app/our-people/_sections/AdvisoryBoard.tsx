@@ -6,7 +6,7 @@ import { pngs } from "@/_assets/pngs";
 
 export default function UnitingForImpact() {
   return (
-    <Box sx={{ bgcolor: "#fff" }}>
+    <Box sx={{ bgcolor: "#1A1A1A" }}>
       <Box
         sx={{
           padding: sectionPadding,
@@ -27,18 +27,18 @@ export default function UnitingForImpact() {
             sx={{
               fontSize: localFontSize.h2,
               fontWeight: 600,
-              color: "#000",
+              color: "#FFF",
               textAlign: "center",
               width: "fit-content",
               marginX: "auto",
             }}
           >
-            Advisory Board{" "}
+            Advisory Board
           </Typography>
           <Typography
             sx={{
               fontSize: localFontSize.p1,
-              color: "#00000080",
+              color: "#FFFFFF80",
               marginTop: "20px",
               textAlign: "center",
             }}
@@ -138,7 +138,7 @@ export function Card({ iconSrc, title, description }: CardProps) {
         // justifyContent: "flex-start",
         textAlign: "center",
         gap: { xs: "5px", md: "10px" },
-        backgroundColor: "#25D366",
+        backgroundColor: "#fff",
         padding: { xs: "20px", md: "30px", lg: "40px" },
         borderRadius: { xs: "20px", sm: "40px" },
         height: "-webkit-fill-available",
@@ -161,7 +161,7 @@ export function Card({ iconSrc, title, description }: CardProps) {
       <Typography
         sx={{
           fontSize: localFontSize.h4,
-          color: "#FFFFFF",
+          color: "#000000",
           // elipsis
           display: "-webkit-box",
           WebkitLineClamp: 1,
@@ -176,7 +176,7 @@ export function Card({ iconSrc, title, description }: CardProps) {
       <Typography
         sx={{
           fontSize: localFontSize.p2,
-          color: "#FFFFFF80",
+          color: "#00000080",
           // elipsis
           display: "-webkit-box",
           WebkitLineClamp: 2,

@@ -33,7 +33,7 @@ export default function FeaturedEvent() {
   return (
     <Box
       sx={{
-        bgcolor: "#fff",
+        bgcolor: "#1A1A1A",
       }}
     >
       <Box
@@ -47,7 +47,7 @@ export default function FeaturedEvent() {
           sx={{
             fontSize: localFontSize.h2,
             fontWeight: 600,
-            color: "#000",
+            color: "#fff",
             textAlign: "center",
             paddingBottom: { xs: "30px", md: "40px", lg: "80px" },
           }}
@@ -79,7 +79,7 @@ export function IconTextRow({ iconSrc, text }: IconTextRowProps) {
       }}
     >
       <Image src={iconSrc} alt="" width={25} height={25} />
-      <Typography sx={{ fontSize: localFontSize.p1, color: "#00000080" }}>
+      <Typography sx={{ fontSize: localFontSize.p1, color: "#ffffff80" }}>
         {text}
       </Typography>
     </Box>
@@ -143,13 +143,13 @@ export function SlidingSection() {
                 sx={{
                   fontSize: localFontSize.h2,
                   fontWeight: 600,
-                  color: "#000",
+                  color: "#fff",
                 }}
               >
                 Leadership Summit 2025
               </Typography>
               <Typography
-                sx={{ fontSize: localFontSize.p1, color: "#00000080" }}
+                sx={{ fontSize: localFontSize.p1, color: "#ffffff80" }}
               >
                 Our flagship annual event bringing together leading Muslim
                 professionals for strategic discussions on community leadership,

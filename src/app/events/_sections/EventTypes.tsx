@@ -7,7 +7,7 @@ import { svgs } from "@/_assets/svgs";
 
 export default function EventTypes() {
   return (
-    <Box sx={{ bgcolor: "#fff" }}>
+    <Box sx={{ bgcolor: "#1A1A1A" }}>
       <Box
         sx={{
           padding: sectionPadding,
@@ -21,7 +21,7 @@ export default function EventTypes() {
             sx={{
               fontSize: localFontSize.h2,
               fontWeight: 600,
-              color: "#000",
+              color: "#fff",
               marginBottom: { xs: "10px", md: "20px" },
             }}
           >
@@ -30,7 +30,7 @@ export default function EventTypes() {
           <Typography
             sx={{
               fontSize: localFontSize.p2,
-              color: "#00000080",
+              color: "#ffffff80",
             }}
           >
             Our Advisory Board comprises distinguished professionals from
@@ -116,7 +116,7 @@ export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
       <Typography
         sx={{
           fontSize: localFontSize.p2,
-          color: "#00000080",
+          color: "#FFFFFF80",
         }}
       >
         {description}

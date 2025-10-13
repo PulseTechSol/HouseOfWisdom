@@ -161,7 +161,7 @@ export default function ListOfBlogs() {
   ];
 
   return (
-    <Box sx={{ bgcolor: "#fff" }}>
+    <Box sx={{ bgcolor: "#1A1A1A" }}>
       <Box
         sx={{
           padding: sectionPadding,
@@ -173,7 +173,7 @@ export default function ListOfBlogs() {
           sx={{
             fontSize: localFontSize.h2,
             fontWeight: 600,
-            color: "#000",
+            color: "#fff",
             textAlign: "center",
             paddingBottom: { xs: "30px", md: "40px", lg: "80px" },
           }}
@@ -281,8 +281,8 @@ export function BlogListCard({
           marginBottom: { xs: "12px", sm: "20px", md: "30px" },
         },
         marginY: "10px",
-        marginX: { xs: "8px", sm: "auto", lg: "10px" },
-        height: { xs: "590px", sm: "600px", md: "655px", lg: "690px" },
+        marginX: { xs: "8px", sm: "auto", md: "10px" },
+        height: { xs: "610px", sm: "620px", md: "675px", lg: "710px" },
         transition: "all 0.3s ease-in-out",
         "&:hover": {
           transform: "scale(1.01)",
@@ -340,7 +340,7 @@ export function BlogListCard({
           <Typography
             sx={{
               fontSize: localFontSize.p3,
-              color: "#00000080",
+              color: "#ffffff80",
               textWrap: "nowrap",
             }}
           >
@@ -354,7 +354,7 @@ export function BlogListCard({
         <Typography
           sx={{
             fontSize: localFontSize.h4,
-            color: "#000000",
+            color: "#fff",
             paddingBottom: { xs: "5px", md: "10px" },
             // elipsis
             display: "-webkit-box",
@@ -369,7 +369,7 @@ export function BlogListCard({
         <Typography
           sx={{
             fontSize: localFontSize.p2,
-            color: "#00000080",
+            color: "#FFFFFF80",
             // elipsis
             display: "-webkit-box",
             WebkitLineClamp: 3,
@@ -392,13 +392,13 @@ export function BlogListCard({
       >
         <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <Image height={25} width={25} src={authorIcon} alt="author" />
-          <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
+          <Typography sx={{ fontSize: localFontSize.p2, color: "#FFFFFF80" }}>
             {authorName}
           </Typography>
         </Box>
         <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <Image height={25} width={25} src={dateIcon} alt="date" />
-          <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
+          <Typography sx={{ fontSize: localFontSize.p2, color: "#FFFFFF80" }}>
             {date}
           </Typography>
         </Box>
@@ -410,8 +410,8 @@ export function BlogListCard({
           <Button
             key={index}
             sx={{
-              backgroundColor: "#E9E9E9",
-              color: "#00000080",
+              backgroundColor: "#000",
+              color: "#FFFFFF80",
               borderRadius: "10px",
               padding: { xs: "10px", sm: "5px 10px" },
               textTransform: "none",
@@ -420,7 +420,7 @@ export function BlogListCard({
               textWrap: "nowrap",
               "&:hover": {
                 backgroundColor: "#20b85a",
-                color: "#fff",
+                color: "#FFFFFF",
               },
               display: "flex",
               alignItems: "center",

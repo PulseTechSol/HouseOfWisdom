@@ -2,7 +2,6 @@ import Navbar from "@/_components/Navbar";
 import HeroComponent from "@/_components/HeroComponent";
 import OurTeam from "./_sections/OurTeam";
 import AdvisoryBoard from "./_sections/AdvisoryBoard";
-import JoinOurMission from "@/_components/JoinOurMission";
 import Footer from "@/_components/Footer";
 
 export default function OurPeople() {
@@ -19,7 +18,6 @@ export default function OurPeople() {
       />
       <OurTeam />
       <AdvisoryBoard />
-      <JoinOurMission />
       <Footer />
     </>
   );

@@ -42,13 +42,13 @@ export const CustomInput = React.forwardRef<HTMLInputElement, CustomInputProps>(
         inputRef={ref}
         InputLabelProps={{
           style: {
-            color: "#00000080",
+            color: "#FFFFFF80",
             // fontSize: localFontSize.p2,
           },
         }}
         inputProps={{
           style: {
-            color: "#00000080",
+            color: "#FFFFFF80",
             // fontSize: localFontSize.p2,
           },
         }}

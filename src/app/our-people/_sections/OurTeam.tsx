@@ -47,7 +47,7 @@ export default function OurTeam() {
   return (
     <Box
       sx={{
-        bgcolor: "#fff",
+        bgcolor: "#1A1A1A",
       }}
     >
       <Box
@@ -97,7 +97,7 @@ export default function OurTeam() {
               sx={{
                 fontSize: localFontSize.h2,
                 fontWeight: 600,
-                color: "#000",
+                color: "#FFF",
               }}
             >
               Meet the Team
@@ -117,7 +117,7 @@ export default function OurTeam() {
               gap: { xs: "10px", md: "20px" },
             }}
           >
-            <Typography sx={{ fontSize: localFontSize.p1, color: "#00000080" }}>
+            <Typography sx={{ fontSize: localFontSize.p1, color: "#FFFFFF80" }}>
               Our strength lies in the people who make up House of Wisdom — a
               collective of accomplished Muslim professionals, leaders, and
               visionaries from across the UK. Bound by shared values of faith,
@@ -186,14 +186,14 @@ export function MemberCard({ image, name, designation }: MemberCardProps) {
         <Typography
           sx={{
             fontSize: localFontSize.h4,
-            color: "#000000",
+            color: "#FFF",
             textTransform: "capitalize",
             paddingTop: { xs: "20px", md: "40px" },
           }}
         >
           {name}
         </Typography>
-        <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
+        <Typography sx={{ fontSize: localFontSize.p2, color: "#FFFFFF80" }}>
           {designation}
         </Typography>
       </Box>

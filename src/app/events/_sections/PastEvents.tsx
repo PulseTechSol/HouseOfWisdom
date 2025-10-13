@@ -53,7 +53,7 @@ export default function PastEvents() {
   };
 
   return (
-    <Box sx={{ bgcolor: "#E9E9E9" }}>
+    <Box sx={{ bgcolor: "#000" }}>
       <Box
         sx={{
           padding: sectionPadding,
@@ -66,7 +66,7 @@ export default function PastEvents() {
           sx={{
             fontSize: localFontSize.h2,
             fontWeight: 600,
-            color: "#000",
+            color: "#fff",
             textAlign: "center",
             marginBottom: "20px",
           }}
@@ -158,7 +158,7 @@ export function ValueCard({
         textAlign: "center",
         maxWidth: { xs: "250px", sm: "300px", md: "360px" },
         padding: "20px",
-        backgroundColor: "#25D366",
+        backgroundColor: "#fff",
         borderRadius: "20px",
         // height: "345px",
         marginX: { xs: "auto", lg: "10px" },
@@ -182,7 +182,7 @@ export function ValueCard({
       <Typography
         sx={{
           fontSize: localFontSize.h4,
-          color: "#fff",
+          color: "#000",
           // elipsis
           display: "-webkit-box",
           WebkitLineClamp: 1,
@@ -196,7 +196,7 @@ export function ValueCard({
       <Typography
         sx={{
           fontSize: localFontSize.p3,
-          color: "#FFFFFF",
+          color: "#000",
           marginY: { xs: "6px", md: "10px" },
         }}
       >
@@ -205,7 +205,7 @@ export function ValueCard({
       <Typography
         sx={{
           fontSize: localFontSize.p2,
-          color: "#FFFFFF80",
+          color: "#00000080",
           // elipsis
           display: "-webkit-box",
           WebkitLineClamp: 4,

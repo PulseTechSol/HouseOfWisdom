@@ -10,7 +10,7 @@ export default function ContactUs() {
     <Box
       sx={{
         padding: sectionPadding,
-        bgcolor: "#fff",
+        bgcolor: "#1A1A1A",
       }}
     >
       <Box
@@ -31,7 +31,7 @@ export default function ContactUs() {
             sx={{
               fontSize: localFontSize.h2,
               fontWeight: 600,
-              color: "#000",
+              color: "#fff",
               textTransform: "capitalize",
             }}
           >
@@ -57,7 +57,7 @@ export default function ContactUs() {
             <Typography
               sx={{
                 fontSize: localFontSize.p1,
-                color: "#00000080",
+                color: "#ffffff80",
                 paddingBottom: { xs: "20px", md: "40px" },
               }}
             >
@@ -69,7 +69,7 @@ export default function ContactUs() {
               <Box sx={{ display: "flex", gap: "20px", alignItems: "center" }}>
                 <Image src={svgs.email} height={40} width={40} alt="phone" />
                 <Typography
-                  sx={{ fontSize: localFontSize.p1, color: "#00000080" }}
+                  sx={{ fontSize: localFontSize.p1, color: "#ffffff80" }}
                 >
                   info@thehownetwork.co.uk
                 </Typography>
@@ -84,7 +84,7 @@ export default function ContactUs() {
               >
                 <Image src={svgs.phone} height={40} width={40} alt="phone" />
                 <Typography
-                  sx={{ fontSize: localFontSize.p1, color: "#00000080" }}
+                  sx={{ fontSize: localFontSize.p1, color: "#ffffff80" }}
                 >
                   +44 (0) 20 7123 4567
                 </Typography>
