@@ -10,7 +10,7 @@ export default function WhatWeOffer() {
   return (
     <Box
       sx={{
-        bgcolor: "#E9E9E9",
+        bgcolor: "#000",
       }}
     >
       <Box
@@ -29,6 +29,19 @@ export default function WhatWeOffer() {
           }}
         >
           <Box
+            data-aos="fade-left"
+            data-aos-duration="500"
+            sx={{
+              width: { xs: "100%", md: "50%" },
+            }}
+          >
+            <Image
+              src={pngs.whatWeOffer}
+              alt="Driven By Purpose"
+              style={{ objectFit: "cover", height: "100%", width: "100%" }}
+            />
+          </Box>
+          <Box
             data-aos="fade-right"
             data-aos-duration="500"
             sx={{
@@ -44,7 +57,7 @@ export default function WhatWeOffer() {
                 sx={{
                   fontSize: localFontSize.h2,
                   fontWeight: 600,
-                  color: "#000",
+                  color: "#FFFFFF",
                 }}
               >
                 What We Offer
@@ -85,19 +98,6 @@ export default function WhatWeOffer() {
               />
             </Box>
           </Box>
-          <Box
-            data-aos="fade-left"
-            data-aos-duration="500"
-            sx={{
-              width: { xs: "100%", md: "50%" },
-            }}
-          >
-            <Image
-              src={pngs.whatWeOffer}
-              alt="Driven By Purpose"
-              style={{ objectFit: "cover", height: "100%", width: "100%" }}
-            />
-          </Box>
         </Box>
       </Box>
     </Box>
@@ -128,13 +128,13 @@ export function IconTextRow({ title, describtion }: IconTextRowProps) {
         }}
       ></Box>
       <Box>
-        <Typography sx={{ fontSize: localFontSize.p1, color: "#000000" }}>
+        <Typography sx={{ fontSize: localFontSize.p1, color: "#FFFFFF" }}>
           {title}
         </Typography>
         <Typography
           sx={{
             fontSize: localFontSize.p1,
-            color: "#00000080",
+            color: "#FFFFFF80",
             marginTop: "5px",
           }}
         >

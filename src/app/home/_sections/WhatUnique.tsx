@@ -6,7 +6,7 @@ import { svgs } from "@/_assets/svgs";
 
 export default function WhatUnique() {
   return (
-    <Box sx={{ bgcolor: "#fff" }}>
+    <Box sx={{ bgcolor: "#1A1A1A" }}>
       <Box
         sx={{
           padding: sectionPadding,
@@ -33,10 +33,10 @@ export default function WhatUnique() {
               sx={{
                 fontSize: localFontSize.h2,
                 fontWeight: 600,
-                color: "#000",
+                color: "#FFF",
               }}
             >
-              Uniting For Impact
+              What Sets Us Apart
             </Typography>
             <Divider
               sx={{
@@ -48,7 +48,7 @@ export default function WhatUnique() {
           <Typography
             sx={{
               fontSize: localFontSize.p2,
-              color: "#00000080",
+              color: "#FFFFFF80",
             }}
           >
             {`Discover how we're revolutionizing professional networking and
@@ -125,7 +125,7 @@ export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
         sx={{
           fontSize: localFontSize.h3,
           fontWeight: 600,
-          color: "#000",
+          color: "#FFF",
         }}
       >
         {title}
@@ -134,7 +134,7 @@ export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
       <Typography
         sx={{
           fontSize: localFontSize.p2,
-          color: "#00000080",
+          color: "#FFFFFF80",
         }}
       >
         {description}

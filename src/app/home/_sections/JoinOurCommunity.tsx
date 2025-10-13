@@ -5,7 +5,7 @@ import Image from "next/image";
 import { toast } from "react-toastify";
 import axios from "axios";
 
-import { Box, InputBase, Typography } from "@mui/material";
+import { Box, InputBase, Typography, Divider } from "@mui/material";
 import { localFontSize, sectionPadding } from "@/utils/themes";
 import { svgs } from "@/_assets/svgs";
 
@@ -56,7 +56,7 @@ export default function JoinOurCommunity() {
   }
 
   return (
-    <Box sx={{ bgcolor: "#fff" }}>
+    <Box sx={{ bgcolor: "#1A1A1A" }}>
       <Box
         sx={{
           padding: sectionPadding,
@@ -107,20 +107,33 @@ export default function JoinOurCommunity() {
 
         {/* heading there  */}
         <Box sx={{ textAlign: "center", maxWidth: "1140px", margin: "auto" }}>
-          <Typography
+          <Box
             sx={{
-              fontSize: localFontSize.h2,
-              fontWeight: 600,
-              color: "#000",
-              textAlign: "center",
+              marginX: "auto",
+              width: "fit-content",
             }}
           >
-            Join our community of professionals
-          </Typography>
+            <Typography
+              sx={{
+                fontSize: localFontSize.h2,
+                fontWeight: 600,
+                color: "#FFFFFF",
+                textTransform: "capitalize",
+              }}
+            >
+              Join our community of professionals
+            </Typography>
+            <Divider
+              sx={{
+                width: "80px",
+                border: { xs: "2px solid #25D366", md: "4px solid #25D366" },
+              }}
+            />
+          </Box>
           <Typography
             sx={{
               fontSize: localFontSize.p1,
-              color: "#00000080",
+              color: "#FFFFFF80",
               marginTop: { xs: "10px", md: "20px" },
               textAlign: "center",
             }}
@@ -159,7 +172,7 @@ export default function JoinOurCommunity() {
               sx={{
                 flex: 1,
                 fontSize: localFontSize.p2,
-                color: "#00000080",
+                color: "#FFFFFF80",
               }}
             />
             <Box

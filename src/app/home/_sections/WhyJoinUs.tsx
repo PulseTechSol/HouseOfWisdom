@@ -42,7 +42,7 @@ export default function WhyJoinUs() {
                 sx={{
                   fontSize: localFontSize.h2,
                   fontWeight: 600,
-                  color: "#000",
+                  color: "#FFFFFF",
                 }}
               >
                 Why Join Us
@@ -51,13 +51,13 @@ export default function WhyJoinUs() {
                 sx={{
                   width: "80px",
                   border: {
-                    xs: "2px solid #000",
-                    md: "4px solid #000",
+                    xs: "2px solid #25D366",
+                    md: "4px solid #25D366",
                   },
                 }}
               />
             </Box>
-            <Typography sx={{ fontSize: localFontSize.p1, color: "#00000080" }}>
+            <Typography sx={{ fontSize: localFontSize.p1, color: "#FFFFFF80" }}>
               {` Joining our network opens doors to meaningful connections,
               mentorship opportunities, and professional development. Whether
               you’re an established leader or an emerging professional, you’ll

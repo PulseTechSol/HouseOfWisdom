@@ -50,7 +50,7 @@ export default function LatestEvents() {
             <Typography
               sx={{
                 fontSize: localFontSize.p2,
-                color: "#FFFFFF",
+                color: "#FFFFFF80",
               }}
             >
               Stay informed about our latest initiatives, events, and community
@@ -166,38 +166,13 @@ export function EventCard({
       <Typography
         sx={{
           fontSize: localFontSize.p2,
-          color: "#FFFFFF",
+          color: "#FFFFFF80",
           textAlign: "left",
         }}
       >
         {description}
       </Typography>
-      <Button
-        sx={{
-          textTransform: "capitalize",
-          color: "#fff",
-          borderRadius: "10px",
-          padding: "15px 30px",
-          fontSize: localFontSize.p2,
-          backgroundColor: "#25D366",
-          height: { xs: "45px", md: "56px" },
-          textWrap: "nowrap",
-          // the flex there
-          display: "flex",
-          alignItems: "center",
-          gap: "10px",
-          border: "2px solid #25D366",
-          "&:hover": {
-            backgroundColor: "transparent",
-            color: "#25D366",
-            boxShadow: "0 6px 14px rgba(37, 211, 102, 0.25)",
-          },
-        }}
-        onClick={learnMore}
-      >
-        learn more
-        <hr style={{ border: "1px solid #fff", width: "30px" }} />
-      </Button>
+      <CustomButton text="learn more" lightmode={true} onClick={learnMore} />
     </Box>
   );
 }

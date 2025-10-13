@@ -4,6 +4,7 @@ import { localFontSize, sectionPaddingY } from "@/utils/themes";
 import { Box, Typography, Grid, Divider } from "@mui/material";
 import { pngs } from "@/_assets/pngs";
 import Image from "next/image";
+import CustomButton from "@/_components/CustomButton";
 
 export default function AboutUs() {
   return (
@@ -22,6 +23,7 @@ export default function AboutUs() {
               lg: "30px",
               xl: "60px !important",
             },
+            backgroundColor: "#1A1A1A",
           }}
           size={{ xs: 12, md: 7, lg: 6, xl: 5.3 }}
         >
@@ -31,7 +33,7 @@ export default function AboutUs() {
                 sx={{
                   fontSize: localFontSize.h2,
                   fontWeight: 600,
-                  color: "#000",
+                  color: "#FFFFFF",
                 }}
               >
                 About Us
@@ -46,7 +48,13 @@ export default function AboutUs() {
                 }}
               />
             </Box>
-            <Typography sx={{ fontSize: localFontSize.p1, color: "#00000080" }}>
+            <Typography
+              sx={{
+                fontSize: localFontSize.p1,
+                color: "#FFFFFF80",
+                marginBottom: { xs: "20px", md: "40px" },
+              }}
+            >
               The House of Wisdom (HOW) is a bold new initiative launched by a
               group of British Muslims, led by Patron Hammad Mustafa Al-Madani
               Al-Qadri. Inspired by the intellectual legacy of the Islamic
@@ -58,6 +66,7 @@ export default function AboutUs() {
               confident, capable Muslim leaders who can shape the future with
               integrity and purpose.
             </Typography>
+            <CustomButton text="learn more" lightmode={true} />
           </Box>
         </Grid>
         <Grid
