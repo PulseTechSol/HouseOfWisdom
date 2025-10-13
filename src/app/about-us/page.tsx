@@ -20,9 +20,9 @@ export default function AboutUS() {
         descriptionMob="We are a professional network dedicated to uniting Muslim leaders, innovators, and changemakers from across the UK. Our mission is to connect talent with purpose — building a platform where professional growth meets community impact."
       />
       <WhoWeAre />
-      <MediaFeatureList />
-      <UnitingForImpact />
       <AimsAndObjectives />
+      <UnitingForImpact />
+      <MediaFeatureList />
       <JoinOurMission />
       <Footer />
     </>

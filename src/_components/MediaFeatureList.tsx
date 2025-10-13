@@ -10,7 +10,7 @@ export default function MediaFeatureList() {
   const mediaOnLeft = true;
 
   return (
-    <Box sx={{ bgcolor: "#fff" }}>
+    <Box sx={{ bgcolor: "#1A1A1A" }}>
       <Box
         sx={{
           padding: sectionPadding,
@@ -62,7 +62,7 @@ export default function MediaFeatureList() {
               sx={{
                 fontSize: localFontSize.h2,
                 fontWeight: 600,
-                color: "#000",
+                color: "#fff",
               }}
             >
               Principles We Live By
@@ -114,7 +114,7 @@ export default function MediaFeatureList() {
                     component="span"
                     sx={{
                       fontSize: localFontSize.p1,
-                      color: "#000",
+                      color: "#fff",
                     }}
                   >
                     {item.title}
@@ -122,7 +122,7 @@ export default function MediaFeatureList() {
                   <br />
                   <Typography
                     component="span"
-                    sx={{ fontSize: localFontSize.p1, color: "#00000080" }}
+                    sx={{ fontSize: localFontSize.p1, color: "#FFFFFF80" }}
                   >
                     {item.text}
                   </Typography>

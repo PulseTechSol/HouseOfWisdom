@@ -7,7 +7,7 @@ import { svgs } from "@/_assets/svgs";
 
 export default function UnitingForImpact() {
   return (
-    <Box sx={{ bgcolor: "#E9E9E9" }}>
+    <Box sx={{ bgcolor: "#000" }}>
       <Box
         sx={{
           padding: sectionPadding,
@@ -43,7 +43,7 @@ export default function UnitingForImpact() {
             sx={{
               fontSize: localFontSize.h2,
               fontWeight: 600,
-              color: "#000",
+              color: "#FFF",
               textAlign: "center",
               width: "fit-content",
               marginX: "auto",
@@ -60,7 +60,7 @@ export default function UnitingForImpact() {
           <Typography
             sx={{
               fontSize: localFontSize.p1,
-              color: "#00000080",
+              color: "#FFFFFF",
               marginTop: "20px",
               textAlign: "center",
             }}
@@ -129,7 +129,7 @@ export function Card({ iconSrc, title, description }: CardProps) {
         textAlign: "center",
         gap: { xs: "10px", md: "20px" },
         // width: "100%",
-        backgroundColor: "#25D366",
+        backgroundColor: "#fff",
         padding: { xs: "20px", md: "30px", lg: "40px" },
         borderRadius: "40px",
         justifyContent: "center",
@@ -154,7 +154,7 @@ export function Card({ iconSrc, title, description }: CardProps) {
         sx={{
           fontSize: localFontSize.h3,
           fontWeight: 600,
-          color: "#FFFFFF",
+          color: "#000",
         }}
       >
         {title}
@@ -163,7 +163,7 @@ export function Card({ iconSrc, title, description }: CardProps) {
       <Typography
         sx={{
           fontSize: localFontSize.p2,
-          color: "#FFFFFF80",
+          color: "#00000080",
         }}
       >
         {description}

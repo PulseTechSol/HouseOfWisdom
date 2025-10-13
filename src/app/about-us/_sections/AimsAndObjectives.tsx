@@ -7,7 +7,7 @@ import { svgs } from "@/_assets/svgs";
 
 export default function AimsAndObjectives() {
   return (
-    <Box sx={{ bgcolor: "#fff" }}>
+    <Box sx={{ bgcolor: "#1A1A1A" }}>
       <Box
         sx={{
           padding: sectionPadding,
@@ -38,7 +38,7 @@ export default function AimsAndObjectives() {
             sx={{
               fontSize: localFontSize.h2,
               fontWeight: 600,
-              color: "#000",
+              color: "#fff",
               textAlign: "center",
             }}
           >
@@ -121,7 +121,7 @@ export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
         sx={{
           fontSize: localFontSize.h3,
           fontWeight: 600,
-          color: "#000",
+          color: "#fff",
         }}
       >
         {title}
@@ -130,7 +130,7 @@ export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
       <Typography
         sx={{
           fontSize: localFontSize.p2,
-          color: "#00000080",
+          color: "#FFFFFF80",
         }}
       >
         {description}

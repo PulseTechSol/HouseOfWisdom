@@ -9,7 +9,7 @@ export default function JoinOurMission() {
   const router = useRouter();
 
   return (
-    <Box sx={{ bgcolor: "#fff" }}>
+    <Box sx={{ bgcolor: "#1A1A1A" }}>
       <Box
         sx={{
           padding: sectionPadding,
@@ -18,12 +18,12 @@ export default function JoinOurMission() {
         }}
       >
         {/* heading there  */}
-        <Box sx={{ textAlign: "center", maxWidth: "650px", margin: "auto" }}>
+        <Box sx={{ textAlign: "center", maxWidth: "680px", margin: "auto" }}>
           <Typography
             sx={{
               fontSize: localFontSize.h2,
               fontWeight: 600,
-              color: "#000",
+              color: "#FFF",
               textAlign: "center",
             }}
           >
@@ -32,7 +32,7 @@ export default function JoinOurMission() {
           <Typography
             sx={{
               fontSize: localFontSize.p1,
-              color: "#00000080",
+              color: "#FFFFFF80",
               marginTop: { xs: "10px", md: "20px" },
               textAlign: "center",
             }}
