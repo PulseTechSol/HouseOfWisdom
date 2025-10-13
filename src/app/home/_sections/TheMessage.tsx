@@ -90,8 +90,8 @@ export default function TheMessage() {
                 sx={{
                   width: "80px",
                   border: {
-                    xs: "2px solid #000000",
-                    md: "4px solid #000000",
+                    xs: "2px solid #25D366",
+                    md: "4px solid #25D366",
                   },
                 }}
               />

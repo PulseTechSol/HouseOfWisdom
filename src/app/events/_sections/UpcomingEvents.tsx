@@ -151,7 +151,6 @@ export function EventCard({
           backgroundColor: "#25D366",
           padding: "10px",
           borderRadius: "10px",
-          "&:hover": { backgroundColor: "#015C46" },
         }}
       >
         {buttonText}

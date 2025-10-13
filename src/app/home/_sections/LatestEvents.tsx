@@ -80,18 +80,18 @@ export default function LatestEvents() {
             date="November 28, 2025 at 6:00 PM"
             title="official launch at central hall"
             description="Join leading Muslim professionals for a day of strategic discussions on community leadership and policy influence."
-            learnMore={() =>
-              router.push("events/policy-and-governance-workshop")
-            }
+            // learnMore={() =>
+            //   router.push("events/policy-and-governance-workshop")
+            // }
           />
           <EventCard
             iconSrc={pngs.latestEvents2}
             date="February 28, 2026"
             title="New Member Welcome"
             description="We're excited to welcome 25 new professionals to our growing network this month."
-            learnMore={() =>
-              router.push("events/policy-and-governance-workshop")
-            }
+            // learnMore={() =>
+            //   router.push("events/policy-and-governance-workshop")
+            // }
           />
         </Box>
       </Box>
