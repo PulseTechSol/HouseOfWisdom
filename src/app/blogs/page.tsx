@@ -9,8 +9,8 @@ export default function Blogs() {
     <>
       <Navbar />
       <HeroComponent
-        mobileBg="bgAbout.webp"
-        pcBg="bgAbout.webp"
+        mobileBg="bgBlogs.webp"
+        pcBg="bgBlogs.webp"
         title="Insights & Inspiration"
         titleMob="Insights & Inspiration"
         description="Insights, analysis, and perspectives from Muslim professionals shaping Britain's future."
