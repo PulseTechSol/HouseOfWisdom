@@ -17,7 +17,7 @@ export default function Details() {
             },
           }}
         >
-          <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
+          <Typography sx={{ fontSize: localFontSize.p2, color: "#ffffff80" }}>
             British Muslim professionals are now leading across business,
             academia, law, healthcare, and public service. As the community
             grows in education and civic engagement, the next decade presents an
@@ -35,13 +35,13 @@ export default function Details() {
             <Typography
               sx={{
                 fontSize: localFontSize.h3,
-                color: "#000000",
+                color: "#fff",
                 fontWeight: 600,
               }}
             >
               A New Era Of Opportunity
             </Typography>
-            <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
+            <Typography sx={{ fontSize: localFontSize.p2, color: "#ffffff80" }}>
               Rising educational achievement, digital entrepreneurship, and
               diversity initiatives have opened doors for Muslim professionals.
               Yet challenges such as bias, limited access to senior networks,
@@ -60,13 +60,13 @@ export default function Details() {
             <Typography
               sx={{
                 fontSize: localFontSize.h3,
-                color: "#000000",
+                color: "#fff",
                 fontWeight: 600,
               }}
             >
               Defining The Next Generation Of Leaders
             </Typography>
-            <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
+            <Typography sx={{ fontSize: localFontSize.p2, color: "#ffffff80" }}>
               Future Muslim leadership in Britain will be built on integrity,
               collaboration, and community consciousness. True leaders will
               combine professional excellence with values of service and
@@ -81,7 +81,7 @@ export default function Details() {
               }}
             >
               <Typography
-                sx={{ fontSize: localFontSize.p2, color: "#00000080" }}
+                sx={{ fontSize: localFontSize.p2, color: "#ffffff80" }}
               >
                 Key qualities will include:
               </Typography>
@@ -104,7 +104,7 @@ export default function Details() {
             <Typography
               sx={{
                 fontSize: localFontSize.h3,
-                color: "#000000",
+                color: "#fff",
                 fontWeight: 600,
               }}
             >
@@ -118,7 +118,7 @@ export default function Details() {
               }}
             >
               <Typography
-                sx={{ fontSize: localFontSize.p2, color: "#00000080" }}
+                sx={{ fontSize: localFontSize.p2, color: "#ffffff80" }}
               >
                 For Organisations:
               </Typography>
@@ -131,7 +131,7 @@ export default function Details() {
               />
 
               <Typography
-                sx={{ fontSize: localFontSize.p2, color: "#00000080" }}
+                sx={{ fontSize: localFontSize.p2, color: "#ffffff80" }}
               >
                 For Professionals:
               </Typography>
@@ -154,13 +154,13 @@ export default function Details() {
             <Typography
               sx={{
                 fontSize: localFontSize.h3,
-                color: "#000000",
+                color: "#fff",
                 fontWeight: 600,
               }}
             >
               The Role Of Networks
             </Typography>
-            <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
+            <Typography sx={{ fontSize: localFontSize.p2, color: "#ffffff80" }}>
               Platforms like House of Wisdom are vital in connecting British
               Muslim professionals, fostering collaboration, and amplifying
               their collective voice. Through events, mentorship, and leadership
@@ -178,20 +178,20 @@ export default function Details() {
             <Typography
               sx={{
                 fontSize: localFontSize.h3,
-                color: "#000000",
+                color: "#fff",
                 fontWeight: 600,
               }}
             >
               Moving Forward
             </Typography>
-            <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
+            <Typography sx={{ fontSize: localFontSize.p2, color: "#ffffff80" }}>
               The future of Muslim professional leadership in Britain is not
               just about inclusion — it’s about influence. By investing in
               talent, nurturing networks, and leading with integrity, British
               Muslims can help shape a society that reflects the values of
               excellence, fairness, and humanity.
             </Typography>
-            <Typography sx={{ fontSize: localFontSize.p2, color: "#00000080" }}>
+            <Typography sx={{ fontSize: localFontSize.p2, color: "#ffffff80" }}>
               Together, we can build a future where representation becomes
               leadership — and leadership drives positive change.
             </Typography>
@@ -212,7 +212,7 @@ function Bullets(props: { items: string[] }) {
         listStyleType: "disc",
         "& .MuiListItem-root": { display: "list-item", px: 0, py: 0.5 },
         fontSize: localFontSize.p2,
-        color: "#00000080",
+        color: "#ffffff80",
       }}
     >
       {props.items.map((t, i) => (
