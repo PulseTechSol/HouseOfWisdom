@@ -126,8 +126,9 @@ export function ValueCard({ iconSrc, title, description }: ValueCardProps) {
           fontSize: localFontSize.h3,
           fontWeight: 600,
           color: "#FFF",
-          maxWidth: { sm: "240px", lg: "260px" },
+          maxWidth: { sm: "185px", md: "226px", lg: "260px" },
           margin: "auto",
+          marginY: "0px",
         }}
       >
         {title}
