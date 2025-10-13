@@ -2,12 +2,11 @@ import { sectionPaddingX } from "@/utils/themes";
 import { Box, Typography, Divider } from "@mui/material";
 import { svgs } from "@/_assets/svgs";
 import Image, { StaticImageData } from "next/image";
+import Marquee from "react-fast-marquee";
 
 export default function NavTopBar() {
   return (
-    <Box
-      sx={{ backgroundColor: "#1A1A1A", display: { xs: "none", md: "block" } }}
-    >
+    <Box sx={{ backgroundColor: "#1A1A1A" }}>
       <Box
         sx={{
           maxWidth: "1440px",
@@ -17,21 +16,45 @@ export default function NavTopBar() {
           display: "flex",
           gap: "20px",
           alignItems: "center",
-          flexWrap: "wrap",
+          textWrap: "nowrap",
         }}
       >
-        <Box sx={{ display: "flex", gap: "20px", alignItems: "center" }}>
-          <Typography sx={{ fontSize: "14px", color: "#fff" }}>
-            Next Event:
-          </Typography>
-          <Typography sx={{ fontSize: "14px", color: "#FFFFFF80" }}>
-            Networking Dinner - Healthcare Professionals
-          </Typography>
-        </Box>
-        {/* sub-section */}
-        <TopBarInfoItem icon={svgs.calander} text="April 25, 2024" />
-        <TopBarInfoItem icon={svgs.clock} text="7:00 PM - 10:00 PM" />
-        <TopBarInfoItem icon={svgs.location} text="The Dorchester, London" />
+        <Typography sx={{ fontSize: 14, color: "#fff", lineHeight: 1 }}>
+          Next Event:
+        </Typography>
+
+        {/* IMPORTANT: lock the row height, center items, and hide overflow */}
+        <Marquee
+          gradient={false}
+          pauseOnHover
+          style={{
+            height: 28, // 24–28 works well for 20–25px icons
+            overflow: "hidden",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: "20px",
+            }}
+          >
+            <Typography
+              sx={{ fontSize: 14, color: "#FFFFFF80", lineHeight: 1 }}
+            >
+              Networking Dinner - Healthcare Professionals
+            </Typography>
+
+            <TopBarInfoItem icon={svgs.calander} text="April 25, 2024" />
+            <TopBarInfoItem icon={svgs.clock} text="7:00 PM - 10:00 PM" />
+            <TopBarInfoItem
+              icon={svgs.location}
+              text="The Dorchester, London"
+            />
+          </Box>
+        </Marquee>
       </Box>
     </Box>
   );
@@ -45,23 +68,41 @@ function TopBarInfoItem({
   text: string;
 }) {
   return (
-    <Box sx={{ display: "flex", gap: "20px", alignItems: "center" }}>
+    <Box sx={{ display: "flex", gap: "16px", alignItems: "center" }}>
+      {/* fixed-height divider, not flexItem */}
       <Divider
         orientation="vertical"
-        flexItem
-        sx={{ borderColor: "#fff", borderRightWidth: 2 }}
+        sx={{ borderColor: "#fff", borderRightWidth: 2, height: 16 }}
       />
 
-      <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
-        <Box sx={{ width: 25, height: 25 }}>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          gap: { xs: "8px", md: "12px" },
+        }}
+      >
+        <Box
+          sx={{
+            width: { xs: "15px", md: 20 },
+            height: { xs: "15px", md: 20 },
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
           <Image
-            style={{ width: "100%", height: "100%" }}
             src={icon}
             alt="icon"
+            style={{
+              display: "block",
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+            }}
           />
         </Box>
 
-        <Typography sx={{ fontSize: "14px", color: "#FFFFFF80" }}>
+        <Typography sx={{ fontSize: 14, color: "#FFFFFF80", lineHeight: 1 }}>
           {text}
         </Typography>
       </Box>

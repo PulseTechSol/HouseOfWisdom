@@ -68,7 +68,9 @@ export default function Navbar() {
 
   return (
     <>
-      <NavTopBar />
+      <Box sx={{ display: { xs: "none", md: "block" } }}>
+        <NavTopBar />
+      </Box>
       <Box sx={{ backgroundColor: "#25D366" }}>
         <Box
           data-aos="zoom-in"
@@ -128,6 +130,9 @@ export default function Navbar() {
             <Image onClick={sidebar} src={svgs.hamburger} alt="hamburger" />
           </Box>
         </Box>
+      </Box>
+      <Box sx={{ display: { xs: "block", md: "none" } }}>
+        <NavTopBar />
       </Box>
 
       <Box
