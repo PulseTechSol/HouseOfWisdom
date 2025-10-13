@@ -6,6 +6,7 @@ import { svgs } from "@/_assets/svgs";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useRouter } from "next/navigation";
 
 export default function UpcomingEvents() {
   const settings = {
@@ -65,6 +66,7 @@ export default function UpcomingEvents() {
         <Slider {...settings}>
           {/* the cards there  */}
           <EventCard
+            link="/events/policy-and-governance-workshop"
             buttonText="Conference"
             heading="Policy & Governance Workshop"
             description="An interactive workshop focused on understanding UK policy-making processes and how Muslim professionals can effectively engage with government institutions."
@@ -79,6 +81,7 @@ export default function UpcomingEvents() {
             ]}
           />
           <EventCard
+            link="/events/policy-and-governance-workshop"
             buttonText="Networking"
             heading="Networking Dinner - Healthcare Professionals"
             description="An exclusive networking dinner for Muslim healthcare professionals to discuss challenges, opportunities, and collaborative initiatives in the healthcare sector."
@@ -93,6 +96,7 @@ export default function UpcomingEvents() {
             ]}
           />
           <EventCard
+            link="/events/policy-and-governance-workshop"
             buttonText="Conference"
             heading="Policy & Governance Workshop"
             description="An interactive workshop focused on understanding UK policy-making processes and how Muslim professionals can effectively engage with government institutions."
@@ -122,6 +126,7 @@ type EventCardProps = {
   heading: string;
   description: string;
   points: EventPoint[];
+  link: string;
 };
 
 export function EventCard({
@@ -129,7 +134,9 @@ export function EventCard({
   heading,
   description,
   points,
+  link,
 }: EventCardProps) {
+  const router = useRouter();
   return (
     <Box
       data-aos="zoom-in"
@@ -145,6 +152,7 @@ export function EventCard({
       }}
     >
       <Button
+        onClick={() => router.push(link)}
         sx={{
           textTransform: "capitalize",
           color: "#fff",
