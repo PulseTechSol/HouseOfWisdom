@@ -45,6 +45,7 @@ import exclusiveEvents from "./home/exclusiveEvents.svg";
 import policyInfluence from "./home/policyInfluence.svg";
 import professionalNetworking from "./home/professionalNetworking.svg";
 import quoteComma from "./home/quoteComma.svg";
+import calanderWhite from "./home/calanderWhite.svg";
 
 import sliderArrow from "./sliderArrow.svg";
 import profile from "./profile.svg";
@@ -100,6 +101,7 @@ export const svgs = {
   policyInfluence,
   professionalNetworking,
   quoteComma,
+  calanderWhite,
 
   sliderArrow,
   profile,

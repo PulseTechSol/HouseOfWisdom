@@ -76,6 +76,7 @@ export default function LatestEvents() {
           }}
         >
           <EventCard
+            buttonText="Featured Event"
             iconSrc={pngs.latestEvents1}
             date="November 28, 2025 at 6:00 PM"
             title="official launch at central hall"
@@ -85,6 +86,7 @@ export default function LatestEvents() {
             // }
           />
           <EventCard
+            buttonText="Community Growth"
             iconSrc={pngs.latestEvents2}
             date="February 28, 2026"
             title="New Member Welcome"
@@ -105,6 +107,7 @@ type Props = {
   description: string;
   date: string;
   learnMore?: () => void;
+  buttonText: string;
 };
 
 export function EventCard({
@@ -112,6 +115,7 @@ export function EventCard({
   title,
   description,
   date,
+  buttonText,
   learnMore = () => {},
 }: Props) {
   return (
@@ -125,21 +129,47 @@ export function EventCard({
         textAlign: "center",
         gap: { xs: "12px", md: "30px" },
         maxWidth: { xs: "555px", lg: "555px" },
+        width: "100%",
       }}
     >
       <Box
         sx={{
-          maxHeight: { xl: "350px" },
+          height: { xl: "350px" },
           width: "100%",
           borderRadius: "20px",
           overflow: "hidden",
+          position: "relative",
         }}
       >
         <Image
-          style={{ height: "100%", width: "100%", objectFit: "contain" }}
+          style={{ height: "100%", width: "100%", objectFit: "cover" }}
           src={iconSrc}
           alt={title}
         />
+        <Button
+          sx={{
+            textTransform: "capitalize",
+            color: "#fff",
+            backgroundColor: "#25D366",
+            padding: "10px",
+            borderRadius: "10px",
+            fontSize: localFontSize.p1,
+            position: "absolute",
+            top: { xs: "12px", md: "20px", lg: "30px" },
+            left: { xs: "12px", md: "20px", lg: "30px" },
+            height: "46px",
+            display: "flex",
+            gap: "10px",
+            alignItems: "canter",
+          }}
+        >
+          <Image
+            style={{ width: "14px" }}
+            src={svgs.calanderWhite}
+            alt="calander"
+          />
+          {buttonText}
+        </Button>
       </Box>
       <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
         <Image height={15} width={15} src={svgs.calander} alt="calendar" />
