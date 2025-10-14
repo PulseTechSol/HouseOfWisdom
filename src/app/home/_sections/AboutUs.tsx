@@ -5,8 +5,10 @@ import { Box, Typography, Grid, Divider } from "@mui/material";
 import { pngs } from "@/_assets/pngs";
 import Image from "next/image";
 import CustomButton from "@/_components/CustomButton";
+import { useRouter } from "next/navigation";
 
 export default function AboutUs() {
+  const router = useRouter();
   return (
     <>
       <Grid sx={{ maxWidth: { xl: "1600px" }, margin: "auto" }} container>
@@ -63,7 +65,11 @@ export default function AboutUs() {
               confident, capable Muslim leaders who can shape the future with
               integrity and purpose.
             </Typography>
-            <CustomButton text="learn more" lightmode={true} />
+            <CustomButton
+              text="learn more"
+              lightmode={true}
+              onClick={() => router.push("about-us")}
+            />
           </Box>
         </Grid>
         <Grid
