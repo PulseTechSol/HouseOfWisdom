@@ -109,12 +109,16 @@ export default function ContactUsForm() {
           padding: "15px 30px",
           fontSize: localFontSize.p2,
           gap: "12px",
-          border: "2px solid #25D366",
           backgroundColor: "#25D366",
+          transition: "all 0.3s ease-in-out",
           "& .MuiButton-endIcon": { margin: 0 },
           height: { xs: "45px", md: "56px" },
           textWrap: "nowrap",
-          "&:hover": { backgroundColor: "#1EBE5A" },
+          border: { xs: "1px solid #25D366", md: "2px solid #25D366" },
+          "&:hover": {
+            backgroundColor: "transparent",
+            color: "#25D366",
+          },
         }}
       >
         {loading ? "Sending..." : "Send Message"}

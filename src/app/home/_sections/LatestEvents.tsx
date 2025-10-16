@@ -6,6 +6,7 @@ import { pngs } from "@/_assets/pngs";
 import { svgs } from "@/_assets/svgs";
 import CustomButton from "@/_components/CustomButton";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function LatestEvents() {
   const router = useRouter();
@@ -118,6 +119,8 @@ export function EventCard({
   buttonText,
   learnMore = () => {},
 }: Props) {
+  const [hovered, setHovered] = useState(false);
+
   return (
     <Box
       data-aos="zoom-in"
@@ -147,10 +150,12 @@ export function EventCard({
           alt={title}
         />
         <Button
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
           sx={{
             textTransform: "capitalize",
-            color: "#fff",
-            backgroundColor: "#25D366",
+            color: hovered ? "#25D366" : "#fff",
+            backgroundColor: hovered ? "transparent" : "#25D366",
             padding: "10px",
             borderRadius: "10px",
             fontSize: localFontSize.p1,
@@ -160,13 +165,20 @@ export function EventCard({
             height: "46px",
             display: "flex",
             gap: "10px",
-            alignItems: "canter",
+            alignItems: "center",
+            border: { xs: "1px solid #25D366", md: "2px solid #25D366" },
+            transition:
+              "background-color .2s ease, color .2s ease, border .2s ease",
           }}
         >
           <Image
-            style={{ width: "14px" }}
-            src={svgs.calanderWhite}
-            alt="calander"
+            src={hovered ? svgs.calander : svgs.calanderWhite}
+            alt="calendar"
+            width={18}
+            height={18}
+            style={{
+              transition: "transform .3s ease, filter .2s ease",
+            }}
           />
           {buttonText}
         </Button>

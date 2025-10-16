@@ -202,16 +202,19 @@ export default function ListOfBlogs() {
                   activeCategory === category ? "#25D366" : "transparent",
                 color: activeCategory === category ? "#fff" : "#6B6B6B",
                 height: "46px",
+                width: "fit-content",
                 borderRadius: "10px",
                 padding: { xs: "10px", sm: "10px 20px" },
                 textTransform: "none",
                 fontSize: "16px",
                 fontWeight: 500,
-                transition: "all 0.3s ease",
+                transition: "all 0.25s ease-in-out",
                 textWrap: "nowrap",
                 "&:hover": {
                   backgroundColor:
-                    activeCategory === category ? "#20b85a" : "#f5f5f5",
+                    activeCategory === category ? "#25D366" : "#25D366",
+                  outline: activeCategory === category ? "none" : "none",
+                  color: activeCategory === category ? "#fff" : "#fff",
                 },
               }}
             >
@@ -327,8 +330,10 @@ export function BlogListCard({
             fontWeight: 500,
             transition: "all 0.3s ease",
             textWrap: "nowrap",
+            border: { xs: "1px solid #25D366", md: "2px solid #25D366" },
             "&:hover": {
-              backgroundColor: "#20b85a",
+              backgroundColor: "transparent",
+              color: "#fff",
             },
           }}
         >

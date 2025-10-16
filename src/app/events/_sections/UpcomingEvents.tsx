@@ -159,6 +159,12 @@ export function EventCard({
           backgroundColor: "#25D366",
           padding: "10px",
           borderRadius: "10px",
+          border: { xs: "1px solid #25D366", md: "2px solid #25D366" },
+          transition: "all .3s ease-in-out",
+          "&:hover": {
+            background: "transparent",
+            color: "#25D366",
+          },
         }}
       >
         {buttonText}
