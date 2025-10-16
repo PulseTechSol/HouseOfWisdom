@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Button, Divider } from "@mui/material";
 import Image from "next/image";
 import { svgs } from "@/_assets/svgs";
@@ -16,9 +17,13 @@ export default function CustomButton({
   onClick,
   lightmode = false,
 }: CustomButtonProps) {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <Button
       onClick={onClick ?? (() => {})}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       endIcon={
         lightmode ? (
           <Divider
@@ -34,8 +39,8 @@ export default function CustomButton({
         ) : (
           <Image
             className="btn-end-icon"
-            src={svgs.ourPropleWhite}
-            alt=""
+            src={isHovered ? svgs.ourPeopleGreen : svgs.ourPropleWhite}
+            alt="ourPeopleIcon"
             width={24}
             height={24}
             aria-hidden
@@ -56,32 +61,21 @@ export default function CustomButton({
 
         height: { xs: "45px", md: "56px" },
         textWrap: "nowrap",
-        transition:
-          "background-color .2s ease, color .2s ease, box-shadow .2s ease",
+        // transition:
+        //   "background-color .2s ease, color .2s ease, box-shadow .2s ease",
+        transition: "all .4s ease-in-out",
 
-        /* HOVER for both modes */
         "&:hover": {
-          backgroundColor: lightmode ? "#25D366" : "#20b85a",
-          color: "#fff",
-          boxShadow: "0 6px 14px rgba(37, 211, 102, 0.25)",
-
-          /* nudge the end icon */
+          backgroundColor: lightmode ? "#25D366" : "transparent",
+          color: lightmode ? "#fff" : "#25D366",
           "& .btn-end-icon": {
             transform: "translateX(3px)",
           },
         },
 
-        /* Make divider line turn white on hover when in light mode */
         "&:hover .btn-end-icon": lightmode
           ? { borderColor: "#fff" }
           : undefined,
-
-        /* Focus-visible for accessibility */
-        "&:focus-visible": {
-          outline: "3px solid rgba(37, 211, 102, 0.35)",
-          outlineOffset: "2px",
-        },
-        /* Active press feedback */
         "&:active": {
           transform: "translateY(1px)",
           boxShadow: "0 3px 8px rgba(37, 211, 102, 0.2)",
