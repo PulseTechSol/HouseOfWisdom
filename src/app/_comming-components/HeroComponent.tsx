@@ -13,21 +13,6 @@ interface HeroProps {
   titleMob?: string;
 }
 
-/*************  ✨ Windsurf Command ⭐  *************/
-/**
- * A hero component that displays a background image,
- * a title, and a description.
- * It is responsive and uses animations.
- *
- * @param {Object} props - The props object.
- * @param {string | StaticImageData} [props.mobileBg] - The background image for mobile devices.
- * @param {string | StaticImageData} [props.pcBg] - The background image for PC devices.
- * @param {string} [props.title] - The title of the hero component.
- * @param {string} [props.description] - The description of the hero component.
- * @param {string} [props.descriptionMob] - The description of the hero component for mobile devices.
- * @param {string} [props.titleMob] - The title of the hero component for mobile devices.
- */
-/*******  d28bc79d-b497-4542-b6ca-d9b6a8dcfa99  *******/
 export default function HeroComponent({
   mobileBg,
   pcBg,
@@ -46,7 +31,7 @@ export default function HeroComponent({
         backgroundPosition: { xs: "center", sm: "center", md: "cover" },
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        height: { xs: "450px", md: "600px" },
+        height: { xs: "calc( 100vh - 77px )", md: "600px" },
         display: "flex",
       }}
     >
