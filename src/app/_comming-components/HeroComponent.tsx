@@ -31,8 +31,9 @@ export default function HeroComponent({
         backgroundPosition: { xs: "center", sm: "center", md: "cover" },
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        height: { xs: "calc( 100vh - 77px )", md: "600px" },
+        height: { xs: "calc( 100vh - 77px )", md: "calc( 100vh - 77px )" },
         display: "flex",
+        position: "relative",
       }}
     >
       <Box
@@ -41,6 +42,8 @@ export default function HeroComponent({
           width: "100%",
           margin: "auto",
           padding: sectionPadding,
+          zIndex: "20",
+          position: "relative",
         }}
       >
         <Box
@@ -126,6 +129,18 @@ export default function HeroComponent({
           </Typography>
         </Box>
       </Box>
+      {/* bgblurr  */}
+      <Box
+        sx={{
+          backgroundColor: "rgba(0, 0, 0, 0.3)",
+          height: "100%",
+          width: "100%",
+          position: "absolute",
+          top: "0",
+          left: "0",
+          zIndex: "10",
+        }}
+      ></Box>
     </Box>
   );
 }

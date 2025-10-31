@@ -16,8 +16,8 @@ export default function Home() {
       <Box>
         <NavTopBar />
         <HeroComponent
-          mobileBg="bgAbout.webp"
-          pcBg="bgAbout.webp"
+          mobileBg="bgHome.webp"
+          pcBg="bgHome.webp"
           title="Our official website will launch on 24th November 2025, marking the beginning of a movement built on faith, purpose, and community impact"
           titleMob="Our official website will launch on 24th November 2025, marking the beginning of a movement built on faith, purpose, and community impact"
           description=""
