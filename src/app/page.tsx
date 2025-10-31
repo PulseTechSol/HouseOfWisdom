@@ -9,7 +9,7 @@ import { localFontSize } from "@/utils/themes";
 import NavTopBar from "@/app/_comming-components/NavTopBar";
 import HeroComponent from "@/_components/HeroComponent";
 import TheMessage from "./home/_sections/TheMessage";
-import ContactUs from "@/_components/ContactUs";
+// import ContactUs from "@/_components/ContactUs";
 
 export default function Home() {
   return (
@@ -19,16 +19,16 @@ export default function Home() {
         <HeroComponent
           mobileBg="bgAbout.webp"
           pcBg="bgAbout.webp"
-          title="A Professional Network with Purpose."
-          titleMob="A Professional Network with Purpose."
-          description="House of Wisdom unites Muslim leaders, thinkers, and changemakers from across the UK to connect, collaborate, and cultivate excellence through faith-driven leadership."
-          descriptionMob="House of Wisdom unites Muslim leaders, thinkers, and changemakers from across the UK to connect, collaborate, and cultivate excellence through faith-driven leadership."
+          title="A New Era of Muslim Leadership is Coming."
+          titleMob="A New Era of Muslim Leadership is Coming."
+          description="Our official website will launch on 24th November 2025, marking the beginning of a movement built on faith, purpose, and community impact."
+          descriptionMob="Our official website will launch on 24th November 2025, marking the beginning of a movement built on faith, purpose, and community impact."
         />
       </Box>
       <TheMessage />
-      <ContactUs />
+      {/* <ContactUs /> */}
       {/* the copy right line  */}
-      <Box sx={{ borderTop: "2px solid #fff" }}>
+      <Box sx={{ borderTop: "0px solid #fff" }}>
         <Typography
           sx={{
             maxWidth: "800px",
