@@ -7,9 +7,8 @@
 import { Box, Link, Typography } from "@mui/material";
 import { localFontSize } from "@/utils/themes";
 import NavTopBar from "@/app/_comming-components/NavTopBar";
-import HeroComponent from "@/_components/HeroComponent";
+import HeroComponent from "@/app/_comming-components/HeroComponent";
 import TheMessage from "./home/_sections/TheMessage";
-// import ContactUs from "@/_components/ContactUs";
 
 export default function Home() {
   return (
@@ -19,10 +18,10 @@ export default function Home() {
         <HeroComponent
           mobileBg="bgAbout.webp"
           pcBg="bgAbout.webp"
-          title="A New Era of Muslim Leadership is Coming."
-          titleMob="A New Era of Muslim Leadership is Coming."
-          description="Our official website will launch on 24th November 2025, marking the beginning of a movement built on faith, purpose, and community impact."
-          descriptionMob="Our official website will launch on 24th November 2025, marking the beginning of a movement built on faith, purpose, and community impact."
+          title="Our official website will launch on 24th November 2025, marking the beginning of a movement built on faith, purpose, and community impact"
+          titleMob="Our official website will launch on 24th November 2025, marking the beginning of a movement built on faith, purpose, and community impact"
+          description=""
+          descriptionMob=""
         />
       </Box>
       <TheMessage />

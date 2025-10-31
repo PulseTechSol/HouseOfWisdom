@@ -51,10 +51,7 @@ export default function NavTopBar() {
                 lineHeight: 1,
               }}
             >
-              Website launching on 24th Nov 2025 — The House of Wisdom (HOW) is
-              a new initiative by British Muslims, inspired by the Islamic
-              Golden Age to build thought leadership and empower a new
-              generation of confident, principled Muslim leaders.{" "}
+              Keep tuned for the launch of our official website
             </Typography>
           </Box>
         </Marquee>
