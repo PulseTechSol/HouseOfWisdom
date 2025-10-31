@@ -163,6 +163,28 @@ export default function JoinOurCommunity() {
               maxWidth: "480px",
               width: "100%",
               margin: "auto",
+              backgroundColor: "transparent",
+              transition:
+                "border-color .2s ease, box-shadow .2s ease, background-color .2s ease",
+
+              /* Hover state */
+              "&:hover": {
+                borderColor: "#1fb85a",
+                backgroundColor: "rgba(37, 211, 102, 0.06)",
+                boxShadow: "0 8px 18px rgba(37, 211, 102, 0.18)",
+              },
+
+              /* When any child (the input) is focused */
+              "&:focus-within": {
+                borderColor: "#25D366",
+                backgroundColor: "rgba(37, 211, 102, 0.08)",
+                boxShadow: "0 0 0 4px rgba(37, 211, 102, 0.18)",
+              },
+
+              /* Optional: subtle pressed feedback when clicking send */
+              "&:active": {
+                boxShadow: "0 4px 12px rgba(37, 211, 102, 0.16)",
+              },
             }}
           >
             <InputBase
@@ -172,16 +194,45 @@ export default function JoinOurCommunity() {
               sx={{
                 flex: 1,
                 fontSize: localFontSize.p2,
-                color: "#FFFFFF80",
+                color: "#FFFFFF",
+                /* nicer placeholder */
+                "&::placeholder": { color: "#FFFFFF80", opacity: 1 },
+                /* remove iOS/Chrome default styles */
+                "& .MuiInputBase-input": { outline: "none" },
+                /* remove autofill yellow */
+                "& input:-webkit-autofill": {
+                  WebkitBoxShadow: "0 0 0px 1000px transparent inset",
+                  WebkitTextFillColor: "#FFFFFF",
+                  transition: "background-color 5000s ease-in-out 0s",
+                },
+              }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") onSubmit();
               }}
             />
+
             <Box
               sx={{
                 width: "44px",
                 height: "44px",
+                display: "grid",
+                placeItems: "center",
+                borderRadius: "10px",
+                transition: "transform .18s ease, background-color .18s ease",
+                /* icon hover target too */
+                cursor: "pointer",
+                "&:hover": {
+                  transform: "translateX(2px)",
+                  backgroundColor: "rgba(37, 211, 102, 0.12)",
+                },
+                /* when input focused, keep subtle bg under icon */
+                ".Mui-focused + &": {
+                  backgroundColor: "rgba(37, 211, 102, 0.1)",
+                },
               }}
               onClick={onSubmit}
               role="button"
+              aria-label="Send email"
             >
               <Image
                 src={svgs.sendIcon}
