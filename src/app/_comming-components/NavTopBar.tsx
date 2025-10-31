@@ -47,6 +47,21 @@ export default function NavTopBar() {
             }}
           >
             Keep tuned for the launch of our official website.
+            <span style={{ paddingLeft: "60px" }}></span> Keep tuned for the
+            launch of our official website.
+            <span style={{ paddingLeft: "60px" }}></span> Keep tuned for the
+            launch of our official website.
+            <span style={{ paddingLeft: "60px" }}></span> Keep tuned for the
+            launch of our official website.
+            <span style={{ paddingLeft: "60px" }}></span> Keep tuned for the
+            launch of our official website.
+            <span style={{ paddingLeft: "60px" }}></span> Keep tuned for the
+            launch of our official website.
+            <span style={{ paddingLeft: "60px" }}></span> Keep tuned for the
+            launch of our official website.
+            <span style={{ paddingLeft: "60px" }}></span> Keep tuned for the
+            launch of our official website.
+            <span style={{ paddingLeft: "60px" }}></span>
           </Typography>
         </Marquee>
       </Box>
