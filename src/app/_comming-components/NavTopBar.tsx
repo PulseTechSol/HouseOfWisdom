@@ -37,23 +37,17 @@ export default function NavTopBar() {
             alignItems: "center",
           }}
         >
-          <Box
+          <Typography
             sx={{
-              display: "flex",
-              alignItems: "center",
-              gap: "20px",
+              fontSize: { xs: "16px", md: "18px" },
+              color: "#FFFFFF",
+              lineHeight: 1,
+              textTransform: "uppercase",
+              pr: "60px",
             }}
           >
-            <Typography
-              sx={{
-                fontSize: { xs: "16px", md: "18px" },
-                color: "#FFFFFF",
-                lineHeight: 1,
-              }}
-            >
-              Keep tuned for the launch of our official website
-            </Typography>
-          </Box>
+            Keep tuned for the launch of our official website.
+          </Typography>
         </Marquee>
       </Box>
     </Box>
