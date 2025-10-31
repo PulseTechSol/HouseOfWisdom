@@ -31,7 +31,7 @@ export default function HeroComponent({
         backgroundPosition: { xs: "center", sm: "center", md: "cover" },
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        height: { xs: "calc( 100vh - 77px )", md: "calc( 100vh - 77px )" },
+        height: { xs: "calc( 100vh - 77px )", md: "600px" },
         display: "flex",
         position: "relative",
       }}
