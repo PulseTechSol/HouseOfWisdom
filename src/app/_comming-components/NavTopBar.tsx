@@ -6,12 +6,11 @@ import Image from "next/image";
 
 export default function NavTopBar() {
   return (
-    <Box sx={{ backgroundColor: "#25D366" }}>
+    <Box sx={{ backgroundColor: "#25D366", px: sectionPaddingX }}>
       <Box
         sx={{
-          maxWidth: "1440px",
+          maxWidth: "1600px",
           margin: "auto",
-          px: sectionPaddingX,
           py: "15px",
           display: "flex",
           gap: "20px",

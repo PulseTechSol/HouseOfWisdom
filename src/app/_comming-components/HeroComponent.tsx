@@ -34,14 +34,14 @@ export default function HeroComponent({
         height: { xs: "calc( 100vh - 77px )", md: "600px" },
         display: "flex",
         position: "relative",
+        padding: sectionPadding,
       }}
     >
       <Box
         sx={{
-          maxWidth: "1440px",
+          maxWidth: "1600px",
           width: "100%",
           margin: "auto",
-          padding: sectionPadding,
           zIndex: "20",
           position: "relative",
         }}

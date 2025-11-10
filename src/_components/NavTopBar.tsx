@@ -6,12 +6,12 @@ import Marquee from "react-fast-marquee";
 
 export default function NavTopBar() {
   return (
-    <Box sx={{ backgroundColor: "#1A1A1A" }}>
+    <Box sx={{ backgroundColor: "#1A1A1A", px: sectionPaddingX }}>
       <Box
         sx={{
-          maxWidth: "1440px",
+          maxWidth: "1600px",
           margin: "auto",
-          px: sectionPaddingX,
+
           py: "10px",
           display: "flex",
           gap: "20px",

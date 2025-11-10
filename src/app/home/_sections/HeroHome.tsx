@@ -16,14 +16,14 @@ export default function HeroHome() {
         backgroundRepeat: "no-repeat",
         display: "flex",
         minHeight: { xs: "calc( 100vh - 75px )", md: "700px", lg: "800px" },
+        padding: sectionPadding,
       }}
     >
       <Box
         sx={{
-          maxWidth: "1440px",
+          maxWidth: "1600px",
           width: "100%",
           margin: "auto",
-          padding: sectionPadding,
         }}
       >
         <Box>

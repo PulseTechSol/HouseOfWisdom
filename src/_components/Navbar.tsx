@@ -71,15 +71,14 @@ export default function Navbar() {
       <Box sx={{ display: { xs: "none", md: "block" } }}>
         <NavTopBar />
       </Box>
-      <Box sx={{ backgroundColor: "#25D366" }}>
+      <Box sx={{ backgroundColor: "#25D366", px: sectionPaddingX }}>
         <Box
           data-aos="zoom-in"
           data-aos-duration="500"
           sx={{
-            maxWidth: 1440,
+            maxWidth: 1600,
             height: 80,
             margin: "auto",
-            px: sectionPaddingX,
             py: "10px",
             display: "flex",
             gap: "20px",
@@ -88,7 +87,11 @@ export default function Navbar() {
             justifyContent: "space-between",
           }}
         >
-          <Image src={svgs.logo} alt="logo" width={50} height={50} />
+          <Image
+            style={{ height: "50px", width: "auto" }}
+            src={svgs.logo}
+            alt="logo"
+          />
 
           <Box
             sx={{
