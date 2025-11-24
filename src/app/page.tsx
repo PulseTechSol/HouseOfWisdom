@@ -18,8 +18,8 @@ export default function Home() {
         <HeroComponent
           mobileBg="bgHome.webp"
           pcBg="bgHome.webp"
-          title="Our official website will launch on 24th November 2025, marking the beginning of a movement built on faith, purpose, and community impact"
-          titleMob="Our official website will launch on 24th November 2025, marking the beginning of a movement built on faith, purpose, and community impact"
+          title="Our official website is coming soon, marking the beginning of a movement built on faith, purpose, and community impact"
+          titleMob="Our official website is coming soon, marking the beginning of a movement built on faith, purpose, and community impact"
           description=""
           descriptionMob=""
         />
