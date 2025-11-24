@@ -9,6 +9,7 @@ import { localFontSize } from "@/utils/themes";
 import NavTopBar from "@/app/_comming-components/NavTopBar";
 import HeroComponent from "@/app/_comming-components/HeroComponent";
 import TheMessage from "./home/_sections/TheMessage";
+import ContactUs from "@/_components/ContactUs";
 
 export default function Home() {
   return (
@@ -18,13 +19,14 @@ export default function Home() {
         <HeroComponent
           mobileBg="bgHome.webp"
           pcBg="bgHome.webp"
-          title="Our official website will launch on 24th November 2025, marking the beginning of a movement built on faith, purpose, and community impact"
-          titleMob="Our official website will launch on 24th November 2025, marking the beginning of a movement built on faith, purpose, and community impact"
+          title="Our official website is coming soon, marking the beginning of a movement built on faith, purpose, and community impact."
+          titleMob="Our official website is coming soon, marking the beginning of a movement built on faith, purpose, and community impact."
           description=""
           descriptionMob=""
         />
       </Box>
       <TheMessage />
+      <ContactUs />
       {/* <ContactUs /> */}
       {/* the copy right line  */}
       <Box sx={{ borderTop: "0px solid #fff" }}>
