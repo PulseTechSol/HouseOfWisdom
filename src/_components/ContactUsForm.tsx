@@ -85,16 +85,16 @@ export default function ContactUsForm() {
       />
 
       <CustomInput
-        label="Message"
+        label="Industry"
         multiline
         rows={4}
         error={!!errors.message}
         helperText={errors.message?.message}
         {...register("message", {
-          required: "Message is required",
+          required: "Industry is required",
           minLength: {
-            value: 10,
-            message: "Message must be at least 10 characters long",
+            value: 3,
+            message: "Industry must be at least 10 characters long",
           },
         })}
       />
