@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export const POST = async (request: Request) => {
-  const { name, email, message } = await request.json();
+  const { name, email, company, industry, message } = await request.json();
 
   try {
     const transporter = nodemailer.createTransport({
@@ -17,11 +17,13 @@ export const POST = async (request: Request) => {
       from: "marsad11223@gmail.com",
       to: "Aadil.khan997@gmail.com",
       subject: "Contact Form Submission",
-      text: message,
+      text: message || "No message provided",
       html: `
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Industry:</strong> ${message}</p>
+        <p><strong>Company:</strong> ${company}</p>
+        <p><strong>Industry:</strong> ${industry}</p>
+        <p><strong>Message:</strong> ${message || "Not provided"}</p>
       `,
     };
 

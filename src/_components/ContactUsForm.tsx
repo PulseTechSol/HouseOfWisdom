@@ -11,6 +11,8 @@ import "react-toastify/dist/ReactToastify.css";
 interface FormData {
   name: string;
   email: string;
+  company: string;
+  industry: string;
   message: string;
 }
 
@@ -23,7 +25,13 @@ export default function ContactUsForm() {
     formState: { errors },
     reset,
   } = useForm<FormData>({
-    defaultValues: { name: "", email: "", message: "" },
+    defaultValues: {
+      name: "",
+      email: "",
+      company: "",
+      industry: "",
+      message: "",
+    },
     mode: "onChange",
     reValidateMode: "onChange",
   });
@@ -85,18 +93,30 @@ export default function ContactUsForm() {
       />
 
       <CustomInput
+        label="Company"
+        error={!!errors.company}
+        helperText={errors.company?.message}
+        {...register("company", {
+          required: "Company is required",
+        })}
+      />
+
+      <CustomInput
         label="Industry"
-        multiline
+        error={!!errors.industry}
+        helperText={errors.industry?.message}
+        {...register("industry", {
+          required: "Industry is required",
+        })}
+      />
+
+      <CustomInput
+        label="Message"
         rows={4}
+        multiline
         error={!!errors.message}
         helperText={errors.message?.message}
-        {...register("message", {
-          required: "Industry is required",
-          minLength: {
-            value: 3,
-            message: "Industry must be at least 10 characters long",
-          },
-        })}
+        {...register("message")}
       />
 
       <Button

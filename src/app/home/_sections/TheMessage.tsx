@@ -116,15 +116,17 @@ export default function TheMessage() {
                     paddingY: "30px",
                   }}
                 >
-                  The future of our community, and our country, will be shaped
-                  by the voices we raise, the leaders we nurture, and the values
-                  we stand for. The House of Wisdom exists to unlock the
-                  potential of British Muslims across every field of society,
-                  and to build a network of thinkers, professionals, and
-                  changemakers who are committed to progress, unity, and
-                  service. Together, through collaboration and courage, we can
-                  shape a better Britain, one that reflects the richness of all
-                  its people and the strength of shared purpose.
+                  The House of Wisdom (HOW) has been established as a forum
+                  dedicated to cultivating a network of Muslim professionals who
+                  recognise that expertise acquires its greatest value when
+                  directed towards the wider public. HOW is a networking
+                  platform for intellectual exchange, professional development,
+                  and collaborative problem-solving. It seeks to bring together
+                  individuals working in fields as diverse as law, medicine,
+                  finance, engineering, technology, education, public policy,
+                  and the creative industries. The goal is to provide the
+                  conditions in which their collective knowledge can be
+                  mobilised for societal benefit.
                 </Typography>
               </Box>
               <Box
