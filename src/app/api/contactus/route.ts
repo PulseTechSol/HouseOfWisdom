@@ -8,14 +8,14 @@ export const POST = async (request: Request) => {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "marsad11223@gmail.com",
-        pass: "qwaa gpky fuxl fzqp",
+        user: "qashnova123@gmail.com",
+        pass: "jzgn dbey uppw ppjj",
       },
     });
 
     const mailOptions = {
-      from: "marsad11223@gmail.com",
-      to: "Aadil.khan997@gmail.com",
+      from: "qashnova123@gmail.com",
+      to: "marsad11223@gmail.com",
       subject: "Contact Form Submission",
       text: message || "No message provided",
       html: `
@@ -32,7 +32,7 @@ export const POST = async (request: Request) => {
       console.warn("⚠️ Email not accepted by recipient server.");
       return NextResponse.json(
         { error: "Email was not accepted by the recipient server." },
-        { status: 500 }
+        { status: 500 },
       );
     }
 
